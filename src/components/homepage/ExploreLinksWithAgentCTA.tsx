@@ -1,0 +1,64 @@
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs/Tabs";
+
+// components
+import Heading from "@/components/Heading";
+
+const ExploreLinksWithAgentCTA = () => {
+  return (
+    <>
+      <section className="py-[165px] text-black">
+        <div className="container">
+          {/* section heading  */}
+          <Heading />
+
+          {/* content  */}
+          <Tabs defaultValue="real-estate">
+            <TabsList className="flex items-center gap-4 justify-start">
+              <TabsTrigger
+                value="real-estate"
+                className=" capitalize font-medium text-[19px] text-black bg-transparent border-b-2   p-[0_0_10px_0] border-transparent ease-out duration-300
+                data-[state=active]:shadow-none data-[state=active]:border-black"
+              >
+                real estate
+              </TabsTrigger>
+              <TabsTrigger
+                value="new-homes"
+                className=" capitalize font-medium text-[19px] text-black bg-transparent border-b-2   p-[0_0_10px_0] border-transparent ease-out duration-300
+                data-[state=active]:shadow-none data-[state=active]:border-black"
+              >
+                new homes
+              </TabsTrigger>
+              <TabsTrigger
+                value="popular-area"
+                className=" capitalize font-medium text-[19px] text-black bg-transparent border-b-2   p-[0_0_10px_0] border-transparent ease-out duration-300
+                data-[state=active]:shadow-none data-[state=active]:border-black"
+              >
+                popular area
+              </TabsTrigger>
+              <TabsTrigger
+                value="popular-searches"
+                className=" capitalize font-medium text-[19px] text-black bg-transparent border-b-2   p-[0_0_10px_0] border-transparent ease-out duration-300
+                data-[state=active]:shadow-none data-[state=active]:border-black"
+              >
+                popular searches
+              </TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="real-estate">
+              Make changes to your account here.
+            </TabsContent>
+            <TabsContent value="new-homes">
+              Change your password here.
+            </TabsContent>
+          </Tabs>
+        </div>
+      </section>
+    </>
+  );
+};
+export default ExploreLinksWithAgentCTA;

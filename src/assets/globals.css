@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* layer components  */
+
+@layer components {
+  .container {
+    @apply max-w-[1430px] mx-auto px-[15px];
+  }
+  .inline-reset {
+    @apply no-underline list-none inline-block;
+  }
+  .heading {
+    @apply font-medium font-roboto text-[40px] leading-[52px] capitalize;
+  }
+  .heading-discription {
+    @apply font-normal font-roboto text-[17px] leading-[32.3px];
+  }
+}
+
+/* layer base */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
+
+/* @layer base {
+  @font-face {
+    font-family: "Roboto";
+    src: url("/fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+      url("/fonts/roboto-v20-latin-regular.woff") format("woff");
+    font-weight: medium;
+    font-style: normal;
+  }
+}
+
+:root {
+  --font-roboto: "Roboto", sans-serif;
+  --font-roboto-medium: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+  font-style: normal;
+} */

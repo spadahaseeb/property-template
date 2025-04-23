@@ -1,0 +1,60 @@
+import Link from "next/link";
+import React, { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
+import { tv } from "tailwind-variants";
+
+// Button props types
+interface ButtonPropsType {
+  variant?: "default" | "v1" | "v2" | "v3";
+  className?: string;
+  buttonText?: string;
+  buttonIcon?: ReactNode;
+  buttonIconStyle?: string;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
+}
+
+// button component
+const Button = ({
+  variant,
+  className,
+  buttonText,
+  buttonIcon,
+  buttonIconStyle,
+  onClick,
+}: ButtonPropsType) => {
+  return (
+    <>
+      <Link
+        href={"/"}
+        className={twMerge(
+          buttonVariants({ variant, className }),
+          "inline-reset flex items-center"
+        )}
+        onClick={onClick}
+      >
+        {buttonText && <p>{buttonText}</p>}
+        <span className={twMerge("inline-reset", buttonIconStyle)}>
+          {buttonIcon}
+        </span>
+      </Link>
+    </>
+  );
+};
+export default Button;
+
+// button tailwind varians
+const buttonVariants = tv({
+  base: "flex items-center justify-center text-center capitalize w-[max-content]",
+  variants: {
+    variant: {
+      v1: "text-16 font-medium border-1 py-2 px-7 border-white rounded-lg text-white bg-transparent hover:bg-white hover:text-black ease-out duration-300",
+      v2: "bg-accent-gold text-black text-[15px] rounded-normal py-3 px-6 font-medium",
+      v3: "rounded-full font-medium w-[70px] h-[70px] pl-0",
+      default:
+        "bg-white/10 text-16 font-medium py-2 px-7 rounded-xlg text-white",
+    },
+  },
+  defaultVariants: {
+    variant: "default",
+  },
+});
