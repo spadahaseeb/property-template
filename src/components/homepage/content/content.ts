@@ -9,11 +9,64 @@ import {
 } from "lucide-react";
 
 export const NavigationLinksContent = [
-  { text: "home", link: "/", icon: true },
-  { text: "listings", link: "/", icon: true },
-  { text: "members", link: "/", icon: true },
-  { text: "blog", link: "/", icon: true },
-  { text: "pages", link: "/", icon: true },
+  {
+    text: "home",
+    link: "/",
+    icon: true,
+    hoverLinks: [
+      { text: "home 1", link: "/" },
+      { text: "home 2", link: "/" },
+      { text: "home 3", link: "/" },
+      { text: "home 4", link: "/" },
+      { text: "home 5", link: "/" },
+      { text: "home 6", link: "/" },
+    ],
+  },
+  {
+    text: "listings",
+    link: "/",
+    icon: true,
+    hoverLinks: [
+      { text: "listings 1", link: "/" },
+      { text: "listings 2", link: "/" },
+      { text: "listings 3", link: "/" },
+      { text: "listings 4", link: "/" },
+      { text: "listings 5", link: "/" },
+    ],
+  },
+  {
+    text: "members",
+    link: "/",
+    icon: true,
+    hoverLinks: [
+      { text: "members 1", link: "/" },
+      { text: "members 2", link: "/" },
+      { text: "members 3", link: "/" },
+      { text: "members 4", link: "/" },
+    ],
+  },
+  {
+    text: "blog",
+    link: "/",
+    icon: true,
+    hoverLinks: [
+      { text: "blog 1", link: "/" },
+      { text: "blog 2", link: "/" },
+      { text: "blog 3", link: "/" },
+      { text: "blog 4", link: "/" },
+    ],
+  },
+  {
+    text: "pages",
+    link: "/",
+    icon: true,
+    hoverLinks: [
+      { text: "page 1", link: "/" },
+      { text: "page 2", link: "/" },
+      { text: "page 3", link: "/" },
+      { text: "page 4", link: "/" },
+    ],
+  },
   { text: "contact", link: "/", icon: false },
 ];
 
@@ -298,5 +351,39 @@ export const ExploreLinksWithAgentCTAContent = [
       "smart lock homes",
       "modern interior",
     ],
+  },
+];
+
+export const FooterLinksContent = [
+  {
+    tab: "discover",
+    links: [
+      "buy house ny",
+      "sell property la",
+      "rent apartment tx",
+      "real estate agents",
+      "house listings",
+      "investment property",
+    ],
+  },
+  {
+    tab: "quick links",
+    links: [
+      "foreclosed houses",
+      "open house",
+      "property value",
+      "investment property",
+      "rental market",
+      "first time buyer",
+      "house listings",
+    ],
+  },
+  {
+    tab: "contact us",
+    links: ["hi@justhome.com", "(123) 456-7890"],
+  },
+  {
+    tab: "our adress",
+    links: ["99 Fifth Avenue, 3rd Floor San Francisco, CA 1980"],
   },
 ];

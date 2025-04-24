@@ -1,9 +1,8 @@
 "use client";
-
-// components
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs/Tabs";
 import { Search } from "lucide-react";
 import { useState } from "react";
+// components
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/Tabs";
 
 const PropertySearchBar = () => {
   const [tab, setTab] = useState("sale");
