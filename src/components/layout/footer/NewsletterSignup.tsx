@@ -20,6 +20,7 @@ const NewsletterSignup = () => {
             className="placeholder:font-normal placeholder:text-[15px] placeholder:text-white text-4 text-white flex-1 bg-transparent border-none outline-none capitalize min-w-[252px]"
           />
           <Button
+            linkEnable={false}
             buttonText="send"
             buttonIcon={<ArrowRight size={20} strokeWidth={2} />}
             buttonIconStyle="ml-2"
