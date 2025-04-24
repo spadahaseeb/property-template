@@ -9,6 +9,7 @@ import Testimonials from "@/components/homepage/Testimonials";
 import RecentArticles from "@/components/homepage/RecentArticles";
 import ExploreLinksWithAgentCTA from "@/components/homepage/ExploreLinksWithAgentCTA";
 import AgentCTA from "@/components/AgentCTA";
+import BackToTop from "@/components/BackToTop";
 
 const HomePage = () => {
   return (
@@ -23,6 +24,7 @@ const HomePage = () => {
       <RecentArticles />
       <ExploreLinksWithAgentCTA />
       <AgentCTA />
+      <BackToTop />
     </>
   );
 };

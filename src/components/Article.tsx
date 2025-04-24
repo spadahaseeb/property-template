@@ -37,6 +37,8 @@ const Article = ({ date, title, image }: ArticlePropType) => {
             buttonIcon={<MoveRight size={20} strokeWidth={1} />}
             variant="v2"
             className="bg-transparent"
+            linkEnable={true}
+            buttonLink="/"
           />
         </div>
       </div>

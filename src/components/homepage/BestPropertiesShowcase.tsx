@@ -42,6 +42,8 @@ const BestPropertiesShowcase = () => {
                     }
                     variant="v3"
                     className="bg-black-primary/20"
+                    linkEnable={true}
+                    buttonLink="/"
                   />
                 </Thumbnail>
               </div>

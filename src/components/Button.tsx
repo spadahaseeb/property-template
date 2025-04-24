@@ -10,7 +10,9 @@ interface ButtonPropsType {
   buttonText?: string;
   buttonIcon?: ReactNode;
   buttonIconStyle?: string;
-  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
+  linkEnable: boolean;
+  buttonLink?: string;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement | HTMLButtonElement>;
 }
 
 // button component
@@ -20,23 +22,40 @@ const Button = ({
   buttonText,
   buttonIcon,
   buttonIconStyle,
+  linkEnable,
+  buttonLink,
   onClick,
 }: ButtonPropsType) => {
   return (
     <>
-      <Link
-        href={"/"}
-        className={twMerge(
-          buttonVariants({ variant, className }),
-          "inline-reset flex items-center"
-        )}
-        onClick={onClick}
-      >
-        {buttonText && <p>{buttonText}</p>}
-        <span className={twMerge("inline-reset", buttonIconStyle)}>
-          {buttonIcon}
-        </span>
-      </Link>
+      {linkEnable ? (
+        <Link
+          href={buttonLink || "/"}
+          className={twMerge(
+            buttonVariants({ variant, className }),
+            "inline-reset flex items-center"
+          )}
+          onClick={onClick}
+        >
+          {buttonText && <p>{buttonText}</p>}
+          <span className={twMerge("inline-reset", buttonIconStyle)}>
+            {buttonIcon}
+          </span>
+        </Link>
+      ) : (
+        <button
+          className={twMerge(
+            buttonVariants({ variant, className }),
+            "inline-reset flex items-center"
+          )}
+          onClick={onClick}
+        >
+          {buttonText && <p>{buttonText}</p>}
+          <span className={twMerge("inline-reset", buttonIconStyle)}>
+            {buttonIcon}
+          </span>
+        </button>
+      )}
     </>
   );
 };

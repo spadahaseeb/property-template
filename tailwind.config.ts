@@ -33,6 +33,7 @@ const config: Config = {
           secondary: "#3D3E3F",
           muted: "#122223",
           deep: "#1F4B43",
+          smooth: "#222121",
         },
         white: {
           DEFAULT: "#FFFFFF",

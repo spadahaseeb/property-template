@@ -40,6 +40,8 @@ const ExpertiseShowcase = () => {
                 buttonIcon={<ArrowRight size={20} strokeWidth={1.3} />}
                 buttonIconStyle="pl-2"
                 variant="v2"
+                linkEnable={true}
+                buttonLink="/"
               />
             </div>
           </main>

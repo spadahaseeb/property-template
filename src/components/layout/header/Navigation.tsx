@@ -29,7 +29,7 @@ const Navigation = () => {
                 <HoverCardContent
                   side="bottom"
                   sideOffset={0}
-                  className="border-none shadow-none w-[max-content]"
+                  className="border-none shadow-none w-[max-content] z-300"
                 >
                   <div className="bg-black-muted mt-10 rounded-normal p-[50px_150px_15px_40px]">
                     {item.hoverLinks.map((linkx, idxx) => (

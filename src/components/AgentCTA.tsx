@@ -28,6 +28,8 @@ const AgentCTA = () => {
               buttonIcon={<ArrowRight size={20} strokeWidth={1.2} />}
               buttonIconStyle="ml-2"
               variant="v2"
+              linkEnable={true}
+              buttonLink="/"
             />
           </main>
         </div>

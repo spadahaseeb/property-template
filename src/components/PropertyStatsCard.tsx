@@ -21,6 +21,8 @@ const PropertyStatsCard = () => {
             buttonIcon={<ArrowRight size={20} strokeWidth={1} />}
             variant="v3"
             className="bg-white text-black w-[51px] h-[51px]"
+            linkEnable={true}
+            buttonLink="/"
           />
         </div>
       </div>
