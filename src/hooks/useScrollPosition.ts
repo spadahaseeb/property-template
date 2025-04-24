@@ -13,6 +13,7 @@ const useScrollPosition = (offset: number) => {
       }
     };
 
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [offset]);
