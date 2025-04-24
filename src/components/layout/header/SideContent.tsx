@@ -30,6 +30,8 @@ const SideContent = () => {
           onClick={() => console.log("logged")}
           buttonText="Add property"
           variant="v1"
+          linkEnable={true}
+          buttonLink="/"
         />
       </div>
     </>
