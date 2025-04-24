@@ -6,7 +6,7 @@
 
 @layer components {
   .container {
-    @apply max-w-[1430px] mx-auto px-[15px];
+    @apply max-w-[1430px] mx-auto px-4;
   }
   .inline-reset {
     @apply no-underline list-none inline-block;
@@ -15,7 +15,7 @@
     @apply font-medium font-roboto text-[40px] leading-[52px] capitalize;
   }
   .heading-discription {
-    @apply font-normal font-roboto text-[17px] leading-[32.3px];
+    @apply font-normal font-roboto text-[17px] leading-8;
   }
 }
 

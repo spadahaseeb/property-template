@@ -1,12 +1,8 @@
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs/Tabs";
-
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
+import Link from "next/link";
 // components
 import Heading from "@/components/Heading";
+import { ExploreLinksWithAgentCTAContent } from "./content/content";
 
 const ExploreLinksWithAgentCTA = () => {
   return (
@@ -17,45 +13,46 @@ const ExploreLinksWithAgentCTA = () => {
           <Heading />
 
           {/* content  */}
-          <Tabs defaultValue="real-estate">
-            <TabsList className="flex items-center gap-4 justify-start">
-              <TabsTrigger
-                value="real-estate"
-                className=" capitalize font-medium text-[19px] text-black bg-transparent border-b-2   p-[0_0_10px_0] border-transparent ease-out duration-300
-                data-[state=active]:shadow-none data-[state=active]:border-black"
-              >
-                real estate
-              </TabsTrigger>
-              <TabsTrigger
-                value="new-homes"
-                className=" capitalize font-medium text-[19px] text-black bg-transparent border-b-2   p-[0_0_10px_0] border-transparent ease-out duration-300
-                data-[state=active]:shadow-none data-[state=active]:border-black"
-              >
-                new homes
-              </TabsTrigger>
-              <TabsTrigger
-                value="popular-area"
-                className=" capitalize font-medium text-[19px] text-black bg-transparent border-b-2   p-[0_0_10px_0] border-transparent ease-out duration-300
-                data-[state=active]:shadow-none data-[state=active]:border-black"
-              >
-                popular area
-              </TabsTrigger>
-              <TabsTrigger
-                value="popular-searches"
-                className=" capitalize font-medium text-[19px] text-black bg-transparent border-b-2   p-[0_0_10px_0] border-transparent ease-out duration-300
-                data-[state=active]:shadow-none data-[state=active]:border-black"
-              >
-                popular searches
-              </TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="real-estate">
-              Make changes to your account here.
-            </TabsContent>
-            <TabsContent value="new-homes">
-              Change your password here.
-            </TabsContent>
-          </Tabs>
+          <TabGroup>
+            <TabList className="flex items-center justify-start gap-[30px]">
+              {ExploreLinksWithAgentCTAContent.map((item, idx) => (
+                <Tab
+                  className="data-[selected]:border-b-black border-b-[2px] outline-none border-transparent bg-transparent text-black text-[19px] font-medium ease-out duration-300 capitalize inline-reset pb-3"
+                  key={idx}
+                >
+                  {item.tab}
+                </Tab>
+              ))}
+            </TabList>
+            <TabPanels>
+              {ExploreLinksWithAgentCTAContent.map((item, idx) => (
+                <TabPanel key={idx}>
+                  <div className="pt-[35px] pb-4 border-t-1 border-black/10 translate-y-[-1px]">
+                    <div className="grid grid-cols-4 gap-6">
+                      {Array.from({
+                        length: Math.ceil(item.links.length / 6),
+                      }).map((_, colIdx) => (
+                        <ul key={colIdx} className="space-y-2">
+                          {item.links
+                            .slice(colIdx * 6, colIdx * 6 + 6)
+                            .map((link, linkIdx) => (
+                              <li key={linkIdx} className="list-none pb-[10px]">
+                                <Link
+                                  href="/"
+                                  className="font-normal text-[15px] capitalize inline-reset"
+                                >
+                                  {link}
+                                </Link>
+                              </li>
+                            ))}
+                        </ul>
+                      ))}
+                    </div>
+                  </div>
+                </TabPanel>
+              ))}
+            </TabPanels>
+          </TabGroup>
         </div>
       </section>
     </>
