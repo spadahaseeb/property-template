@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 const NewsletterSignup = () => {
   return (
     <>
-      <div className="pr-[135px]">
+      <div className="xs:max-w-[500px]">
         <h6 className="footer-links-heading">subscribe</h6>
 
         <form
@@ -17,7 +17,7 @@ const NewsletterSignup = () => {
             name="email"
             type="email"
             placeholder="your email"
-            className="placeholder:font-normal placeholder:text-[15px] placeholder:text-white text-4 text-white flex-1 bg-transparent border-none outline-none capitalize min-w-[252px]"
+            className="placeholder:font-normal placeholder:text-[15px] placeholder:text-white text-4 text-white flex-1 bg-transparent border-none outline-none capitalize xs:w-[250px]"
           />
           <Button
             linkEnable={false}

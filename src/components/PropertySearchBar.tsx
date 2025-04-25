@@ -41,7 +41,7 @@ const PropertySearchBar = () => {
           <form
             action="/"
             className={
-              "p-[5px] min-w-[690px] w-full flex items-center bg-white rounded-lg"
+              "p-[5px] w-full xxl:min-w-[690px] w-full flex items-center bg-white rounded-lg"
             }
           >
             <input

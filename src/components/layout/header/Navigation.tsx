@@ -12,9 +12,12 @@ import {
 const Navigation = () => {
   return (
     <>
-      <ul className="flex items-center justify-center flex-1">
+      <ul className="flex items-center justify-center flex-1 flex-col hdr:flex-row h-[100vh] hdr:h-[max-content]">
         {NavigationLinksContent.map((item, idx) => (
-          <li key={idx} className="px-5 inline-reset text-white text-16">
+          <li
+            key={idx}
+            className="hdr:px-5 inline-reset text-white text-16 text-center mt-8 hdr:mt-0 hdr:text-left"
+          >
             {item.hoverLinks && item.hoverLinks.length > 0 ? (
               // HoverTrigger
               <HoverCard openDelay={0} closeDelay={0}>

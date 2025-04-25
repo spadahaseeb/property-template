@@ -13,7 +13,7 @@ const AgentCTA = () => {
           <Heading />
 
           {/* section content  */}
-          <main className="flex items-center justify-between">
+          <main className="flex items-center justify-between md:flex-row xs:flex-col">
             <div>
               <h5 className="font-medium text-[30px] leading-8 pb-[10px]">
                 Become a Real Estate Agent
@@ -30,6 +30,7 @@ const AgentCTA = () => {
               variant="v2"
               linkEnable={true}
               buttonLink="/"
+              className="xs:mt-[30px] md:mt-0"
             />
           </main>
         </div>

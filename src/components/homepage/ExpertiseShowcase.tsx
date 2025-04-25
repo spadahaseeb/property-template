@@ -11,11 +11,11 @@ const ExpertiseShowcase = () => {
     <>
       <section className="py-[165px] bg-black-deep text-white rounded-medium overflow-hidden">
         <div className="container">
-          <main className="grid grid-cols-2 items-center pb-20">
+          <main className="grid grid-cols-1 xl:grid-cols-2 items-center pb-20 ">
             {/* image with-label  */}
             <Thumbnail
               image="expertise.png"
-              className="h-[640px] w-[640px] p-[25px]"
+              className=" h-[640px] xl:w-[640px] w-full p-[25px] bg-top xl:bg-center"
             >
               <Image
                 src={"/images/totalclients.png"}
@@ -26,7 +26,7 @@ const ExpertiseShowcase = () => {
             </Thumbnail>
 
             {/* heading content  */}
-            <div className="pl-[185px]">
+            <div className="xl:pl-[185px] pt-[60px] xl:pt-0">
               <Heading
                 heading="Local expertise for luxury homes"
                 discription="Pellentesque egestas elementum egestas faucibus sem. Velit nunc

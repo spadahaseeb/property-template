@@ -20,7 +20,7 @@ const BestPropertiesShowcase = () => {
 
           {/* section-content  */}
           <main>
-            <div className="grid grid-cols-2 gap-[30px]">
+            <div className="grid xl:grid-cols-2 grid-cols-1 gap-[30px]">
               <div className="grid grid-cols-2 gap-[30px]">
                 <Thumbnail
                   image="bp1.jfif"

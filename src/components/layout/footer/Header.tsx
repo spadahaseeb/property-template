@@ -13,10 +13,10 @@ const Header = () => {
       {/* footer-container  */}
       <div className="footer-container pb-[96px]">
         {/* footer-header  */}
-        <div className="py-[55px] flex items-center justify-between border-b-1 border-white/10">
+        <div className="py-[55px] flex items-center justify-between border-b-1 border-white/10 xs:flex-col lg:flex-row">
           <Image src={"/images/logo.png"} width={200} height={56} alt="logo" />
 
-          <div className="text-white flex items-center">
+          <div className="text-white flex items-center xs:pt-[60px]">
             {/* follow-us link */}
             <a
               href="#"

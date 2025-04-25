@@ -11,9 +11,9 @@ const Testimonials = () => {
       <section className="pt-[187px] pb-[155px]">
         <div className="container">
           {/* heading & review wrapper  */}
-          <div className="grid grid-cols-2 gap-5 pb-20">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-20 xl:gap-5 pb-20 ">
             {/* heading content  */}
-            <div className="max-w-[450px]">
+            <div className="max-w-[450px] m-auto xl:m-0">
               <Heading
                 heading="What our customers are saying us?"
                 discription="Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like."
@@ -22,7 +22,7 @@ const Testimonials = () => {
               />
 
               {/* stats  */}
-              <div className="flex items-center gap-[68px]">
+              <div className="flex items-center gap-[68px] justify-center xl:justify-normal">
                 <Stats stat={"10m+"} statDiscription={"happy people"} />
                 <Stats stat={"4.88"} statDiscription={"overall rating"}>
                   <Image

@@ -17,7 +17,7 @@ const RecommendedHomes = () => {
             />
 
             {/* content */}
-            <main className="grid grid-cols-3 items-center">
+            <main className="gap-[30px] grid grid-cols-1 lg:grid-cols-2 xxl:grid-cols-3 items-center">
               {RecommendedHomesContent.map((item, idx) => (
                 <PropertyCard
                   key={idx}

@@ -5,7 +5,7 @@ import { ExpertiseStatsContent } from "@/components/homepage/content/content";
 const ExpertiseStats = () => {
   return (
     <>
-      <div className="grid grid-cols-4 gap-[30px] justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] justify-items-center">
         {ExpertiseStatsContent.map((item, idx) => (
           <Stats
             key={idx}

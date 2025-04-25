@@ -18,7 +18,7 @@
     @apply font-normal font-roboto text-[17px] leading-8;
   }
   .footer-container {
-    @apply max-w-[1710px] w-full m-auto px-[15px];
+    @apply max-w-[1920px] w-full m-auto px-[100px];
   }
   .footer-links-heading {
     @apply font-medium text-[19px] leading-[19px] text-white/50 capitalize pb-[35px];

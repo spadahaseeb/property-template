@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
 
         {/* section-content  */}
         <main>
-          <div className="flex items-center justify-between">
+          <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4">
             {WhyChooseUsContent.map((item, idx) => (
               <FeatureItem
                 key={idx}

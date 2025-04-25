@@ -25,15 +25,13 @@ const PropertyCard = ({
 }: PropertyCardPropType) => {
   return (
     <>
-      <div className="w-[max-content] h-[max-content] rounded-medium text-black p-[11px] bg-white border-1 border-black/10">
+      <div className="w-full xxl:w-[max-content] h-[max-content] rounded-medium text-black p-[11px] bg-white border-1 border-black/10">
         {/* property-image */}
         <div className="relative">
-          <Image
+          <img
             src={`/images/${image}`}
-            width={425}
-            height={425}
             alt="property-product-image"
-            className="rounded-medium"
+            className="rounded-medium w-full"
           />
           <div className="absolute top-6 left-5 w-full flex items-center gap-[10px]">
             {isForSale && <PropertyTag text="for sale" variant="v1" />}

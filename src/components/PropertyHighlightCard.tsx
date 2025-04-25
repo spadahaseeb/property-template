@@ -24,7 +24,7 @@ const PropertyHighlightCard = ({
       <Thumbnail image="bp3.jfif">
         <div
           className={twMerge(
-            "flex flex-col justify-between w-full h-full p-10 text-white bg-black-primary/30 rounded-medium",
+            "flex flex-col justify-between w-full h-[500px] xl:h-full p-10 text-white bg-black-primary/30 rounded-medium",
             className
           )}
         >

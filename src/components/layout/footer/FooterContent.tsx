@@ -6,7 +6,7 @@ const FooterContent = () => {
   return (
     <>
       <div className="footer-container py-[95px]">
-        <div className="flex justify-between">
+        <div className="flex flex-col justify-between">
           <NewsletterSignup />
           <FooterLinks />
         </div>
