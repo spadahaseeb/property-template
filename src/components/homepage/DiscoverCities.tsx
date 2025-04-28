@@ -22,7 +22,7 @@ const DiscoverCities = () => {
                 if (index === 0 || index === 5) {
                   layoutClass = "md:col-span-2";
                 } else {
-                  layoutClass = "min-w-[327px]";
+                  layoutClass = "md:min-w-[327px]";
                 }
                 return (
                   <div

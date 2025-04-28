@@ -24,7 +24,7 @@ const BestPropertiesShowcase = () => {
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-[30px]">
                 <Thumbnail
                   image="bp1.jfif"
-                  className="xl:col-span-2 min-h-[330px]"
+                  className="lg:col-span-2 min-h-[330px]"
                 />
                 <PropertyStatsCard />
 

@@ -50,19 +50,17 @@ const PropertyHighlightCard = ({
 
             {/* price and details  */}
             <div className="flex sm:items-center sm:flex-row flex-col">
-              <p className="font-semibold text-[21px]">280,000</p>
+              <p className="font-semibold text-[21px] pb-[10px] sm:pb-0">
+                280,000
+              </p>
 
-              <div
-                className="xl:pl-[60px] sm:pl-[15px] flex items-center flex-wrap 
-              "
-              >
+              <div className="xl:pl-[60px] sm:pl-[15px] flex items-center flex-wrap">
                 {PropertyHighlightCardContent.map((item, idx) => (
                   <PropertyDetail
                     key={idx}
                     detail={item.detail}
                     icon={<item.icon size={25} strokeWidth={1.2} />}
                     className={twMerge(
-                      "pt-[10px] sm:pt-0",
                       idx !== PropertyHighlightCardContent.length - 1
                         ? "border-r-1 border-black-white/20 pr-3 mr-3"
                         : ""

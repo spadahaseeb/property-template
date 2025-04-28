@@ -15,13 +15,14 @@ const ExpertiseShowcase = () => {
             {/* image with-label  */}
             <Thumbnail
               image="expertise.png"
-              className="h-[640px] w-full p-[25px]"
+              className="md:h-[640px] h-[500px] w-full p-[25px]"
             >
               <Image
                 src={"/images/totalclients.png"}
                 width={255}
                 height={100}
                 alt="total-clients"
+                className="md:w-[255px] w-[170px]"
               />
             </Thumbnail>
 
