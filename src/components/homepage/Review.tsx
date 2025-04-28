@@ -4,7 +4,7 @@ import Image from "next/image";
 const Review = () => {
   return (
     <>
-      <div className="xl:w-[100%] w-[max-content] m-auto xl:m-0">
+      <div className="w-[100%]">
         <div className="max-w-[600px]">
           <div className="flex justify-between pb-[30px]">
             {/* user profile and quotes */}
@@ -35,7 +35,7 @@ const Review = () => {
           </div>
 
           {/* user review */}
-          <p className="text-[19px] font-medium leading-9 text-center xl:text-left">
+          <p className="text-[19px] font-medium leading-9">
             Searches for multiplexes, property comparisons, and the loan
             estimator. Works great. Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor incididunt ut labore et

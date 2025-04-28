@@ -9,10 +9,10 @@ const HeroSection = () => {
           <main>
             {/* heading */}
             <div className="flex flex-col items-center justify-center pb-8">
-              <span className="inline-reset uppercase text-12 text-white border-1 border-white py-3 px-7 rounded-lg mb-5">
+              <span className="inline-reset uppercase text-12 text-white border-1 border-white md:py-3 md:px-7 py-2 px-6 rounded-lg mb-5">
                 let us guide your home
               </span>
-              <h1 className="text-left text-[60px] font-medium lowercase pb-6 leading-snug">
+              <h1 className="text-left md:text-[60px] text-[45px] font-medium lowercase pb-6 leading-snug">
                 a place {"you'll"}
                 <br /> love to live
               </h1>

@@ -1,31 +1,41 @@
 // components
 import { FooterLinksContent } from "@/components/homepage/content/content";
-import AppDownloadLink from "./AppDownloadLink";
+import AppDownloadLink from "@/components/layout/footer/AppDownloadLink";
 
 const FooterLinks = () => {
   return (
     <>
-      <div className="flex justify-between flex-1 xs:grid-cols-2 xs:grid  xl:grid-cols-3 xxl:grid-cols-5">
-        {FooterLinksContent.map((item, idx) => (
-          <div className="xl:pt-[70px] text-white xs:pt-[70px]" key={idx}>
-            <h6 className="footer-links-heading">{item.tab}</h6>
+      <div className="flex justify-between flex-col xl:flex-row">
+        <div
+          className="grid-col-1 sm:grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-between   
+        justify-items-center text-center lg:text-left"
+        >
+          {FooterLinksContent.map((item, idx) => (
+            <div
+              className="pr-0 lg:pr-[50px] last:pr-0 xl:last:pr-[50px]
+                text-white pt-[40px] lg:pt-0"
+              key={idx}
+            >
+              <h6 className="footer-links-heading">{item.tab}</h6>
 
-            {item.links.map((link, idxx) => (
-              <a
-                href="#"
-                key={idxx}
-                className="block w-full font-normal text-[15px] leading-7 mb-[15px] capitalize max-w-[170px]  "
-              >
-                {link}
-              </a>
-            ))}
-          </div>
-        ))}
+              {item.links.map((link, idxx) => (
+                <a
+                  href="#"
+                  key={idxx}
+                  className="block w-full lg:w-[max-content] font-normal text-[15px] 
+                  leading-7 mb-[15px] capitalize max-w-[170px]"
+                >
+                  {link}
+                </a>
+              ))}
+            </div>
+          ))}
+        </div>
 
-        <div className="text-white xl:pt-[70px] lg:pt-[70px]">
+        <div className="text-white pt-[60px] xl:pt-0 grid justify-items-center lg:justify-items-start">
           <h6 className="footer-links-heading">get the app</h6>
 
-          <div className="xl:flex xl:items-center gap-[15px] xxl:flex-col lg:flex-col">
+          <div className="flex gap-[15px] lg:items-start items-center flex-col md:flex-row lg:flex-col">
             <AppDownloadLink
               imageSrc={"apple.png"}
               altText={"app-store"}

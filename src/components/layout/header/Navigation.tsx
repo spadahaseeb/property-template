@@ -12,11 +12,14 @@ import {
 const Navigation = () => {
   return (
     <>
-      <ul className="flex items-center justify-center flex-1 flex-col hdr:flex-row h-[100vh] hdr:h-[max-content]">
+      <ul
+        className="flex flex-col xl:flex-row h-[max-content]
+      items-center justify-center "
+      >
         {NavigationLinksContent.map((item, idx) => (
           <li
             key={idx}
-            className="hdr:px-5 inline-reset text-white text-16 text-center mt-8 hdr:mt-0 hdr:text-left"
+            className="py-[7px] xl:py-0 xl:px-5 inline-reset text-white text-[12px] xl:text-[16px]"
           >
             {item.hoverLinks && item.hoverLinks.length > 0 ? (
               // HoverTrigger
@@ -39,7 +42,7 @@ const Navigation = () => {
                       <Link
                         key={idxx}
                         href={linkx.link}
-                        className="mb-4 block text-white text-16 capitalize hover:text-white-secondary/90"
+                        className="mb-4 block text-white capitalize hover:text-white-secondary/90"
                       >
                         {linkx.text}
                       </Link>
@@ -62,36 +65,3 @@ const Navigation = () => {
   );
 };
 export default Navigation;
-
-{
-  /* <ul className="flex items-center justify-center flex-1">
-        {NavigationLinksContent.map((item, idx) => (
-          <HoverCard openDelay={0} closeDelay={0}>
-            <li key={idx} className="px-5 inline-reset text-white text-16">
-              <HoverCardTrigger>
-                <Link
-                  href={"/"}
-                  className="capitalize font-medium flex items-center"
-                >
-                  {item.text}
-                  {item.icon && <ChevronDown className="ml-1" size={16} />}
-                </Link>
-              </HoverCardTrigger>
-
-              <HoverCardContent className="text-white delay-0">
-                {item.hoverLinks &&
-                  item.hoverLinks.map((link, idx) => (
-                    <Link
-                      key={idx}
-                      href={link.link}
-                      className="text-white text-16 capitalize hover:text-accent-gold"
-                    >
-                      {link.text}
-                    </Link>
-                  ))}
-              </HoverCardContent>
-            </li>
-          </HoverCard>
-        ))}
-      </ul> */
-}

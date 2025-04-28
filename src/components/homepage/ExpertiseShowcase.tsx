@@ -11,11 +11,11 @@ const ExpertiseShowcase = () => {
     <>
       <section className="py-[165px] bg-black-deep text-white rounded-medium overflow-hidden">
         <div className="container">
-          <main className="grid grid-cols-1 xl:grid-cols-2 items-center pb-20 ">
+          <main className="grid md:grid-cols-2 grid-cols-1 items-center pb-20">
             {/* image with-label  */}
             <Thumbnail
               image="expertise.png"
-              className=" h-[640px] xl:w-[640px] w-full p-[25px] bg-top xl:bg-center"
+              className="h-[640px] w-full md:max-w-[640px] p-[25px]"
             >
               <Image
                 src={"/images/totalclients.png"}
@@ -26,13 +26,13 @@ const ExpertiseShowcase = () => {
             </Thumbnail>
 
             {/* heading content  */}
-            <div className="xl:pl-[185px] pt-[60px] xl:pt-0">
+            <div className="md:pl-[70px] lg:pl-[185px] pt-[30px] md:pt-0">
               <Heading
                 heading="Local expertise for luxury homes"
                 discription="Pellentesque egestas elementum egestas faucibus sem. Velit nunc
                 egestas ut morbi. Leo diam diam nibh eget fermentum massa
                 pretium. Mi mauris nulla ac dictum ut mauris non."
-                className="pb-5 text-left"
+                className="pb-5 md:text-left text-center"
                 spacing="pb-[20px]"
               />
               <Button
@@ -42,6 +42,7 @@ const ExpertiseShowcase = () => {
                 variant="v2"
                 linkEnable={true}
                 buttonLink="/"
+                className="w-[max-content] m-auto md:m-0"
               />
             </div>
           </main>

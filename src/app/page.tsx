@@ -8,7 +8,7 @@ import ExpertiseShowcase from "@/components/homepage/ExpertiseShowcase";
 import Testimonials from "@/components/homepage/Testimonials";
 import RecentArticles from "@/components/homepage/RecentArticles";
 import ExploreLinksWithAgentCTA from "@/components/homepage/ExploreLinksWithAgentCTA";
-import AgentCTA from "@/components/AgentCTA";
+import AgentCTA from "@/components/homepage/AgentCTA";
 import BackToTop from "@/components/BackToTop";
 
 const HomePage = () => {

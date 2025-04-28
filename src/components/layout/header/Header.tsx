@@ -8,39 +8,69 @@ import SideContent from "@/components/layout/header/SideContent";
 import useScrollPosition from "@/hooks/useScrollPosition";
 import Button from "@/components/Button";
 import { Menu } from "lucide-react";
+import { useState } from "react";
 
 const Header = () => {
+  const [IsMenuClicked, setIsMenuClicked] = useState<boolean>(false);
+  const handleToogleNavbar = () => setIsMenuClicked(!IsMenuClicked);
+
   const isScrolled = useScrollPosition(100);
   const HeaderStyles = isScrolled
-    ? `hdr:p-[35px_60px_40px_60px] hdr:rounded-medium hdr:border-white/10 hdr:top-5 hdr:right-20 hdr:left-20 w-[calc(100%-(160px)] hdr:bg-black-deep`
-    : `top-0 left-0 right-0 w-full  `;
+    ? `border-white/10  rounded-medium bg-black-muted bg-black-deep
+       py-[25px] px-[20px] w-[calc((100%)-40px] md:top-5 top-[10px] left-5 right-5 
+       md:py-[30px] md:px-[30px] md:left-10 md:right-10`
+    : `top-0 left-0 right-0 bg-transparent md:py-[51px] md:px-[60px] py-[40px] px-[35px]`;
 
   return (
     <>
       <header
         className={twMerge(
-          "fixed top-0 left-0 right-0 w-full flex items-center p-[51px_60px_60px_60px] flex-wrap z-300 duration-300 ease-out",
-          HeaderStyles
+          "fixed z-300 ease-in-out duration-300 border-1 border-transparent",
+          HeaderStyles,
+          IsMenuClicked
+            ? "top-0 left-0 right-0 md:top-0 md:left-0 md:right-0 bg-black-deep rounded-none md:px-[30px] md:py-[30px] py-[30px] px-[30px]"
+            : ""
         )}
       >
-        <div className="flex items-center justify-between w-full hdr:w-[max-content]">
-          <Link href={"/"}>
-            <Image src="/images/logo.png" alt="logo" width={150} height={42} />
-          </Link>
-          <div className="hdr:hidden">
-            <Button
-              linkEnable={false}
-              buttonIcon={<Menu size={40} strokeWidth={1} />}
-              className="bg-transparent p-[10px_0]"
-            />
-          </div>
-        </div>
+        <div className="flex items-center w-full flex-wrap xl:flex-nowrap">
+          {/* logo and menu-icon  */}
+          <div className="flex xl:w-[max-content] w-full items-center justify-between">
+            <Link href={"/"}>
+              <Image
+                src="/images/logo.png"
+                alt="logo"
+                width={150}
+                height={42}
+              />
+            </Link>
 
-        <div className="hdr:items-center hdr:justify-between hdr:flex-1 hdr:flex w-full hdr:w-[max-content] translate-x-[150vw] hdr:translate-x-0 hdr:bg-transparent ">
-          <div className="flex flex-1 justify-center">
-            <Navigation />
+            <div className="xl:hidden block">
+              <Button
+                linkEnable={false}
+                buttonIcon={<Menu size={20} strokeWidth={1} />}
+                onClick={handleToogleNavbar}
+              />
+            </div>
           </div>
-          <SideContent />
+
+          {/* navigation  */}
+          <div
+            className={twMerge(
+              `w-full flex flex-col items-center xl:flex-row py-10 xl:py-0
+               xl:justify-between justify-center bg-black-deep xl:bg-transparent 
+               absolute xl:static top-full left-0 right-0 h-[calc((100vh)-100px)]
+               xl:h-auto duration-300 ease-out`,
+              IsMenuClicked
+                ? "translate-x-0 xl:translate-y-0 translate-y-1"
+                : "xl:translate-x-0 translate-x-[100vw] translate-y-0"
+            )}
+          >
+            <div className="xl:flex-1 pb-5 xl:pb-0">
+              <Navigation />
+            </div>
+            {/* side content  */}
+            <SideContent />
+          </div>
         </div>
       </header>
     </>

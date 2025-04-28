@@ -1,3 +1,4 @@
+import type { Viewport } from "next";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 // components
@@ -12,10 +13,17 @@ export const metadata: Metadata = {
   creator: "haseeb.arshad@spadasoftinc.com",
   publisher: "spadasoftinc.com",
   icons: {
-    icon: "/src/assets/favicon.ico",
-    // shortcut: "/assets/favicon.ico",
-    // apple: "/assets/favicon.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 const RobotoFont = Roboto({
@@ -35,10 +43,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${RobotoFont.variable} antialiased p-5`}>
-        <Header />
-        {children}
-        <Footer />
+      <body className={`${RobotoFont.variable} `}>
+        <div className="p-5">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

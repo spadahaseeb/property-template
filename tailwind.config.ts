@@ -95,7 +95,7 @@ const config: Config = {
         lg: "1024px",
         xl: "1366px",
         xxl: "1440px",
-        hdr: "1600px",
+        "2xl": "1720px",
       },
       zIndex: {
         "0": "0",

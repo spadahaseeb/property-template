@@ -11,12 +11,18 @@ const Header = () => {
   return (
     <>
       {/* footer-container  */}
-      <div className="footer-container pb-[96px]">
+      <div
+        className="footer-container pb-[50px] md:pb-[96px] px-[20px] md:px-[40px]
+       lg:px-[100px] "
+      >
         {/* footer-header  */}
-        <div className="py-[55px] flex items-center justify-between border-b-1 border-white/10 xs:flex-col lg:flex-row">
+        <div
+          className="py-[55px] flex flex-col md:flex-row items-center justify-between 
+        border-b-1 border-white/10"
+        >
           <Image src={"/images/logo.png"} width={200} height={56} alt="logo" />
 
-          <div className="text-white flex items-center xs:pt-[60px]">
+          <div className="text-white flex items-center pt-[50px] md:pt-0">
             {/* follow-us link */}
             <a
               href="#"
@@ -26,7 +32,7 @@ const Header = () => {
             </a>
 
             {/* social-icons  */}
-            <div className="flex items-center">
+            <div className="flex items-center ">
               <a href="#" className="mr-8">
                 <FacebookIcon size={20} strokeWidth={1} />
               </a>

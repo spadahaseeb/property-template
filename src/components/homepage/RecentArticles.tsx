@@ -18,7 +18,7 @@ const RecentArticles = () => {
 
           {/* content  */}
           <main>
-            <div className="grid xxl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[30px]">
               {RecentArticlesContent.map((item, idx) => (
                 <Article
                   key={idx}

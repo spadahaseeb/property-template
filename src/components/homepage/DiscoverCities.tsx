@@ -16,11 +16,11 @@ const DiscoverCities = () => {
 
           {/* section content  */}
           <main>
-            <div className="grid grid-cols-1 xxl:grid-cols-4 md:grid-cols-2 gap-[30px]">
+            <div className="grid xxl:grid-cols-4 md:grid-cols-2  grid-cols-1 gap-[30px]">
               {DiscoverCitiesContent.map((card, index) => {
                 let layoutClass = "";
                 if (index === 0 || index === 5) {
-                  layoutClass = "md:col-span-2 ";
+                  layoutClass = "xxl:col-span-2";
                 } else {
                   layoutClass = "min-w-[327px]";
                 }

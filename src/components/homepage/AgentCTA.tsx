@@ -1,7 +1,7 @@
 // components
 
 import Heading from "@/components/Heading";
-import Button from "./Button";
+import Button from "@/components/Button";
 import { ArrowRight } from "lucide-react";
 
 const AgentCTA = () => {
@@ -9,20 +9,19 @@ const AgentCTA = () => {
     <>
       <section className="bg-white-warm rounded-medium py-[104px] mb-5">
         <div className="container">
-          {/* section heading  */}
-          <Heading />
+          <main
+            className="flex  md:flex-row flex-col items-center
+           justify-between px-[50px] md:px-0"
+          >
+            {/* section heading  */}
+            <Heading
+              heading="Become a Real Estate Agent"
+              discription="We only work with the best companies around the globe"
+              className="font-medium text-center md:text-left"
+              spacing="text-[30px] leading-8 pb-[10px]"
+            />
 
-          {/* section content  */}
-          <main className="flex items-center justify-between md:flex-row xs:flex-col">
-            <div>
-              <h5 className="font-medium text-[30px] leading-8 pb-[10px]">
-                Become a Real Estate Agent
-              </h5>
-              <p className="font-normal text-[17] leading-8">
-                We only work with the best companies around the globe
-              </p>
-            </div>
-
+            {/* section content  */}
             <Button
               buttonText="register now"
               buttonIcon={<ArrowRight size={20} strokeWidth={1.2} />}
@@ -30,7 +29,7 @@ const AgentCTA = () => {
               variant="v2"
               linkEnable={true}
               buttonLink="/"
-              className="xs:mt-[30px] md:mt-0"
+              className="mt-[30px] md:mt-0"
             />
           </main>
         </div>

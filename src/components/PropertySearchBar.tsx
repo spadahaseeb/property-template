@@ -41,7 +41,7 @@ const PropertySearchBar = () => {
           <form
             action="/"
             className={
-              "p-[5px] w-full xxl:min-w-[690px] w-full flex items-center bg-white rounded-lg"
+              "p-[5px] xl:min-w-[690px] md:w-[500px] w-[300px] flex items-center bg-white rounded-lg"
             }
           >
             <input
@@ -49,16 +49,20 @@ const PropertySearchBar = () => {
               type="text"
               name="searchbar"
               placeholder={placeholders[tab]}
-              className="w-full pl-8 font-normal
+              className="flex-1 pl-8 font-normal
                placeholder:text-black placeholder:font-normal 
                placeholder:text-16 border-none outline-none
                text-black text-18 inline-reset bg-transparent"
             />
             <button
-              className="w-14 h-14 flex items-center justify-center
-            bg-accent-gold rounded-lg"
+              className="md:w-[60px] md:h-[60px] w-[45px] h-[45px] flex items-center justify-center
+            bg-accent-gold rounded-[100px]"
             >
-              <Search strokeWidth={1.5} className="text-black text-[20px]" />
+              <Search
+                size={20}
+                strokeWidth={1.5}
+                className="text-black text-[20px]"
+              />
             </button>
           </form>
         </div>

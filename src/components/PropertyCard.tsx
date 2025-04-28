@@ -1,9 +1,9 @@
+import { twMerge } from "tailwind-merge";
 import { Bath, Bed, Copy, MapPin } from "lucide-react";
 import Image from "next/image";
 // components
 import PropertyDetail from "@/components/PropertyDetail";
-import PropertyTag from "./PropertyTag";
-import { twMerge } from "tailwind-merge";
+import PropertyTag from "@/components/PropertyTag";
 
 // types
 type PropertyCardPropType = {
@@ -25,11 +25,13 @@ const PropertyCard = ({
 }: PropertyCardPropType) => {
   return (
     <>
-      <div className="w-full xxl:w-[max-content] h-[max-content] rounded-medium text-black p-[11px] bg-white border-1 border-black/10">
+      <div className="w-full h-[max-content] rounded-medium text-black p-[11px] bg-white border-1 border-black/10">
         {/* property-image */}
         <div className="relative">
-          <img
+          <Image
             src={`/images/${image}`}
+            width={425}
+            height={425}
             alt="property-product-image"
             className="rounded-medium w-full"
           />

@@ -5,33 +5,35 @@
 /* layer components  */
 
 @layer components {
-  .container {
-    @apply max-w-[1430px] mx-auto px-4;
-  }
-  .inline-reset {
-    @apply no-underline list-none inline-block;
-  }
-  .heading {
-    @apply font-medium font-roboto text-[40px] leading-[52px] capitalize;
-  }
-  .heading-discription {
-    @apply font-normal font-roboto text-[17px] leading-8;
-  }
-  .footer-container {
-    @apply max-w-[1920px] w-full m-auto px-[100px];
-  }
-  .footer-links-heading {
-    @apply font-medium text-[19px] leading-[19px] text-white/50 capitalize pb-[35px];
-  }
+    .container {
+        @apply max-w-[1430px] mx-auto px-4;
+    }
+    .inline-reset {
+        @apply no-underline list-none inline-block;
+    }
+    .heading {
+        @apply font-medium font-roboto text-[40px] leading-[52px] capitalize;
+    }
+    .heading-discription {
+        @apply font-normal font-roboto text-[17px] leading-8;
+    }
+    .footer-container {
+        @apply max-w-[1920px] w-full m-auto;
+    }
+    .footer-links-heading {
+        @apply font-medium text-[19px] leading-[19px] text-white/50 capitalize pb-[35px];
+    }
 }
+
 
 /* layer base */
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+    * {
+        @apply border-border;
+    }
 }
+
 
 /* @layer base {
   @font-face {

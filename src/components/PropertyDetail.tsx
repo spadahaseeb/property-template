@@ -16,7 +16,7 @@ const PropertyDetail = ({
 }: propertyDetailPropsType) => {
   return (
     <>
-      <li className={twMerge("flex items-center inline-reset", className)}>
+      <li className={twMerge("flex items-center list-none ", className)}>
         <p className="text-[16px] flex items-center gap-2">
           {icon} {detail}
         </p>

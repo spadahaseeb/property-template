@@ -1,11 +1,10 @@
-// components
 import { twMerge } from "tailwind-merge";
 import { MapPin } from "lucide-react";
 // components
 import Thumbnail from "@/components/Thumbnail";
-import PropertyDetail from "./PropertyDetail";
-import PropertyTag from "./PropertyTag";
-import { PropertyHighlightCardContent } from "./homepage/content/content";
+import PropertyDetail from "@/components/PropertyDetail";
+import PropertyTag from "@/components/PropertyTag";
+import { PropertyHighlightCardContent } from "@/components/homepage/content/content";
 
 // types
 type PropertyHighlightCardPropsType = {
@@ -24,7 +23,7 @@ const PropertyHighlightCard = ({
       <Thumbnail image="bp3.jfif">
         <div
           className={twMerge(
-            "flex flex-col justify-between w-full h-[500px] xl:h-full p-10 text-white bg-black-primary/30 rounded-medium",
+            "flex flex-col justify-between w-full h-full p-10 text-white bg-black-primary/30 rounded-medium",
             className
           )}
         >
@@ -35,7 +34,8 @@ const PropertyHighlightCard = ({
           </div>
 
           {/* property details  */}
-          <div>
+          <div className="">
+            {/* title and location  */}
             <div>
               <h5 className="text-[26px] font-medium leading-8 pb-4">
                 Villa One Hyde Park
@@ -48,19 +48,25 @@ const PropertyHighlightCard = ({
               </p>
             </div>
 
-            <div className="flex items-center">
+            {/* price and details  */}
+            <div className="flex sm:items-center sm:flex-row flex-col">
               <p className="font-semibold text-[21px]">280,000</p>
-              <div className="pl-[60px] flex items-center">
+
+              <div
+                className="sm:pl-[60px] sm:flex sm:items-center flex-wrap 
+              pt-4 sm:pt-0  block"
+              >
                 {PropertyHighlightCardContent.map((item, idx) => (
                   <PropertyDetail
                     key={idx}
                     detail={item.detail}
                     icon={<item.icon size={25} strokeWidth={1.2} />}
-                    className={
+                    className={twMerge(
+                      "pt-[10px] sm:pt-0",
                       idx !== PropertyHighlightCardContent.length - 1
                         ? "border-r-1 border-black-white/20 pr-3 mr-3"
                         : ""
-                    }
+                    )}
                   />
                 ))}
               </div>
