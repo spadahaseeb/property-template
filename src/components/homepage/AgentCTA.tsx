@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 const AgentCTA = () => {
   return (
     <>
-      <section className="bg-white-warm rounded-medium py-[104px] mb-5">
+      <section className="bg-white-warm rounded-medium lg:py-[104px] py-[70px] mb-5">
         <div className="container">
           <main
             className="flex  md:flex-row flex-col items-center

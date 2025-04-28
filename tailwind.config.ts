@@ -92,6 +92,7 @@ const config: Config = {
         xs: "480px",
         sm: "640px",
         md: "768px",
+        xmd: "880px",
         lg: "1024px",
         xl: "1366px",
         xxl: "1440px",

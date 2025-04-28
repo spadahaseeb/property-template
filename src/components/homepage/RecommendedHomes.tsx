@@ -6,7 +6,7 @@ import { RecommendedHomesContent } from "@/components/homepage/content/content";
 const RecommendedHomes = () => {
   return (
     <>
-      <section className="bg-white-soft rounded-medium py-[165px]">
+      <section className="bg-white-soft rounded-medium lg:py-[165px] py-[90px]">
         <div className="container">
           <div>
             {/* section-heading */}
@@ -17,7 +17,7 @@ const RecommendedHomes = () => {
             />
 
             {/* content */}
-            <main className="gap-[30px] grid md:grid-cols-2 xxl:grid-cols-3 items-center">
+            <main className="xl:gap-[30px] gap-[20px] grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 items-center">
               {RecommendedHomesContent.map((item, idx) => (
                 <PropertyCard
                   key={idx}

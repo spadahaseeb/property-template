@@ -5,7 +5,7 @@ const Review = () => {
   return (
     <>
       <div className="w-[100%]">
-        <div className="max-w-[600px]">
+        <div className="">
           <div className="flex justify-between pb-[30px]">
             {/* user profile and quotes */}
             <div className="flex items-center">
@@ -14,9 +14,9 @@ const Review = () => {
                 alt="user-profile"
                 width={90}
                 height={90}
-                className="rounded-90px overflow-hidden"
+                className="rounded-90px overflow-hidden xs:w-[90px] xs:h-[90px] w-[60px] h-[60px]"
               />
-              <div className="pl-[20px] pb=[30px] text-left">
+              <div className="xs:pl-[20px] pl-[10px] text-left">
                 <h5 className="font-medium text-[19px] pb-[3px]">
                   Cameron Williamson
                 </h5>
@@ -35,7 +35,7 @@ const Review = () => {
           </div>
 
           {/* user review */}
-          <p className="text-[19px] font-medium leading-9">
+          <p className="text-[19px] font-medium leading-9 text-center xs:text-left">
             Searches for multiplexes, property comparisons, and the loan
             estimator. Works great. Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor incididunt ut labore et

@@ -5,7 +5,7 @@ import { DiscoverCitiesContent } from "@/components/homepage/content/content";
 const DiscoverCities = () => {
   return (
     <>
-      <section className="py-[165px]">
+      <section className="lg:py-[165px] py-[90px]">
         <div className="container">
           {/* section-heading  */}
           <Heading
@@ -16,11 +16,11 @@ const DiscoverCities = () => {
 
           {/* section content  */}
           <main>
-            <div className="grid xxl:grid-cols-4 md:grid-cols-2  grid-cols-1 gap-[30px]">
+            <div className="grid xxl:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-[30px] gap-[20px]">
               {DiscoverCitiesContent.map((card, index) => {
                 let layoutClass = "";
                 if (index === 0 || index === 5) {
-                  layoutClass = "xxl:col-span-2";
+                  layoutClass = "md:col-span-2";
                 } else {
                   layoutClass = "min-w-[327px]";
                 }
@@ -28,9 +28,9 @@ const DiscoverCities = () => {
                   <div
                     key={index}
                     style={{ backgroundImage: `url('/images/${card.image}')` }}
-                    className={`rounded-medium overflow-hidden bg-no-repeat bg-cover bg-center h-[395px] ${layoutClass}`}
+                    className={`rounded-medium overflow-hidden bg-no-repeat bg-cover bg-center h-[350px] ${layoutClass}`}
                   >
-                    <div className="text-white p-[45px_0_0_50px] w-full h-full bg-gradient-to-b from-black-primary/80 via-black-primary/10 to-black/0">
+                    <div className="text-white md:pt-[45px] md:pl-[50px] pl-[30px] pt-[30px] w-full h-full bg-gradient-to-b from-black-primary/80 via-black-primary/10 to-black/0">
                       <p className="font-normal text-16 pb-[10px]">
                         {card.properties} properties
                       </p>

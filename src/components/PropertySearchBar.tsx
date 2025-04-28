@@ -37,33 +37,27 @@ const PropertySearchBar = () => {
         </TabsList>
 
         {/* search bar  */}
-        <div className={"w-full flex justify-center"}>
-          <form
-            action="/"
-            className={
-              "p-[5px] xl:min-w-[690px] md:w-[500px] w-[300px] flex items-center bg-white rounded-lg"
-            }
-          >
-            <input
-              required
-              type="text"
-              name="searchbar"
-              placeholder={placeholders[tab]}
-              className="flex-1 pl-8 font-normal
-               placeholder:text-black placeholder:font-normal 
-               placeholder:text-16 border-none outline-none
-               text-black text-18 inline-reset bg-transparent"
-            />
-            <button
-              className="md:w-[60px] md:h-[60px] w-[45px] h-[45px] flex items-center justify-center
-            bg-accent-gold rounded-[100px]"
-            >
-              <Search
-                size={20}
-                strokeWidth={1.5}
-                className="text-black text-[20px]"
+        <div className={"w-full bg-white-soft rounded-full"}>
+          <form action="/" className="w-full relative">
+            <div className="p-[5px] w-full">
+              {/* search input  */}
+              <input
+                type="text"
+                required
+                name="searchbar"
+                placeholder={placeholders[tab]}
+                className="lg:w-[690px] md:w-[490px] xs:w-[340px] xs:h-[40px] lg:h-[60px] md:h-[50px]  bg-transparent border-none outline-none text-black 
+                text-[18px] xs:pl-5 pl-[7px] w-[280px] h-[35px]"
               />
-            </button>
+              {/* search button  */}
+              <button className="lg:w-[60px] lg:h-[60px] md:w-[50px] md:h-[50px] xs:w-10 xs:h-10 flex items-center justify-center bg-accent-gold rounded-full absolute top-[50%] right-[5px] translate-y-[-50%] w-[35px] h-[35px]">
+                <Search
+                  size={20}
+                  strokeWidth={1.5}
+                  className="text-black text-[20px]"
+                />
+              </button>
+            </div>
           </form>
         </div>
       </Tabs>

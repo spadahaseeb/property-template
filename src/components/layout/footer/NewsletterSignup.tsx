@@ -35,7 +35,7 @@ const NewsletterSignup = () => {
 
         <p
           className="text-white-secondary text-[15px] font-normal 
-        leading-6 pt-10 pb-[120px] 2xl:pb-0 text-center lg:text-left"
+        leading-6 pt-10 lg:pb-[120px] pb-[70px] 2xl:pb-0 text-center lg:text-left"
         >
           Subscribe to our newsletter to receive our weekly feed.
         </p>

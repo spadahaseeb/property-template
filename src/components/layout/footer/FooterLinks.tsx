@@ -35,7 +35,7 @@ const FooterLinks = () => {
         <div className="text-white pt-[60px] xl:pt-0 grid justify-items-center lg:justify-items-start">
           <h6 className="footer-links-heading">get the app</h6>
 
-          <div className="flex gap-[15px] lg:items-start items-center flex-col md:flex-row lg:flex-col">
+          <div className="flex gap-[15px] lg:items-start items-center sm:flex-row lg:flex-col flex-col">
             <AppDownloadLink
               imageSrc={"apple.png"}
               altText={"app-store"}

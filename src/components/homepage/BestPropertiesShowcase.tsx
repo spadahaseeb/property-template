@@ -9,7 +9,7 @@ import PropertyHighlightCard from "@/components/PropertyHighlightCard";
 const BestPropertiesShowcase = () => {
   return (
     <>
-      <section className="py-[165px]">
+      <section className="lg:py-[165px] py-[90px]">
         <div className="container">
           {/* section-heading  */}
           <Heading
@@ -20,11 +20,11 @@ const BestPropertiesShowcase = () => {
 
           {/* section-content  */}
           <main>
-            <div className="grid lg:grid-cols-2 grid-cols-1 gap-[30px]">
-              <div className="grid sm:grid-cols-2 grid-cols-1 gap-[30px]">
+            <div className="grid xl:grid-cols-2 grid-cols-1 gap-[30px]">
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-[30px]">
                 <Thumbnail
                   image="bp1.jfif"
-                  className="sm:col-span-2 min-h-[330px]"
+                  className="xl:col-span-2 min-h-[330px]"
                 />
                 <PropertyStatsCard />
 

@@ -41,38 +41,36 @@ const PropertyCard = ({
           </div>
 
           {/* property-details */}
-          <div className="p-5">
+          <div className="lg:p-5 p-[15px] capitalize">
             {/* title location price */}
-            <div className="flex justify-between pb-5">
+            <div className="flex lg:justify-between lg:flex-row flex-col lg:pb-5 pb-[12px]">
+              {/* col1 title & location  */}
               <div>
-                <h4 className="font-medium text-18 leading-6 pb-3 capitalize">
+                <h4 className="font-medium text-[18px] leading-6 lg:pb-3 pb-2">
                   {title}
                 </h4>
-                <p className="flex items-center">
-                  <MapPin size={22} strokeWidth={1} className="mr-1" />
-                  <span className="inline-reset font-normal text-16 leading-8 capitalize">
-                    {location}
-                  </span>
+                <p className="flex items-center w-full font-normal text-[16px] leading-8">
+                  <MapPin size={22} strokeWidth={1} className="mr-[5px]" />
+                  {location}
                 </p>
               </div>
-              <p className="font-semibold text-xl leading-8 text-accent-coral">
+
+              {/* col2 price  */}
+              <p className="font-semibold text-xl leading-8 text-accent-coral pt-[15px] lg:pt-0">
                 {price}
               </p>
             </div>
 
             {/* details */}
             <div>
-              <ul className="flex items-center text-black font-normal">
+              <ul className="grid lg:grid-cols-3  xs:grid-cols-2  grid-cols-1 text-black font-normal">
                 {propertyDetailContent.map((item, idx) => (
                   <PropertyDetail
                     key={idx}
                     detail={item.detail}
                     icon={item.icon}
-                    className={twMerge(
-                      idx !== propertyDetailContent.length - 1
-                        ? "border-r border-black-primary/30 mr-3 pr-3"
-                        : "border-none"
-                    )}
+                    className="border-r-1 border-black-primary/30 last:border-r-0
+                     w-[max-content] pr-[10px] mt-[10px] lg:mt-0"
                   />
                 ))}
               </ul>

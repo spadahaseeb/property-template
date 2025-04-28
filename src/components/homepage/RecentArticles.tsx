@@ -6,7 +6,7 @@ import { RecentArticlesContent } from "@/components/homepage/content/content";
 const RecentArticles = () => {
   return (
     <>
-      <section className="py-[165px] bg-white-muted rounded-medium">
+      <section className="lg:py-[165px] py-[90px] bg-white-muted rounded-medium">
         <div className="container">
           {/* section heading  */}
           <Heading
@@ -18,7 +18,7 @@ const RecentArticles = () => {
 
           {/* content  */}
           <main>
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[30px]">
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-[30px] gap-[15px]">
               {RecentArticlesContent.map((item, idx) => (
                 <Article
                   key={idx}

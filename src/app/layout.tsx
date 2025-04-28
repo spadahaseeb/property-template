@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${RobotoFont.variable} `}>
-        <div className="p-5">
+        <div className="md:p-5 p-[10px]">
           <Header />
           {children}
           <Footer />

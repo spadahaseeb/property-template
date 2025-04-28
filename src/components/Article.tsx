@@ -23,7 +23,7 @@ const Article = ({ date, title, image }: ArticlePropType) => {
           />
         </div>
 
-        <div className="p-[20px_45px_26px_45px] text-center flex flex-col items-center">
+        <div className="lg:px-[45px] px-[15px] pt-5 pb-[26px] text-center flex flex-col items-center">
           <p className="text-[15px] font-normal pb-[10px] text-black-secondary">
             {parse(date)}
           </p>

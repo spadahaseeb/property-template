@@ -1,19 +1,28 @@
 // components
 
+import { twMerge } from "tailwind-merge";
+
 // types
 type featureItemPropType = {
   featureIcon: React.ReactNode;
   featureTitle: string;
   discription: string;
+  className?: string;
 };
 
 const FeatureItem = ({
   featureIcon,
   featureTitle,
   discription,
+  className,
 }: featureItemPropType) => {
   return (
-    <div className="flex flex-col items-center justify-center text-center max-w-[320px]">
+    <div
+      className={twMerge(
+        "flex flex-col items-center justify-center text-center",
+        className
+      )}
+    >
       <span className="mb-[26px] inline-reset">{featureIcon}</span>
       <h5 className="font-roboto font-medium text-[20px] leading-[22.8px] pb-[14px]">
         {featureTitle}

@@ -7,14 +7,14 @@ import { ExploreLinksWithAgentCTAContent } from "@/components/homepage/content/c
 const ExploreLinksWithAgentCTA = () => {
   return (
     <>
-      <section className="py-[165px] text-black">
+      <section className="lg:py-[165px] py-[90px] text-black">
         <div className="container">
           {/* section heading  */}
           <Heading />
 
           {/* content  */}
           <TabGroup>
-            <TabList className="flex items-center justify-start gap-[30px]">
+            <TabList className="sm:flex grid grid-cols-2 items-center justify-start sm:gap-[30px] gap-[15px]">
               {ExploreLinksWithAgentCTAContent.map((item, idx) => (
                 <Tab
                   className="data-[selected]:border-b-black border-b-[2px] outline-none border-transparent bg-transparent text-black text-[19px] font-medium ease-out duration-300 capitalize inline-reset pb-3"

@@ -9,13 +9,13 @@ import ExpertiseStats from "@/components/homepage/ExpertiseStats";
 const ExpertiseShowcase = () => {
   return (
     <>
-      <section className="py-[165px] bg-black-deep text-white rounded-medium overflow-hidden">
+      <section className="lg:py-[165px] py-[90px] bg-black-deep text-white rounded-medium overflow-hidden">
         <div className="container">
-          <main className="grid md:grid-cols-2 grid-cols-1 items-center pb-20">
+          <main className="grid lg:grid-cols-2 grid-cols-1 items-center pb-20">
             {/* image with-label  */}
             <Thumbnail
               image="expertise.png"
-              className="h-[640px] w-full md:max-w-[640px] p-[25px]"
+              className="h-[640px] w-full p-[25px]"
             >
               <Image
                 src={"/images/totalclients.png"}
@@ -26,7 +26,7 @@ const ExpertiseShowcase = () => {
             </Thumbnail>
 
             {/* heading content  */}
-            <div className="md:pl-[70px] lg:pl-[185px] pt-[30px] md:pt-0">
+            <div className="lg:pl-[70px] xl:pl-[185px] pt-[30px] lg:pt-0">
               <Heading
                 heading="Local expertise for luxury homes"
                 discription="Pellentesque egestas elementum egestas faucibus sem. Velit nunc
