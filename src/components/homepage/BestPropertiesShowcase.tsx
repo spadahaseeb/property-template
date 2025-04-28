@@ -23,13 +23,13 @@ const BestPropertiesShowcase = () => {
             <div className="grid xl:grid-cols-2 grid-cols-1 gap-[30px]">
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-[30px]">
                 <Thumbnail
-                  image="bp1.jfif"
+                  image="bp1.webp"
                   className="lg:col-span-2 min-h-[330px]"
                 />
                 <PropertyStatsCard />
 
                 <Thumbnail
-                  image="bp2.png"
+                  image="bp2.webp"
                   className="min-h-[330px] flex items-center justify-center"
                 >
                   <Button

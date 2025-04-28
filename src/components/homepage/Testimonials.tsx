@@ -26,7 +26,7 @@ const Testimonials = () => {
                 <Stats stat={"10m+"} statDiscription={"happy people"} />
                 <Stats stat={"4.88"} statDiscription={"overall rating"}>
                   <Image
-                    src={"/images/stars.png"}
+                    src={"/images/stars.webp"}
                     alt={"rating"}
                     width={78}
                     height={10}

@@ -74,38 +74,38 @@ export const DiscoverCitiesContent = [
   {
     title: "New York",
     properties: 8,
-    image: "c1.png",
+    image: "c1.webp",
   },
   {
     title: "chicago",
     properties: 2,
-    image: "c2.png",
+    image: "c2.webp",
   },
   {
     title: "los angeles",
     properties: 1,
-    image: "c3.png",
+    image: "c3.webp",
   },
   {
     title: "san diego",
     properties: 0,
-    image: "c4.png",
+    image: "c4.webp",
   },
   {
     title: "florida",
     properties: 3,
-    image: "c5.png",
+    image: "c5.webp",
   },
   {
     title: "miami",
     properties: 2,
-    image: "c6.png",
+    image: "c6.webp",
   },
 ];
 
 export const RecommendedHomesContent = [
   {
-    image: "product2.png",
+    image: "product2.webp",
     title: "Skyper Pool Apartment",
     location: "1020 Bloomingdale Ave",
     price: "$280,000",
@@ -113,7 +113,7 @@ export const RecommendedHomesContent = [
     isFeatured: false,
   },
   {
-    image: "product2.png",
+    image: "product2.webp",
     title: "Skyper Pool Apartment",
     location: "1020 Bloomingdale Ave",
     price: "$280,000",
@@ -121,7 +121,7 @@ export const RecommendedHomesContent = [
     isFeatured: false,
   },
   {
-    image: "product2.png",
+    image: "product2.webp",
     title: "Skyper Pool Apartment",
     location: "1020 Bloomingdale Ave",
     price: "$280,000",
@@ -192,27 +192,27 @@ export const ExpertiseStatsContent = [
 
 export const TrustedByContent = [
   {
-    src: "trust1.png",
+    src: "trust1.webp",
     alt: "trusted by amazon",
   },
   {
-    src: "trust2.png",
+    src: "trust2.webp",
     alt: "trusted by amazon",
   },
   {
-    src: "trust3.png",
+    src: "trust3.webp",
     alt: "trusted by amazon",
   },
   {
-    src: "trust4.png",
+    src: "trust4.webp",
     alt: "trusted by amazon",
   },
   {
-    src: "trust5.png",
+    src: "trust5.webp",
     alt: "trusted by amazon",
   },
   {
-    src: "trust6.png",
+    src: "trust6.webp",
     alt: "trusted by amazon",
   },
 ];
@@ -221,22 +221,22 @@ export const RecentArticlesContent = [
   {
     date: "Apartment <span>•</span> March 19, 2024",
     title: "Housing Markets That Changed the Most This Week",
-    image: "article1.png",
+    image: "article1.webp",
   },
   {
     date: "Apartment <span>•</span>  March 19, 2024",
     title: "Read Unveils the Best Canadian Cities for Biking",
-    image: "article2.png",
+    image: "article2.webp",
   },
   {
     date: "Office <span>•</span>  March 19, 2024",
     title: "10 Walkable Cities Where You Can Live Affordably",
-    image: "article3.png",
+    image: "article3.webp",
   },
   {
     date: "Shop <span>•</span>  March 19, 2024",
     title: "New Apartment Nice in the Best Canadian Cities",
-    image: "article4.png",
+    image: "article4.webp",
   },
 ];
 

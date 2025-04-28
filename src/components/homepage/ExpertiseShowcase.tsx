@@ -14,11 +14,11 @@ const ExpertiseShowcase = () => {
           <main className="grid lg:grid-cols-2 grid-cols-1 items-center pb-20">
             {/* image with-label  */}
             <Thumbnail
-              image="expertise.png"
+              image="expertise.webp"
               className="md:h-[640px] h-[500px] w-full p-[25px]"
             >
               <Image
-                src={"/images/totalclients.png"}
+                src={"/images/totalclients.webp"}
                 width={255}
                 height={100}
                 alt="total-clients"

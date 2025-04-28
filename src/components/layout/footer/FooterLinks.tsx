@@ -37,14 +37,14 @@ const FooterLinks = () => {
 
           <div className="flex gap-[15px] lg:items-start items-center sm:flex-row lg:flex-col flex-col">
             <AppDownloadLink
-              imageSrc={"apple.png"}
+              imageSrc={"apple.webp"}
               altText={"app-store"}
               linkText={"download on the"}
               linkTextBold={"apple store"}
               link={"/"}
             />
             <AppDownloadLink
-              imageSrc={"play.png"}
+              imageSrc={"play.webp"}
               altText={"play-store"}
               linkText={"get it on"}
               linkTextBold={"gogole play"}

@@ -21,7 +21,7 @@ const Header = () => {
         border-b-1 border-white/10"
         >
           <Image
-            src={"/images/logo.png"}
+            src={"/images/logo.webp"}
             width={200}
             height={56}
             alt="logo"

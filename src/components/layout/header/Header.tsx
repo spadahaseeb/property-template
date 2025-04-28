@@ -37,7 +37,7 @@ const Header = () => {
           <div className="flex xl:w-[max-content] w-full items-center justify-between">
             <Link href={"/"}>
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt="logo"
                 width={150}
                 height={42}

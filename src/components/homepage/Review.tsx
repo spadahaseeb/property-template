@@ -10,7 +10,7 @@ const Review = () => {
             {/* user profile and quotes */}
             <div className="flex items-center">
               <Image
-                src={"/images/test1.png"}
+                src={"/images/test1.webp"}
                 alt="user-profile"
                 width={90}
                 height={90}
@@ -26,7 +26,7 @@ const Review = () => {
 
             {/* quotes */}
             <Image
-              src={"/images/vector.png"}
+              src={"/images/vector.webp"}
               alt="quote"
               className="inline-reset w-[39px] h-[38px]"
               width={39}
