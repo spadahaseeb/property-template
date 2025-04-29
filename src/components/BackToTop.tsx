@@ -12,7 +12,7 @@ const BackToTop = () => {
     <>
       <div
         className={twMerge(
-          "fixed right-[30px] bottom-[30px] transition-all duration-300 ease-in-out z-200",
+          "fixed sm:right-[30px] sm:bottom-[30px] right-[15px] bottom-[15px] transition-all duration-300 ease-in-out z-200",
           isScrolled
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-4 pointer-events-none"
@@ -21,9 +21,9 @@ const BackToTop = () => {
         <Button
           variant="v3"
           linkEnable={false}
-          buttonIcon={<ArrowUp size={20} strokeWidth={1} />}
+          buttonIcon={<ArrowUp size={18} strokeWidth={1} />}
           className={twMerge(
-            "bg-black-smooth w-[50px] h-[50px] text-white hidden ",
+            "bg-black-smooth sm:w-[50px] sm:h-[50px] w-10 h-10  text-white hidden ",
             isScrolled ? "block" : "hidden"
           )}
           onClick={() => {

@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 // components
 import Navigation from "@/components/layout/header/Navigation";
 import SideContent from "@/components/layout/header/SideContent";
 import useScrollPosition from "@/hooks/useScrollPosition";
 import Button from "@/components/Button";
-import { Menu } from "lucide-react";
-import { useState } from "react";
 
 const Header = () => {
   const [IsMenuClicked, setIsMenuClicked] = useState<boolean>(false);
@@ -16,7 +16,7 @@ const Header = () => {
 
   const isScrolled = useScrollPosition(100);
   const HeaderStyles = isScrolled
-    ? `border-white/10  rounded-medium bg-black-muted bg-black-deep
+    ? `border-white/10 rounded-medium bg-black-muted bg-black-deep
        py-[25px] px-[20px] w-[calc((100%)-80px] md:top-5 top-[10px] left-[10px] right-[10px] 
        md:py-[30px] md:px-[30px] md:left-10 md:right-10`
     : `top-0 left-0 right-0 bg-transparent md:py-[51px] md:px-[60px] py-[40px] px-[25px]`;
@@ -48,7 +48,13 @@ const Header = () => {
             <div className="xl:hidden block">
               <Button
                 linkEnable={false}
-                buttonIcon={<Menu size={20} strokeWidth={1} />}
+                buttonIcon={
+                  IsMenuClicked ? (
+                    <X size={20} strokeWidth={1} />
+                  ) : (
+                    <Menu size={20} strokeWidth={1} />
+                  )
+                }
                 onClick={handleToogleNavbar}
               />
             </div>
@@ -57,13 +63,13 @@ const Header = () => {
           {/* navigation  */}
           <div
             className={twMerge(
-              `w-full flex flex-col xl:items-center items-start xl:flex-row 
+              `xl:w-full flex flex-col xl:items-center items-start xl:flex-row 
                xl:justify-between bg-black-deep xl:bg-transparent 
-               absolute xl:static top-full left-0 right-0 h-[calc((100vh)-100px)]
+               absolute xl:static top-full left-[-1px] right-[-1px] h-[calc((100vh)-100px)]
                xl:h-auto duration-300 ease-out p-10 xl:p-0 justify-start`,
               IsMenuClicked
                 ? "translate-x-0 xl:translate-y-0 translate-y-[2px]"
-                : "xl:translate-x-0 translate-x-[100vw] translate-y-0"
+                : "xl:translate-x-0 translate-x-[110vw] translate-y-0"
             )}
           >
             <div className="xl:flex-1 pb-5 xl:pb-0">
