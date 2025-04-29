@@ -11,18 +11,20 @@ const SideContent = () => {
       <div className="flex flex-col xl:flex-row items-center">
         {/* cta - phone */}
         <div className="flex items-center flex-col-reverse xl:flex-row">
-          <div className="xl:pr-5 my-5 xl:my-0">
+          <div className="xl:pr-5 my-5 xl:my-0 hidden xl:inline-block">
             <Link href="/" className="flex items-center">
               <Phone className="mr-2 text-white w-5" />
-              <p className="text-white text-16">+68 685 88666</p>
+              <p className="text-white xl:text-[16px] text-[14px]">
+                +68 685 88666
+              </p>
             </Link>
           </div>
 
           {/* user-profile button */}
-          <div className="">
+          <div className="hidden xl:inline-block">
             <Link
               href={"/"}
-              className="m-auto w-10 h-10 flex items-center justify-center xl:mr-5 border-1 border-white rounded-full"
+              className="m-auto w-[35px] xl:w-10 h-[35px] xl:h-10 flex items-center justify-center xl:mr-5 border-1 border-white rounded-full"
             >
               <UserRound className="text-white" size={16} />
             </Link>

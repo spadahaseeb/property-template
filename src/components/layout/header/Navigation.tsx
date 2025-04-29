@@ -1,70 +1,54 @@
+"use client";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 // components
 import { NavigationLinksContent } from "@/components/homepage/content/content";
 
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/HoverCard";
-
 const Navigation = () => {
   return (
-    <>
-      <ul
-        className="flex flex-col xl:flex-row h-[max-content]
-      items-center justify-center "
-      >
-        {NavigationLinksContent.map((item, idx) => (
-          <li
-            key={idx}
-            className="py-[7px] xl:py-0 xl:px-5 inline-reset text-white text-[14px] xl:text-[16px]"
-          >
-            {item.hoverLinks && item.hoverLinks.length > 0 ? (
-              // HoverTrigger
-              <HoverCard openDelay={0} closeDelay={0}>
-                <HoverCardTrigger asChild>
-                  <div className="capitalize font-medium flex items-center cursor-pointer">
-                    {item.text}
-                    {item.icon && <ChevronDown className="ml-1" size={16} />}
-                  </div>
-                </HoverCardTrigger>
+    <ul
+      className="text-white flex flex-1 xl:items-center xl:justify-center xl:flex-row
+    flex-col items-start"
+    >
+      {NavigationLinksContent.map((item, idx) => (
+        // tap trigger
+        <li
+          key={idx}
+          className="cursor-pointer inline-reset capitalize font-medium py-[7px] xl:py-0 xl:px-5 xl:text-[16px] text-[21px]"
+        >
+          {item.hoverLinks && item.hoverLinks.length > 0 ? (
+            <div className="relative group flex items-center select-none">
+              {item.text}
+              {item.icon && <ChevronDown className="ml-1" size={16} />}
 
-                {/* HoverCardContent */}
-                <HoverCardContent
-                  side="bottom"
-                  sideOffset={0}
-                  className="border-none shadow-none w-[max-content] z-500"
-                >
-                  <div
-                    className="bg-black-muted mt-10 rounded-normal pt-[50px] pr-[150px]
-                  pb-[15px] pl-10"
-                  >
-                    {item.hoverLinks.map((linkx, idxx) => (
+              {/* Dropdown on hover or tap */}
+              <div className="absolute left-0 top-full z-400 hidden group-hover:block group-focus-within:block xl:pt-10 pt-4">
+                <div className="flex flex-col gap-2 p-6 bg-black-muted min-w-[200px] rounded-medium">
+                  {item.hoverLinks &&
+                    item.hoverLinks.map((linkx, idxx) => (
                       <Link
                         key={idxx}
                         href={linkx.link}
-                        className="mb-4 block text-white capitalize hover:text-white-secondary/90"
+                        className="block xl:inline-block text-white capitalize hover:text-white-secondary/90"
                       >
                         {linkx.text}
                       </Link>
                     ))}
-                  </div>
-                </HoverCardContent>
-              </HoverCard>
-            ) : (
-              <Link
-                href={item.link}
-                className="capitalize font-medium flex items-center"
-              >
-                {item.text}
-              </Link>
-            )}
-          </li>
-        ))}
-      </ul>
-    </>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <Link
+              href={item.link}
+              className="capitalize font-medium flex items-center py-[7px] xl:py-0 text-[16px]"
+            >
+              {item.text}
+            </Link>
+          )}
+        </li>
+      ))}
+    </ul>
   );
 };
+
 export default Navigation;

@@ -81,14 +81,14 @@ const PropertySearchBar = () => {
 
           {/* search keywords box  */}
           {searchValue !== "" ? (
-            <div className="z-100 absolute top-full left-0 right-0 w-full bg-black-deep/70 mt-3 rounded-medium px-5 py-[25px]">
+            <div className="z-100 absolute top-full left-0 right-0 w-full bg-black-deep/70 mt-3 rounded-medium px-5 py-[25px] max-h-[450px] overflow-y-scroll scrl">
               {matchedKeywords.length > 0 ? (
                 matchedKeywords.map((item, idx) => (
                   <p
-                    key={idx}
                     className="flex items-center py-[10px] px-[10px] cursor-pointer select-none w-full
                    hover:bg-black-muted rounded-[6px]"
                     onClick={() => setSearchValue(item)}
+                    key={idx}
                   >
                     <SearchIcon size={20} strokeWidth={1.2} />
                     <span className="pl-3 lowercase text-[16px] text-white">

@@ -57,12 +57,12 @@ const Header = () => {
           {/* navigation  */}
           <div
             className={twMerge(
-              `w-full flex flex-col items-center xl:flex-row py-10 xl:py-0
-               xl:justify-between justify-center bg-black-deep xl:bg-transparent 
+              `w-full flex flex-col xl:items-center items-start xl:flex-row 
+               xl:justify-between bg-black-deep xl:bg-transparent 
                absolute xl:static top-full left-0 right-0 h-[calc((100vh)-100px)]
-               xl:h-auto duration-300 ease-out`,
+               xl:h-auto duration-300 ease-out p-10 xl:p-0 justify-start`,
               IsMenuClicked
-                ? "translate-x-0 xl:translate-y-0 translate-y-1"
+                ? "translate-x-0 xl:translate-y-0 translate-y-[2px]"
                 : "xl:translate-x-0 translate-x-[100vw] translate-y-0"
             )}
           >

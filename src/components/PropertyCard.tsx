@@ -1,4 +1,3 @@
-import { twMerge } from "tailwind-merge";
 import { Bath, Bed, Copy, MapPin } from "lucide-react";
 import Image from "next/image";
 // components
