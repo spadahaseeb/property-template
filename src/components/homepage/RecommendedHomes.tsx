@@ -1,6 +1,11 @@
 "use client";
-// import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -28,7 +33,11 @@ const RecommendedHomes = () => {
             <main>
               <Swiper
                 className="xl:gap-[30px] gap-[20px] grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 items-center overflow-visible"
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                autoplay={{
+                  delay: 2000,
+                  disableOnInteraction: false,
+                }}
                 spaceBetween={30}
                 slidesPerView={3}
                 navigation
@@ -36,7 +45,7 @@ const RecommendedHomes = () => {
                   clickable: true,
                 }}
                 loop={true}
-                speed={600}
+                speed={500}
                 breakpoints={{
                   10: {
                     slidesPerView: 1,
