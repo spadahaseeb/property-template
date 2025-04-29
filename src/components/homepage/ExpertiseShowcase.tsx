@@ -19,10 +19,10 @@ const ExpertiseShowcase = () => {
             >
               <Image
                 src={"/images/totalclients.webp"}
-                width={255}
+                width={170}
                 height={100}
                 alt="total-clients"
-                className="md:w-[255px] w-[170px]"
+                className="md:w-[255px] w-[170px] h-auto"
               />
             </Thumbnail>
 

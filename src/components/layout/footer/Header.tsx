@@ -22,10 +22,10 @@ const Header = () => {
         >
           <Image
             src={"/images/logo.webp"}
-            width={200}
+            width={150}
             height={56}
             alt="logo"
-            className="md:w-[200px] w-[150px]"
+            className="md:w-[200px]"
           />
 
           <div className="text-white flex items-center xs:flex-row flex-col pt-[60px] md:pt-0">

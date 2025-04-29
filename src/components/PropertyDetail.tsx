@@ -18,7 +18,7 @@ const PropertyDetail = ({
     <>
       <li
         className={twMerge(
-          "flex items-center list-none text-[16px] gap-[10px]",
+          "flex items-center list-none text-[16px] xs:gap-[10px] gap-1",
           className
         )}
       >

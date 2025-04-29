@@ -41,7 +41,7 @@ const Header = () => {
                 alt="logo"
                 width={150}
                 height={42}
-                loading="lazy"
+                priority
               />
             </Link>
 

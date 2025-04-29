@@ -26,11 +26,11 @@ const Testimonials = () => {
                 <Stats stat={"10m+"} statDiscription={"happy people"} />
                 <Stats stat={"4.88"} statDiscription={"overall rating"}>
                   <Image
-                    src={"/images/stars.webp"}
-                    alt={"rating"}
-                    width={78}
+                    src="/images/stars.webp"
+                    alt="rating"
+                    width={80}
                     height={10}
-                    className="pt-[7px]"
+                    className="pt-[7px] w-[78px] h-auto"
                   />
                 </Stats>
               </div>

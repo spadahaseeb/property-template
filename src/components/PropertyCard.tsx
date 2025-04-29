@@ -42,7 +42,7 @@ const PropertyCard = ({
           </div>
 
           {/* property-details */}
-          <div className="lg:p-5 p-[15px] capitalize">
+          <div className="lg:p-5 xs:p-[15px] py-[10px] capitalize">
             {/* title location price */}
             <div className="flex lg:justify-between lg:flex-row flex-col lg:pb-5 pb-[12px]">
               {/* col1 title & location  */}
@@ -71,7 +71,7 @@ const PropertyCard = ({
                     detail={item.detail}
                     icon={item.icon}
                     className="border-r-1 border-black-primary/30 last:border-r-0
-                     w-[max-content] pr-[12px] mr-[12px]"
+                     w-[max-content] pr-1 mr-1 xs:pr-[12px] xs:mr-[12px] last:mr-0 last:pr-0"
                   />
                 ))}
               </ul>
@@ -87,14 +87,14 @@ export default PropertyCard;
 const propertyDetailContent = [
   {
     detail: "4 beds",
-    icon: <Bed strokeWidth={0.75} size={22} />,
+    icon: <Bed strokeWidth={0.75} size={20} />,
   },
   {
     detail: "4 baths",
-    icon: <Bath strokeWidth={0.75} size={22} />,
+    icon: <Bath strokeWidth={0.75} size={20} />,
   },
   {
     detail: "400 sqft",
-    icon: <Copy strokeWidth={0.75} size={22} />,
+    icon: <Copy strokeWidth={0.75} size={20} />,
   },
 ];

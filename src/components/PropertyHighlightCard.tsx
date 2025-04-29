@@ -23,7 +23,7 @@ const PropertyHighlightCard = ({
       <Thumbnail image="bp3.webp">
         <div
           className={twMerge(
-            "flex flex-col justify-between w-full h-full xl:p-10 p-[25px] text-white bg-black-primary/30 rounded-medium",
+            "flex flex-col justify-between w-full h-full xl:p-10 xs:p-[25px] p-[15px] text-white bg-black-primary/30 rounded-medium",
             className
           )}
         >
@@ -54,15 +54,15 @@ const PropertyHighlightCard = ({
                 280,000
               </p>
 
-              <div className="xl:pl-[60px] sm:pl-[15px] flex items-center flex-wrap">
+              <div className="xl:pl-[60px] sm:pl-[15px] flex items-center">
                 {PropertyHighlightCardContent.map((item, idx) => (
                   <PropertyDetail
                     key={idx}
                     detail={item.detail}
-                    icon={<item.icon size={25} strokeWidth={1.2} />}
+                    icon={<item.icon size={20} strokeWidth={1.2} />}
                     className={twMerge(
                       idx !== PropertyHighlightCardContent.length - 1
-                        ? "border-r-1 border-black-white/20 pr-3 mr-3"
+                        ? "border-r-1 border-black-white/20 pr-1 xs:pr-3 mr-1 xs:mr-3 gap-2"
                         : ""
                     )}
                   />
