@@ -36,7 +36,7 @@ const PropertySearchBar = () => {
         onValueChange={setTab}
       >
         {/* tabs  */}
-        <TabsList className="bg-transparent flex gap-16 pb-9">
+        <TabsList className="bg-transparent flex md:gap-16 gap-5 pb-9">
           <TabsTrigger
             value="sale"
             className="bg-transparent text-white text-18 font-roboto font-normal border-b-2 border-transparent data-[state=active]:border-white duration-300 ease-out capitalize p-0 pb-2"

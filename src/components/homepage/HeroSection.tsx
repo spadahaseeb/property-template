@@ -4,7 +4,7 @@ import PropertySearchBar from "@/components/PropertySearchBar";
 const HeroSection = () => {
   return (
     <>
-      <section className="w-full pb-[220px] pt-[200px] lg:pt-[225px] text-white bg-[url('/images/hero_background.webp')] bg-cover bg-center rounded-medium">
+      <section className="w-full pb-[220px] pt-[200px] lg:pt-[225px] text-white bg-[url('/images/hero_background.webp')] bg-cover lg:bg-center rounded-medium bg-[30%_100%]">
         <div className="container">
           <main>
             {/* heading */}

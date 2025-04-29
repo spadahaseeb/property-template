@@ -29,7 +29,7 @@ const Navigation = () => {
                       <Link
                         key={idxx}
                         href={linkx.link}
-                        className="block xl:inline-block text-white capitalize hover:text-white-secondary/90"
+                        className="text-[14px] block xl:inline-block text-white capitalize hover:text-white-secondary/90"
                       >
                         {linkx.text}
                       </Link>
@@ -40,7 +40,7 @@ const Navigation = () => {
           ) : (
             <Link
               href={item.link}
-              className="capitalize font-medium flex items-center py-[7px] xl:py-0 text-[16px]"
+              className="capitalize font-medium flex items-center py-[7px] xl:py-0 text-[21px] xl:text-[16px]"
             >
               {item.text}
             </Link>

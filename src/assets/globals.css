@@ -76,11 +76,13 @@
 @media screen and (max-width: 680px) {
   .swiper-button-next,
   .swiper-button-prev {
-    padding: 3px 25px !important;
+    padding: 0 20px !important;
+
+    transform: scale(0.7) !important;
   }
   .swiper-button-next::after,
   .swiper-button-prev::after {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
 }
 
