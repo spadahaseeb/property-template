@@ -21,7 +21,7 @@ const BestPropertiesShowcase = () => {
           {/* section-content  */}
           <main>
             <div className="grid xl:grid-cols-2 grid-cols-1 gap-[30px]">
-              <div className="grid lg:grid-cols-2 grid-cols-1 gap-[30px]">
+              <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-[30px] gap-[15px]">
                 <Thumbnail
                   image="bp1.webp"
                   className="lg:col-span-2 min-h-[330px]"
@@ -48,11 +48,13 @@ const BestPropertiesShowcase = () => {
                 </Thumbnail>
               </div>
 
-              <PropertyHighlightCard
-                isForSle={true}
-                isFeatured={true}
-                className="min-h-[450px]"
-              />
+              <a href="#" className="duration-300 ease-out hover:scale-[1.01]">
+                <PropertyHighlightCard
+                  isForSle={true}
+                  isFeatured={true}
+                  className="min-h-[450px]"
+                />
+              </a>
             </div>
           </main>
         </div>

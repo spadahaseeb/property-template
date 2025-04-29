@@ -44,6 +44,7 @@ const ExpertiseShowcase = () => {
                 linkEnable={true}
                 buttonLink="/"
                 className="w-[max-content] m-auto md:m-0"
+                hover={true}
               />
             </div>
           </main>

@@ -28,7 +28,7 @@ const NewsletterSignup = () => {
             buttonText="send"
             buttonIcon={<ArrowRight size={20} strokeWidth={2} />}
             buttonIconStyle="ml-2"
-            className="text-white bg-black-secondary border-none"
+            className="text-white bg-black-secondary border-none sm:py-2 sm:px-7 py-1 px-4 text-[12px] sm:text-[16px]"
             variant="v1"
           />
         </form>

@@ -36,12 +36,13 @@ const ExploreLinksWithAgentCTA = () => {
                           {item.links
                             .slice(colIdx * 6, colIdx * 6 + 6)
                             .map((link, linkIdx) => (
-                              <li key={linkIdx} className="list-none pb-[10px]">
+                              <li key={linkIdx} className="list-none p-[5px]">
                                 <Link
                                   href="/"
-                                  className="font-normal text-[15px] capitalize inline-reset"
+                                  className="font-normal text-[15px] capitalize inline-reset group"
                                 >
                                   {link}
+                                  <span className="bg-black h-[0.5px] w-0 block group-hover:w-full duration-300 ease"></span>
                                 </Link>
                               </li>
                             ))}

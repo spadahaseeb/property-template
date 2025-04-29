@@ -34,6 +34,7 @@ const PropertyCard = ({
             height={425}
             alt="property-product-image"
             className="rounded-medium w-full"
+            loading="lazy"
           />
           <div className="absolute top-6 left-5 w-full flex items-center gap-[10px]">
             {isForSale && <PropertyTag text="for sale" variant="v1" />}
@@ -63,14 +64,14 @@ const PropertyCard = ({
 
             {/* details */}
             <div>
-              <ul className="grid lg:grid-cols-3  xs:grid-cols-2  grid-cols-1 text-black font-normal">
+              <ul className="flex text-black font-normal">
                 {propertyDetailContent.map((item, idx) => (
                   <PropertyDetail
                     key={idx}
                     detail={item.detail}
                     icon={item.icon}
                     className="border-r-1 border-black-primary/30 last:border-r-0
-                     w-[max-content] pr-[10px] mt-[10px] lg:mt-0"
+                     w-[max-content] pr-[12px] mr-[12px]"
                   />
                 ))}
               </ul>

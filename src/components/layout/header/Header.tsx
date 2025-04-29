@@ -17,9 +17,9 @@ const Header = () => {
   const isScrolled = useScrollPosition(100);
   const HeaderStyles = isScrolled
     ? `border-white/10  rounded-medium bg-black-muted bg-black-deep
-       py-[25px] px-[20px] w-[calc((100%)-40px] md:top-5 top-[10px] left-5 right-5 
+       py-[25px] px-[20px] w-[calc((100%)-80px] md:top-5 top-[10px] left-[10px] right-[10px] 
        md:py-[30px] md:px-[30px] md:left-10 md:right-10`
-    : `top-0 left-0 right-0 bg-transparent md:py-[51px] md:px-[60px] py-[40px] px-[35px]`;
+    : `top-0 left-0 right-0 bg-transparent md:py-[51px] md:px-[60px] py-[40px] px-[25px]`;
 
   return (
     <>
@@ -41,6 +41,7 @@ const Header = () => {
                 alt="logo"
                 width={150}
                 height={42}
+                loading="lazy"
               />
             </Link>
 

@@ -17,7 +17,7 @@ const Review = () => {
                 className="rounded-90px overflow-hidden xs:w-[90px] xs:h-[90px] w-[60px] h-[60px]"
               />
               <div className="xs:pl-[20px] pl-[10px] text-left">
-                <h5 className="font-medium text-[19px] pb-[3px]">
+                <h5 className="font-medium text-[19px] pb-[3px] pr-5">
                   Cameron Williamson
                 </h5>
                 <p className="text-[15px] font-normal">designer</p>
@@ -28,7 +28,7 @@ const Review = () => {
             <Image
               src={"/images/vector.webp"}
               alt="quote"
-              className="inline-reset w-[39px] h-[38px]"
+              className="inline-reset xs:w-[39px] xs:h-[38px] w-5 h-[20px]"
               width={39}
               height={38}
             />

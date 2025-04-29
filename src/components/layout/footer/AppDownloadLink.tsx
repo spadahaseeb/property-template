@@ -21,7 +21,7 @@ const AppDownloadLink = ({
     <>
       <a
         href={link}
-        className="w-[max-content] h-[max-content] flex items-center py-7 px-8 rounded-medium bg-black-smooth min-w-[230px] max-w-[230px]"
+        className="w-[max-content] h-[max-content] flex items-center md:py-7 md:px-8 rounded-medium bg-black-smooth  min-w-[230px] py-4 px-6"
       >
         <Image
           src={`/images/${imageSrc}`}

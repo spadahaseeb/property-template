@@ -128,6 +128,14 @@ export const RecommendedHomesContent = [
     isForSale: true,
     isFeatured: true,
   },
+  {
+    image: "product2.webp",
+    title: "Skyper Pool Apartment 4",
+    location: "1020 Bloomingdale Ave",
+    price: "$280,000",
+    isForSale: true,
+    isFeatured: true,
+  },
 ];
 
 export const WhyChooseUsContent = [

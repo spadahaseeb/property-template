@@ -19,7 +19,7 @@ const Navigation = () => {
         {NavigationLinksContent.map((item, idx) => (
           <li
             key={idx}
-            className="py-[7px] xl:py-0 xl:px-5 inline-reset text-white text-[12px] xl:text-[16px]"
+            className="py-[7px] xl:py-0 xl:px-5 inline-reset text-white text-[14px] xl:text-[16px]"
           >
             {item.hoverLinks && item.hoverLinks.length > 0 ? (
               // HoverTrigger
@@ -35,9 +35,12 @@ const Navigation = () => {
                 <HoverCardContent
                   side="bottom"
                   sideOffset={0}
-                  className="border-none shadow-none w-[max-content] z-300"
+                  className="border-none shadow-none w-[max-content] z-500"
                 >
-                  <div className="bg-black-muted mt-10 rounded-normal p-[50px_150px_15px_40px]">
+                  <div
+                    className="bg-black-muted mt-10 rounded-normal pt-[50px] pr-[150px]
+                  pb-[15px] pl-10"
+                  >
                     {item.hoverLinks.map((linkx, idxx) => (
                       <Link
                         key={idxx}

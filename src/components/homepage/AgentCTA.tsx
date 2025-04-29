@@ -30,6 +30,7 @@ const AgentCTA = () => {
               linkEnable={true}
               buttonLink="/"
               className="mt-[30px] md:mt-0"
+              hover={true}
             />
           </main>
         </div>

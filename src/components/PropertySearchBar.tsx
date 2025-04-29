@@ -46,8 +46,8 @@ const PropertySearchBar = () => {
                 required
                 name="searchbar"
                 placeholder={placeholders[tab]}
-                className="lg:w-[690px] md:w-[490px] xs:w-[340px] xs:h-[40px] lg:h-[60px] md:h-[50px]  bg-transparent border-none outline-none text-black 
-                text-[18px] xs:pl-5 pl-[7px] w-[280px] h-[35px]"
+                className="lg:w-[690px] md:w-[490px] xs:w-[340px] xs:h-[40px] lg:h-[60px] md:h-[50px]  bg-transparent border-none outline-none text-black md:placeholder:text-[16px]
+                text-[18px] xs:pl-5 pl-[7px] w-[280px] h-[35px] placeholder:text-[14px]"
               />
               {/* search button  */}
               <button className="lg:w-[60px] lg:h-[60px] md:w-[50px] md:h-[50px] xs:w-10 xs:h-10 flex items-center justify-center bg-accent-gold rounded-full absolute top-[50%] right-[5px] translate-y-[-50%] w-[35px] h-[35px]">

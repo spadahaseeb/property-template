@@ -5,6 +5,7 @@ import { tv } from "tailwind-variants";
 
 // Button props types
 interface ButtonPropsType {
+  hover?: boolean;
   variant?: "default" | "v1" | "v2" | "v3";
   className?: string;
   buttonText?: string;
@@ -17,6 +18,7 @@ interface ButtonPropsType {
 
 // button component
 const Button = ({
+  hover,
   variant,
   className,
   buttonText,
@@ -33,12 +35,18 @@ const Button = ({
           href={buttonLink || "/"}
           className={twMerge(
             buttonVariants({ variant, className }),
-            "inline-reset flex items-center"
+            "inline-reset flex items-center group :"
           )}
           onClick={onClick}
         >
           {buttonText && <p>{buttonText}</p>}
-          <span className={twMerge("inline-reset", buttonIconStyle)}>
+          <span
+            className={twMerge(
+              "inline-reset duration-300",
+              buttonIconStyle,
+              hover ? "group-hover:translate-x-1" : ""
+            )}
+          >
             {buttonIcon}
           </span>
         </Link>
@@ -46,12 +54,18 @@ const Button = ({
         <button
           className={twMerge(
             buttonVariants({ variant, className }),
-            "inline-reset flex items-center"
+            "inline-reset flex items-center group"
           )}
           onClick={onClick}
         >
           {buttonText && <p>{buttonText}</p>}
-          <span className={twMerge("inline-reset", buttonIconStyle)}>
+          <span
+            className={twMerge(
+              "inline-reset duration-300",
+              buttonIconStyle,
+              hover ? "group-hover:translate-x-2" : ""
+            )}
+          >
             {buttonIcon}
           </span>
         </button>

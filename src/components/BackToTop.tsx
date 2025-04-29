@@ -12,7 +12,7 @@ const BackToTop = () => {
     <>
       <div
         className={twMerge(
-          "fixed right-[30px] bottom-[30px] transition-all duration-300 ease-in-out",
+          "fixed right-[30px] bottom-[30px] transition-all duration-300 ease-in-out z-200",
           isScrolled
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-4 pointer-events-none"

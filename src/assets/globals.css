@@ -5,52 +5,70 @@
 /* layer components  */
 
 @layer components {
-    .container {
-        @apply max-w-[1430px] mx-auto px-4;
-    }
-    .inline-reset {
-        @apply no-underline list-none inline-block;
-    }
-    .heading {
-        @apply font-medium font-roboto text-[40px] leading-[52px] capitalize;
-    }
-    .heading-discription {
-        @apply font-normal font-roboto text-[17px] leading-8;
-    }
-    .footer-container {
-        @apply max-w-[1920px] w-full m-auto;
-    }
-    .footer-links-heading {
-        @apply font-medium text-[19px] leading-[19px] text-white/50 capitalize pb-[35px];
-    }
+  .container {
+    @apply max-w-[1430px] mx-auto px-4;
+  }
+  .inline-reset {
+    @apply no-underline list-none inline-block;
+  }
+  .heading {
+    @apply font-medium font-roboto text-[40px] leading-[52px] capitalize;
+  }
+  .heading-discription {
+    @apply font-normal font-roboto text-[17px] leading-8;
+  }
+  .footer-container {
+    @apply max-w-[1920px] w-full m-auto;
+  }
+  .footer-links-heading {
+    @apply font-medium text-[19px] leading-[19px] text-white/50 capitalize pb-[35px];
+  }
 }
-
 
 /* layer base */
 
 @layer base {
-    * {
-        @apply border-border;
-    }
-}
-
-
-/* @layer base {
-  @font-face {
-    font-family: "Roboto";
-    src: url("/fonts/roboto-v20-latin-regular.woff2") format("woff2"),
-      url("/fonts/roboto-v20-latin-regular.woff") format("woff");
-    font-weight: medium;
-    font-style: normal;
+  * {
+    @apply border-border;
   }
 }
 
-:root {
-  --font-roboto: "Roboto", sans-serif;
-  --font-roboto-medium: "Roboto", sans-serif;
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  border: 1px solid #0000007a;
+  padding: 10px 30px !important;
+  border-radius: 100px;
+  top: 35% !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: black;
+  font-size: 16px !important;
 }
 
-body {
-  font-family: var(--font-roboto);
-  font-style: normal;
-} */
+.swiper-pagination-bullet {
+  background: black !important;
+  width: 7px;
+  height: 7px;
+  position: relative;
+  transition: 0.3s ease;
+  margin: 0 10px !important;
+}
+.swiper-pagination-bullet-active::after {
+  position: absolute;
+  border-radius: 100px;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 7px;
+  height: 7px;
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.swiper-pagination-bullets {
+  position: static !important;
+  padding-top: 60px;
+}
