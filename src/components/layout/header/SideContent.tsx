@@ -36,7 +36,7 @@ const SideContent = () => {
           onClick={() => console.log("clicked on header add property button")}
           buttonText="Add property"
           variant="v1"
-          linkEnable={true}
+          isLinkEnable={true}
           buttonLink="/"
         />
       </div>

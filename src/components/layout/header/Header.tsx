@@ -16,8 +16,8 @@ const Header = () => {
 
   const isScrolled = useScrollPosition(100);
   const HeaderStyles = isScrolled
-    ? ("w-[calc((100%)-80px] border-white/10 rounded-medium bg-black-muted bg-black-deep py-[25px] px-[20px] md:top-5 top-[10px] left-[10px] right-[10px] md:py-[30px] md:px-[30px] md:left-10 md:right-10")
-    : ("top-0 left-0 right-0 bg-transparent md:py-[50px] md:px-[60px] py-[40px] px-[25px]");
+    ? "w-[calc((100%)-80px] border-white/10 rounded-medium bg-black-muted bg-black-deep py-[25px] px-[20px] md:top-5 top-[10px] left-[10px] right-[10px] md:py-[30px] md:px-[30px] md:left-10 md:right-10"
+    : "top-0 left-0 right-0 bg-transparent md:py-[50px] md:px-[60px] py-[40px] px-[25px]";
 
   return (
     <>
@@ -46,7 +46,7 @@ const Header = () => {
 
             <div className="xl:hidden block">
               <Button
-                linkEnable={false}
+                isLinkEnable={false}
                 buttonIcon={
                   IsMenuClicked ? (
                     <X size={20} strokeWidth={1} />
