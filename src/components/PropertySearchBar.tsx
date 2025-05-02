@@ -14,7 +14,7 @@ const PropertySearchBar = () => {
     setSearchValue(e.currentTarget.value);
   };
   useEffect(() => {
-    const filteredKeywords = SearchKeywordsContent.filter((elem: any) =>
+    const filteredKeywords = SearchKeywordsContent.filter((elem) =>
       elem.toLowerCase().includes(searchValue.toLowerCase())
     );
     setMatchedKeywords(filteredKeywords);
@@ -36,7 +36,7 @@ const PropertySearchBar = () => {
         onValueChange={setTab}
       >
         {/* tabs  */}
-        <TabsList className="bg-transparent flex md:gap-16 gap-5 pb-9">
+        <TabsList className="bg-transparent flex md:gap-16 gap-5 mb-[35px]">
           <TabsTrigger
             value="sale"
             className="bg-transparent text-white text-18 font-roboto font-normal border-b-2 border-transparent data-[state=active]:border-white duration-300 ease-out capitalize p-0 pb-2"
@@ -63,7 +63,7 @@ const PropertySearchBar = () => {
                   name="searchbar"
                   placeholder={placeholders[tab]}
                   className="lg:w-[690px] md:w-[490px] xs:w-[340px] xs:h-[40px] lg:h-[60px] md:h-[50px]  bg-transparent border-none outline-none text-black md:placeholder:text-[16px]
-                text-[18px] xs:pl-5 pl-[7px] w-[280px] h-[35px] placeholder:text-[14px]"
+                md:text-[18px] sm:text-[16px] text-[14px] xs:pl-5 pl-[7px] w-[280px] h-[35px] xs:placeholder:text-[17px] placeholder:text-[12px] placeholder:font-normal placeholder:text-black placeholder:capitalize "
                   value={searchValue}
                   onChange={handleSearchValue}
                 />

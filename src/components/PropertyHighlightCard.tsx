@@ -23,9 +23,13 @@ const PropertyHighlightCard = ({
       <Thumbnail image="bp3.webp">
         <div
           className={twMerge(
-            "flex flex-col justify-between w-full h-full xl:p-10 xs:p-[25px] p-[15px] text-white bg-black-primary/30 rounded-medium",
+            "flex flex-col justify-between w-full h-full xl:p-10 xs:p-[25px] p-[15px] text-white   rounded-medium",
             className
           )}
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(26, 26, 26, 0.1) 60%, rgba(26, 26, 26, 0.8) 100%)",
+          }}
         >
           {/* propert tags  */}
           <div className="flex items-center gap-3">

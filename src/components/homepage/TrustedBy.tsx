@@ -11,14 +11,13 @@ const TrustBy = () => {
         </p>
 
         <div className="justify-items-center grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-[30px]">
-          {TrustedByContent.map((elem: any, index: number) => (
+          {TrustedByContent.map((elem) => (
             <Image
               src={`/images/${elem.src}`}
               alt={elem.alt}
-              key={index}
-              width={100}
-              height={100}
-              className="w-[90px] h-[max-content]"
+              key={elem.src}
+              width={elem.width}
+              height={elem.height}
             />
           ))}
         </div>

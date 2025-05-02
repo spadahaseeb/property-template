@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
 
         {/* section-content  */}
         <main>
-          <div className="w-full grid xl:grid-cols-4 xmd:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[30px] justify-items-center">
+          <div className="w-[max-content] m-auto grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[30px] justify-items-center">
             {WhyChooseUsContent.map((item, idx) => (
               <FeatureItem
                 key={idx}

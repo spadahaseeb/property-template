@@ -11,13 +11,10 @@ const Header = () => {
   return (
     <>
       {/* footer-container  */}
-      <div
-        className="footer-container md:pb-[50px] lg:pb-[96px] px-[20px] md:px-[40px]
-       lg:px-[100px] "
-      >
+      <div className="footer-container">
         {/* footer-header  */}
         <div
-          className="sm:py-[55px] py-10 flex flex-col md:flex-row items-center justify-between 
+          className="sm:py-[55px] flex flex-col md:flex-row items-center justify-between 
         border-b-1 border-white/10"
         >
           <Image
@@ -28,7 +25,7 @@ const Header = () => {
             className="md:w-[200px]"
           />
 
-          <div className="text-white flex items-center xs:flex-row flex-col pt-[60px] md:pt-0">
+          <div className="text-white flex items-center xs:flex-row flex-col md:pt-0">
             {/* follow-us link */}
             <a
               href="#"

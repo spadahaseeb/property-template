@@ -18,14 +18,6 @@ const config: Config = {
         inter: ["Inter", "sans-serif"],
         body: ["Roboto", "sans-serif"],
       },
-      fontSize: {
-        "0": "0",
-        "12": "12px",
-        "16": "16px",
-        "18": "18px",
-        "20": "20px",
-        "23": "23px",
-      },
       colors: {
         black: {
           DEFAULT: "#000000",
@@ -44,6 +36,7 @@ const config: Config = {
         },
         gray: {
           light: "#E1E1E1",
+          normal: "#2c2c2c",
         },
         accent: {
           gold: "#E7C873",
@@ -111,19 +104,6 @@ const config: Config = {
         "400": "400",
         "500": "500",
       },
-      opacity: {
-        "0": "0",
-        "10": "0.1",
-        "20": "0.2",
-        "30": "0.3",
-        "40": "0.4",
-        "50": "0.5",
-        "60": "0.6",
-        "70": "0.7",
-        "80": "0.8",
-        "90": "0.9",
-        "100": "1",
-      },
       borderWidth: {
         "0": "0",
         "1": "1px",
@@ -143,19 +123,6 @@ const config: Config = {
         lg: "50px",
         xlg: "100px",
         md: "calc(var(--radius) - 2px)",
-      },
-      transitionProperty: {
-        none: "none",
-        all: "all",
-        DEFAULT: "all",
-        colors: "background-color, border-color, color, fill, stroke",
-        color: "color",
-        bgColor: "background-color",
-        border: "border",
-        spacing: "margin, padding",
-        shadow: "box-shadow",
-        width: "width",
-        height: "height",
       },
     },
   },

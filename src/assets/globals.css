@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* layer components  */
+/* layer base */
+@layer base {
+  * {
+    @apply border-border font-roboto;
+  }
+}
 
+/* layer components  */
 @layer components {
   .container {
     @apply max-w-[1430px] mx-auto px-4;
@@ -12,41 +18,23 @@
     @apply no-underline list-none inline-block;
   }
   .heading {
-    @apply font-medium font-roboto text-[40px] leading-[52px] capitalize;
+    @apply font-medium font-roboto text-[40px] leading-[52px];
   }
   .heading-discription {
     @apply font-normal font-roboto text-[17px] leading-8;
   }
   .footer-container {
-    @apply max-w-[1920px] w-full m-auto;
+    @apply max-w-[1710px] w-full m-auto px-[15px];
   }
   .footer-links-heading {
-    @apply font-medium text-[19px] leading-[19px] text-white/50 capitalize pb-[35px];
+    @apply font-medium text-[19px] leading-[19px] text-white/50;
+  }
+  .swiper-naviagtion-button-rh {
+    @apply pointer-events-auto bg-white border-1 border-black sm:w-[60px] sm:h-10 text-black flex items-center justify-center rounded-lg w-[40px] h-10;
   }
 }
 
-/* layer base */
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: white;
-  border: 1px solid #0000007a;
-  padding: 10px 30px !important;
-  border-radius: 100px;
-  top: 35% !important;
-}
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  color: black;
-  font-size: 16px !important;
-}
-
+/* homepage-crousel  */
 .swiper-pagination-bullet {
   background: black !important;
   width: 7px;
@@ -73,19 +61,7 @@
   padding-top: 60px;
 }
 
-@media screen and (max-width: 680px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    padding: 0 20px !important;
-
-    transform: scale(0.7) !important;
-  }
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    font-size: 12px !important;
-  }
-}
-
+/* hero searchbar scrollbar  */
 .scrl::-webkit-scrollbar {
   width: 0px;
   height: 0px;

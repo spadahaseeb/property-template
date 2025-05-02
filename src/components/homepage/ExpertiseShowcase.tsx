@@ -15,7 +15,7 @@ const ExpertiseShowcase = () => {
             {/* image with-label  */}
             <Thumbnail
               image="expertise.webp"
-              className="md:h-[640px] h-[500px] w-full p-[25px]"
+              className="md:h-[638px] h-[500px] w-full p-[25px]"
             >
               <Image
                 src={"/images/totalclients.webp"}
@@ -27,24 +27,25 @@ const ExpertiseShowcase = () => {
             </Thumbnail>
 
             {/* heading content  */}
-            <div className="lg:pl-[70px] xl:pl-[185px] pt-[30px] lg:pt-0">
-              <Heading
-                heading="Local expertise for luxury homes"
-                discription="Pellentesque egestas elementum egestas faucibus sem. Velit nunc
-                egestas ut morbi. Leo diam diam nibh eget fermentum massa
-                pretium. Mi mauris nulla ac dictum ut mauris non."
-                className="pb-5 md:text-left text-center"
-                spacing="pb-[20px]"
-              />
+            <div className="lg:pl-[70px] xl:pl-[165px] pt-[30px] lg:pt-0">
+              <div className="pb-5">
+                <Heading
+                  heading="Local expertise for luxury homes"
+                  className="pb-5 md:text-left text-center normal-case max-w-[334px]"
+                />
+                <Heading
+                  className="normal-case text-left max-w-[556px] w-full"
+                  discription="Pellentesque egestas elementum egestas faucibus sem. Velit nunc egestas ut morbi. Leo diam diam nibh eget fermentum massa pretium. Mi mauris nulla ac dictum ut mauris non."
+                />
+              </div>
+
               <Button
-                buttonText="Learn more"
-                buttonIcon={<ArrowRight size={20} strokeWidth={1.3} />}
-                buttonIconStyle="pl-2"
-                variant="v2"
-                linkEnable={true}
-                buttonLink="/"
-                className="w-[max-content] m-auto md:m-0"
                 hover={true}
+                variant="v2"
+                buttonText="Learn more"
+                isLinkEnable={true}
+                buttonLink="/"
+                buttonIcon={<ArrowRight size={18} strokeWidth={1.2} />}
               />
             </div>
           </main>

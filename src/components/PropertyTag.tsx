@@ -19,11 +19,11 @@ export default PropertyTag;
 
 // tag-variants
 const TagVariants = tv({
-  base: "rounded-lg font-medium py-2 px-5 uppercase font-roboto text-[13px] w-[max-content]",
+  base: "rounded-lg font-medium uppercase font-roboto text-[13px] flex items-center justify-center",
   variants: {
     variant: {
-      v1: "bg-black-deep text-white",
-      v2: "bg-accent-gold text-black",
+      v1: "bg-black-deep text-white w-[88px] h-[33px]",
+      v2: "bg-accent-gold text-black w-[92px] h-[33px]",
     },
   },
   defaultVariants: {

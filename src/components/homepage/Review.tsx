@@ -5,7 +5,7 @@ const Review = () => {
   return (
     <>
       <div className="w-[100%]">
-        <div className="">
+        <div className="pt-[10px] px-[15px]">
           <div className="flex justify-between pb-[30px]">
             {/* user profile and quotes */}
             <div className="flex items-center">

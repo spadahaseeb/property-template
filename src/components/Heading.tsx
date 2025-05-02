@@ -15,7 +15,7 @@ const Heading = ({
 }: HeadingPropsType) => {
   return (
     <>
-      <div className={twMerge("text-center", className)}>
+      <div className={twMerge("text-center capitalize", className)}>
         {heading && (
           <h2 className={twMerge("heading pb-[5px]", spacing)}>{heading}</h2>
         )}

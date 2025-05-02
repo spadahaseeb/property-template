@@ -15,32 +15,37 @@ import "swiper/css/pagination";
 import Heading from "@/components/Heading";
 import PropertyCard from "@/components/PropertyCard";
 import { RecommendedHomesContent } from "@/components/homepage/content/content";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const RecommendedHomes = () => {
   return (
     <>
-      <section className="bg-white-soft rounded-medium lg:py-[165px] py-[90px]">
-        <div className="container">
-          <div>
-            {/* section-heading */}
+      <section className="bg-white-soft rounded-medium py-[165px]">
+        <div>
+          {/* section-heading */}
+          <div className="container">
             <Heading
-              heading="foryou homes"
-              discription="based on your view history."
+              heading="Homes For You"
+              discription="Based on your view history"
               className="pb-[30px]"
             />
+          </div>
 
-            {/* content */}
-            <main>
+          {/* content */}
+          <main className="relative max-w-[1660px] m-auto">
+            <div className="container">
               <Swiper
-                className="xl:gap-[30px] gap-[20px] grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 items-center overflow-visible"
+                className="overflow-visible"
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 autoplay={{
                   delay: 2000,
                   disableOnInteraction: false,
                 }}
-                spaceBetween={30}
                 slidesPerView={3}
-                navigation
+                navigation={{
+                  nextEl: ".swiper-button-next-rh",
+                  prevEl: ".swiper-button-prev-rh",
+                }}
                 pagination={{
                   clickable: true,
                 }}
@@ -49,35 +54,46 @@ const RecommendedHomes = () => {
                 breakpoints={{
                   10: {
                     slidesPerView: 1,
-                    spaceBetween: 10,
+                    spaceBetween: 0,
                   },
-                  880: {
+                  700: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
+                    spaceBetween: 15,
                   },
-                  1280: {
+                  1240: {
                     slidesPerView: 3,
-                    spaceBetween: 10,
+                    spaceBetween: 30,
                   },
                 }}
               >
-                {RecommendedHomesContent.map((item, idx) => (
-                  <SwiperSlide key={idx}>
-                    <a href={"#"} className="select-none">
-                      <PropertyCard
-                        image={item.image}
-                        title={item.title}
-                        location={item.location}
-                        price={item.price}
-                        isForSale={item.isForSale}
-                        isFeatured={item.isFeatured}
-                      />
-                    </a>
+                {RecommendedHomesContent.map((item) => (
+                  <SwiperSlide key={item.title} className="select-none">
+                    <PropertyCard
+                      image={item.image}
+                      title={item.title}
+                      location={item.location}
+                      price={item.price}
+                      isForSale={item.isForSale}
+                      isFeatured={item.isFeatured}
+                    />
                   </SwiperSlide>
                 ))}
               </Swiper>
-            </main>
-          </div>
+            </div>
+
+            {/* navigation-buttons  */}
+            <div
+              className="absolute top-0 left-0 right-0 z-100 flex justify-between h-full 
+              items-center pointer-events-none xmd:translate-y-[-30px] translate-y-[-100px]"
+            >
+              <div className="swiper-button-prev-rh swiper-naviagtion-button-rh">
+                <ChevronLeft size={16} strokeWidth={1} />
+              </div>
+              <div className="swiper-button-next-rh swiper-naviagtion-button-rh">
+                <ChevronRight size={16} strokeWidth={1} />
+              </div>
+            </div>
+          </main>
         </div>
       </section>
     </>

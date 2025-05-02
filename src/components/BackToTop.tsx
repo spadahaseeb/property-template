@@ -20,12 +20,13 @@ const BackToTop = () => {
       >
         <Button
           variant="v3"
-          linkEnable={false}
+          isLinkEnable={false}
           buttonIcon={<ArrowUp size={18} strokeWidth={1} />}
           className={twMerge(
-            "bg-black-smooth sm:w-[50px] sm:h-[50px] w-10 h-10  text-white hidden ",
+            "bg-black-smooth sm:w-[50px] sm:h-[50px] w-10 h-10  text-white hidden",
             isScrolled ? "block" : "hidden"
           )}
+          buttonIconStyles="p-0"
           onClick={() => {
             window.scrollTo({
               top: 0,

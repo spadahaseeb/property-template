@@ -105,7 +105,7 @@ export const DiscoverCitiesContent = [
 
 export const RecommendedHomesContent = [
   {
-    image: "product2.webp",
+    image: "product1.webp",
     title: "Skyper Pool Apartment",
     location: "1020 Bloomingdale Ave",
     price: "$280,000",
@@ -121,7 +121,7 @@ export const RecommendedHomesContent = [
     isFeatured: false,
   },
   {
-    image: "product2.webp",
+    image: "product3.webp",
     title: "Skyper Pool Apartment",
     location: "1020 Bloomingdale Ave",
     price: "$280,000",
@@ -129,7 +129,7 @@ export const RecommendedHomesContent = [
     isFeatured: true,
   },
   {
-    image: "product2.webp",
+    image: "product3.webp",
     title: "Skyper Pool Apartment 4",
     location: "1020 Bloomingdale Ave",
     price: "$280,000",
@@ -202,26 +202,38 @@ export const TrustedByContent = [
   {
     src: "trust1.webp",
     alt: "trusted by amazon",
+    width: 84,
+    height: 26,
   },
   {
     src: "trust2.webp",
     alt: "trusted by amazon",
+    width: 83,
+    height: 21,
   },
   {
     src: "trust3.webp",
     alt: "trusted by amazon",
+    width: 74,
+    height: 23,
   },
   {
     src: "trust4.webp",
     alt: "trusted by amazon",
+    width: 122,
+    height: 25,
   },
   {
     src: "trust5.webp",
     alt: "trusted by amazon",
+    width: 82,
+    height: 26,
   },
   {
     src: "trust6.webp",
     alt: "trusted by amazon",
+    width: 99,
+    height: 31,
   },
 ];
 
@@ -366,24 +378,24 @@ export const FooterLinksContent = [
   {
     tab: "discover",
     links: [
-      "buy house ny",
-      "sell property la",
-      "rent apartment tx",
-      "real estate agents",
-      "house listings",
-      "investment property",
+      "miami",
+      "new york",
+      "chicago",
+      "florida",
+      "los angeles",
+      "san diego",
     ],
   },
   {
     tab: "quick links",
     links: [
-      "foreclosed houses",
-      "open house",
-      "property value",
-      "investment property",
-      "rental market",
-      "first time buyer",
-      "house listings",
+      "about",
+      "contact",
+      "FAQ's",
+      "blogs",
+      "pricing plans",
+      "privace policy",
+      "terms and conditions",
     ],
   },
   {
@@ -392,7 +404,7 @@ export const FooterLinksContent = [
   },
   {
     tab: "our adress",
-    links: ["99 Fifth Avenue, 3rd Floor San Francisco, CA 1980"],
+    links: ["99 Fifth Avenue, 3rd Floor", "San Francisco, CA 1980"],
   },
 ];
 

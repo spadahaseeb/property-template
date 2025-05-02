@@ -23,21 +23,18 @@ const Article = ({ date, title, image }: ArticlePropType) => {
           />
         </div>
 
-        <div className="lg:px-[45px] px-[15px] pt-5 pb-[26px] text-center flex flex-col items-center">
+        <div className="lg:px-[43px] px-[15px] pt-5 pb-[26px] text-center flex flex-col items-center">
           <p className="text-[15px] font-normal pb-[10px] text-black-secondary">
             {parse(date)}
           </p>
           <h6 className="capitalize text-[17px] font-medium leading-[26px] pb-[16px]">
-            {title}
+            <a href="#">{title}</a>
           </h6>
 
           <Button
-            buttonText="Learn more"
-            buttonIconStyle="ml-2"
+            buttonText="Read More"
             buttonIcon={<MoveRight size={20} strokeWidth={1} />}
-            variant="v2"
-            className="bg-transparent"
-            linkEnable={true}
+            isLinkEnable={true}
             buttonLink="/"
           />
         </div>

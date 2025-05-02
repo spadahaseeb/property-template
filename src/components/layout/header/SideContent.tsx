@@ -14,7 +14,7 @@ const SideContent = () => {
           <div className="xl:pr-5 my-5 xl:my-0 hidden xl:inline-block">
             <Link href="/" className="flex items-center">
               <Phone className="mr-2 text-white w-5" />
-              <p className="text-white xl:text-[16px] text-[14px]">
+              <p className="text-white xl:text-[16px] text-[14px] font-medium">
                 +68 685 88666
               </p>
             </Link>
@@ -24,7 +24,7 @@ const SideContent = () => {
           <div className="hidden xl:inline-block">
             <Link
               href={"/"}
-              className="m-auto w-[35px] xl:w-10 h-[35px] xl:h-10 flex items-center justify-center xl:mr-5 border-1 border-white rounded-full"
+              className="m-auto w-[40px] xl:w-10 h-[40px] xl:h-10 flex items-center justify-center xl:mr-5 border-1 border-white rounded-full"
             >
               <UserRound className="text-white" size={16} />
             </Link>
@@ -33,7 +33,7 @@ const SideContent = () => {
 
         {/* add property button */}
         <Button
-          onClick={() => console.log("logged")}
+          onClick={() => console.log("clicked on header add property button")}
           buttonText="Add property"
           variant="v1"
           linkEnable={true}

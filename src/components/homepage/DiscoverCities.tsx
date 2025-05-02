@@ -29,7 +29,7 @@ const DiscoverCities = () => {
                     href="#"
                     key={index}
                     style={{ backgroundImage: `url('/images/${card.image}')` }}
-                    className={`rounded-medium overflow-hidden bg-no-repeat bg-cover bg-center h-[350px] ${layoutClass} hover:scale-[1.01] hover:shadow-[1px_1px_12px_6px_rgba(0,0,0,0.20)] duration-300 ease-out`}
+                    className={`rounded-medium overflow-hidden bg-no-repeat bg-cover bg-center h-[395px] ${layoutClass} hover:scale-[1.01] hover:shadow-[1px_1px_12px_6px_rgba(0,0,0,0.20)] duration-300 ease-out`}
                   >
                     <div className="text-white md:pt-[45px] md:pl-[50px] pl-[30px] pt-[30px] w-full h-full bg-gradient-to-b from-black-primary/80 via-black-primary/10 to-black/0">
                       <p className="font-normal text-16 pb-[10px]">

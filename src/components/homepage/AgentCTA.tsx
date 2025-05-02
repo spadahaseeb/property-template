@@ -22,15 +22,15 @@ const AgentCTA = () => {
             />
 
             {/* section content  */}
+
             <Button
-              buttonText="register now"
-              buttonIcon={<ArrowRight size={20} strokeWidth={1.2} />}
-              buttonIconStyle="ml-2"
-              variant="v2"
-              linkEnable={true}
-              buttonLink="/"
-              className="mt-[30px] md:mt-0"
               hover={true}
+              variant="v2"
+              buttonText="register now"
+              isLinkEnable={true}
+              buttonLink="/"
+              buttonIcon={<ArrowRight size={18} strokeWidth={1.2} />}
+              className="w-[174px] h-[54px]"
             />
           </main>
         </div>

@@ -9,7 +9,7 @@ import PropertyHighlightCard from "@/components/PropertyHighlightCard";
 const BestPropertiesShowcase = () => {
   return (
     <>
-      <section className="lg:py-[165px] py-[90px]">
+      <section className="py-[165px]">
         <div className="container">
           {/* section-heading  */}
           <Heading
@@ -24,13 +24,13 @@ const BestPropertiesShowcase = () => {
               <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-[30px] gap-[15px]">
                 <Thumbnail
                   image="bp1.webp"
-                  className="lg:col-span-2 min-h-[330px]"
+                  className="lg:col-span-2 min-h-[334px]"
                 />
                 <PropertyStatsCard />
 
                 <Thumbnail
                   image="bp2.webp"
-                  className="min-h-[330px] flex items-center justify-center"
+                  className="min-h-[329px] flex items-center justify-center"
                 >
                   <Button
                     buttonIcon={
@@ -41,8 +41,9 @@ const BestPropertiesShowcase = () => {
                       />
                     }
                     variant="v3"
-                    className="bg-black-primary/20"
-                    linkEnable={true}
+                    className="bg-black-primary/20 w-[70px] h-[70px]"
+                    buttonIconStyles="p-0"
+                    isLinkEnable={true}
                     buttonLink="/"
                   />
                 </Thumbnail>
@@ -52,7 +53,7 @@ const BestPropertiesShowcase = () => {
                 <PropertyHighlightCard
                   isForSle={true}
                   isFeatured={true}
-                  className="min-h-[450px]"
+                  className="min-h-[700px]"
                 />
               </a>
             </div>

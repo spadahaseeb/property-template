@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 const PropertyStatsCard = () => {
   return (
     <>
-      <div className="h-full w-full bg-black-primary rounded-medium flex p-10 flex-col justify-between">
+      <div className="min-h-[329px] h-full w-full bg-black-primary rounded-medium flex p-10 flex-col justify-between">
         <div className="text-white">
           <span className="font-medium text-[40px] font-roboto pb-[5px]">
             280+
@@ -20,8 +20,9 @@ const PropertyStatsCard = () => {
           <Button
             buttonIcon={<ArrowRight size={20} strokeWidth={1} />}
             variant="v3"
-            className="bg-white text-black w-[51px] h-[51px]"
-            linkEnable={true}
+            className="bg-black-primary/20 bg-white text-black"
+            buttonIconStyles="p-0"
+            isLinkEnable={true}
             buttonLink="/"
           />
         </div>

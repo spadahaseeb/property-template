@@ -14,7 +14,7 @@ const Navigation = () => {
         // tap trigger
         <li
           key={idx}
-          className="cursor-pointer inline-reset capitalize font-medium py-[7px] xl:py-0 xl:px-5 xl:text-[16px] text-[21px]"
+          className="cursor-pointer inline-reset capitalize font-medium py-[7px] xl:py-0 xl:px-5 xl:text-[16px] sm:text-[21px] text-[16px]"
         >
           {item.hoverLinks && item.hoverLinks.length > 0 ? (
             <div className="relative group flex items-center select-none">
@@ -22,7 +22,10 @@ const Navigation = () => {
               {item.icon && <ChevronDown className="ml-1" size={16} />}
 
               {/* Dropdown on hover or tap */}
-              <div className="absolute left-0 top-full z-400 hidden group-hover:block group-focus-within:block xl:pt-10 pt-4">
+              <div
+                className="absolute left-0 top-full z-400 hidden group-hover:block         
+                 group-focus-within:block xl:pt-10 pt-4"
+              >
                 <div className="flex flex-col gap-2 p-6 bg-black-muted min-w-[200px] rounded-medium">
                   {item.hoverLinks &&
                     item.hoverLinks.map((linkx, idxx) => (

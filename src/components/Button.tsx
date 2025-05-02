@@ -3,88 +3,80 @@ import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 import { tv } from "tailwind-variants";
 
-// Button props types
-interface ButtonPropsType {
+// types
+interface ButtonPropType {
   hover?: boolean;
-  variant?: "default" | "v1" | "v2" | "v3";
+  variant?: "v1" | "v2" | "v3";
   className?: string;
   buttonText?: string;
   buttonIcon?: ReactNode;
-  buttonIconStyle?: string;
-  linkEnable: boolean;
+  buttonIconStyles?: string;
+  isLinkEnable: boolean;
   buttonLink?: string;
   onClick?: React.MouseEventHandler<HTMLAnchorElement | HTMLButtonElement>;
 }
 
-// button component
-const Button = ({
-  hover,
+// component
+const ButtonT = ({
+  hover = false,
   variant,
   className,
   buttonText,
   buttonIcon,
-  buttonIconStyle,
-  linkEnable,
+  buttonIconStyles,
+  isLinkEnable,
   buttonLink,
   onClick,
-}: ButtonPropsType) => {
-  return (
-    <>
-      {linkEnable ? (
-        <Link
-          href={buttonLink || "/"}
+}: ButtonPropType) => {
+  const Content = () => (
+    <div
+      aria-label={buttonText}
+      className={twMerge("flex items-center justify-center")}
+    >
+      <p>{buttonText}</p>
+      {buttonIcon && (
+        <span
+          aria-hidden="true"
           className={twMerge(
-            buttonVariants({ variant, className }),
-            "inline-reset flex items-center group :"
+            "pl-[7px] ease-out duration-300",
+            buttonIconStyles,
+            hover ? "group-hover:translate-x-2" : ""
           )}
-          onClick={onClick}
         >
-          {buttonText && <p>{buttonText}</p>}
-          <span
-            className={twMerge(
-              "inline-reset duration-300",
-              buttonIconStyle,
-              hover ? "group-hover:translate-x-1" : ""
-            )}
-          >
-            {buttonIcon}
-          </span>
-        </Link>
-      ) : (
-        <button
-          className={twMerge(
-            buttonVariants({ variant, className }),
-            "inline-reset flex items-center group"
-          )}
-          onClick={onClick}
-        >
-          {buttonText && <p>{buttonText}</p>}
-          <span
-            className={twMerge(
-              "inline-reset duration-300",
-              buttonIconStyle,
-              hover ? "group-hover:translate-x-2" : ""
-            )}
-          >
-            {buttonIcon}
-          </span>
-        </button>
+          {buttonIcon}
+        </span>
       )}
-    </>
+    </div>
+  );
+
+  return isLinkEnable ? (
+    <Link
+      href={buttonLink || "/"}
+      className={twMerge("group", ButtonVariant({ variant, className }))}
+    >
+      <Content />
+    </Link>
+  ) : (
+    <button
+      onClick={onClick}
+      className={twMerge("group", ButtonVariant({ variant, className }))}
+    >
+      <Content />
+    </button>
   );
 };
-export default Button;
 
-// button tailwind varians
-const buttonVariants = tv({
-  base: "flex items-center justify-center text-center capitalize w-[max-content]",
+export default ButtonT;
+
+// tailwind-variants
+const ButtonVariant = tv({
+  base: "ease-out duration-300 relative capitalize text-center flex items-center justify-center",
   variants: {
     variant: {
-      v1: "text-16 font-medium border-1 py-2 px-7 border-white rounded-lg text-white bg-transparent hover:bg-white hover:text-black ease-out duration-300",
-      v2: "bg-accent-gold text-black text-[15px] rounded-normal py-3 px-6 font-medium",
-      v3: "rounded-full font-medium w-[70px] h-[70px] pl-0",
-      default:
-        "bg-white/10 text-16 font-medium py-2 px-7 rounded-xlg text-white",
+      v1: "w-[148px] h-[42px] text-[15px] font-medium border border-white rounded-lg text-white bg-transparent hover:bg-white hover:text-black",
+      v2: "w-[161px] h-[54px] bg-accent-gold text-black text-[15px] rounded-normal font-medium",
+      v3: "w-[51px] h-[51px] rounded-full font-medium",
+      default: "w-[max-content] h-[max-content] text-[15px] font-medium",
     },
   },
   defaultVariants: {
