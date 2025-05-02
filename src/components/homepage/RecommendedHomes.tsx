@@ -20,7 +20,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const RecommendedHomes = () => {
   return (
     <>
-      <section className="bg-white-soft rounded-medium py-[165px]">
+      <section className="bg-white-soft rounded-medium section-spacing">
         <div>
           {/* section-heading */}
           <div className="container">

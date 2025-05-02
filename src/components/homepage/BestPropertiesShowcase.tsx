@@ -18,7 +18,7 @@ import PropertyHighlightCard from "@/components/PropertyHighlightCard";
 const BestPropertiesShowcase = () => {
   return (
     <>
-      <section className="py-[165px]">
+      <section className="section-spacing">
         <div className="container">
           {/* section-heading  */}
           <Heading

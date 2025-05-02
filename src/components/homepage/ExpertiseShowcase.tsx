@@ -9,7 +9,7 @@ import ExpertiseStats from "@/components/homepage/ExpertiseStats";
 const ExpertiseShowcase = () => {
   return (
     <>
-      <section className="lg:py-[165px] py-[90px] bg-black-deep text-white rounded-medium overflow-hidden">
+      <section className="section-spacing bg-black-deep text-white rounded-medium overflow-hidden">
         <div className="container">
           <main className="grid lg:grid-cols-2 grid-cols-1 items-center pb-20">
             {/* image with-label  */}

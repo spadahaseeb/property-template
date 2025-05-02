@@ -2,10 +2,16 @@
 import FeatureItem from "@/components/FeatureItem";
 import Heading from "@/components/Heading";
 import { WhyChooseUsContent } from "@/components/homepage/content/content";
+import { twMerge } from "tailwind-merge";
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-accent-gold rounded-medium lg:pt-[155px] lg:pb-[185px] py-[90px]">
+    <section
+      className={twMerge(
+        "bg-accent-gold rounded-medium section-spacing",
+        "xxl:pt-[155px] xxl:pb-[185px]"
+      )}
+    >
       <div className="container">
         {/* section-heading  */}
         <Heading

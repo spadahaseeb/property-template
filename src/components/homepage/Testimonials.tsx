@@ -14,11 +14,12 @@ import Heading from "@/components/Heading";
 import Review from "@/components/homepage/Review";
 import TrustedBy from "@/components/homepage/TrustedBy";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { twMerge } from "tailwind-merge";
 
 const Testimonials = () => {
   return (
     <>
-      <section className="lg:pt-[187px] lg:pb-[155px] py-[90px]">
+      <section className="lg:pt-[187px] lg:pb-[155px] py-[100px]">
         <div className="container">
           {/* heading & review wrapper  */}
           <div className="gap-20 flex xl:flex-row flex-col justify-between pb-[76px]">

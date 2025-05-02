@@ -6,7 +6,7 @@ import { RecentArticlesContent } from "@/components/homepage/content/content";
 const RecentArticles = () => {
   return (
     <>
-      <section className="lg:py-[165px] py-[90px] bg-white-muted rounded-medium">
+      <section className="section-spacing bg-white-muted rounded-medium">
         <div className="container">
           {/* section heading  */}
           <Heading

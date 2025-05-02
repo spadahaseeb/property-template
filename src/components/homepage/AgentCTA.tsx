@@ -11,7 +11,7 @@ const AgentCTA = () => {
         <div className="container">
           <main
             className="flex xmd:flex-row flex-col items-center
-           justify-between px-[50px] md:px-0"
+           justify-between px-[15px] md:px-0"
           >
             {/* section heading  */}
             <Heading

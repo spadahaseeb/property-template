@@ -1,4 +1,4 @@
-import { MoveRight } from "lucide-react";
+import { ArrowRight, MoveRight } from "lucide-react";
 import parse from "html-react-parser";
 // components
 import Thumbnail from "@/components/Thumbnail";
@@ -33,7 +33,7 @@ const Article = ({ date, title, image }: ArticlePropType) => {
 
           <Button
             buttonText="Read More"
-            buttonIcon={<MoveRight size={20} strokeWidth={1} />}
+            buttonIcon={<ArrowRight size={20} strokeWidth={1} />}
             isLinkEnable={true}
             buttonLink="/"
           />

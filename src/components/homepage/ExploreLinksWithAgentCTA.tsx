@@ -7,7 +7,7 @@ import { ExploreLinksWithAgentCTAContent } from "@/components/homepage/content/c
 const ExploreLinksWithAgentCTA = () => {
   return (
     <>
-      <section className="lg:py-[165px] py-[90px] text-black">
+      <section className="section-spacing text-black">
         <div className="container">
           {/* section heading  */}
           <Heading />

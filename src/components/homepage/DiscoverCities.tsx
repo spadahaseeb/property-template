@@ -5,7 +5,7 @@ import { DiscoverCitiesContent } from "@/components/homepage/content/content";
 const DiscoverCities = () => {
   return (
     <>
-      <section className="lg:py-[165px] py-[90px]">
+      <section className="section-spacing">
         <div className="container">
           {/* section-heading  */}
           <Heading
