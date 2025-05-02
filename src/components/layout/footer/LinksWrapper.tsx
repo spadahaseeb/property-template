@@ -23,7 +23,7 @@ const LinksWrapper = ({ data, className }: LinksWrapperPropType) => {
               <li key={item} className="block list-none mb-[12px]">
                 <a
                   href="#"
-                  className="inline-reset text-white capitalize text-[15px] font-normal"
+                  className="inline-reset text-white capitalize text-[15px] font-normal w-[max-content]"
                 >
                   {item}
                 </a>

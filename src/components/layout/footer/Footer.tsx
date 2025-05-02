@@ -11,6 +11,7 @@ const Footer = () => {
         <Header />
         <Content />
         <Copyright />
+
         <BackToTop />
       </footer>
     </>

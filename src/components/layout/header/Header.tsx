@@ -54,7 +54,9 @@ const Header = () => {
                     <Menu size={20} strokeWidth={1} />
                   )
                 }
-                className="outline-none border-none"
+                className="outline-none border-none text-white bg-black-muted"
+                variant="v3"
+                buttonIconStyles="pl-0"
                 onClick={handleToogleNavbar}
               />
             </div>

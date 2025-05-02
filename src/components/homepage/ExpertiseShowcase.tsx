@@ -31,22 +31,24 @@ const ExpertiseShowcase = () => {
               <div className="pb-5">
                 <Heading
                   heading="Local expertise for luxury homes"
-                  className="pb-5 md:text-left text-center normal-case max-w-[334px]"
+                  className="pb-5 sm:text-left text-center normal-case sm:max-w-[334px]"
                 />
                 <Heading
-                  className="normal-case text-left max-w-[556px] w-full"
+                  className="normal-case max-w-[700px] w-full sm:text-left text-center"
                   discription="Pellentesque egestas elementum egestas faucibus sem. Velit nunc egestas ut morbi. Leo diam diam nibh eget fermentum massa pretium. Mi mauris nulla ac dictum ut mauris non."
                 />
               </div>
 
-              <Button
-                hover={true}
-                variant="v2"
-                buttonText="Learn more"
-                isLinkEnable={true}
-                buttonLink="/"
-                buttonIcon={<ArrowRight size={18} strokeWidth={1.2} />}
-              />
+              <div className="m-auto sm:m-0 w-[max-content]">
+                <Button
+                  hover={true}
+                  variant="v2"
+                  buttonText="Learn more"
+                  isLinkEnable={true}
+                  buttonLink="/"
+                  buttonIcon={<ArrowRight size={18} strokeWidth={1.2} />}
+                />
+              </div>
             </div>
           </main>
 

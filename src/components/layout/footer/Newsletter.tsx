@@ -10,7 +10,7 @@ const Newsletter = () => {
 
         <form
           action="/"
-          className="pb-[13px] w-[370px] border-b-1
+          className="pb-[13px] xs:w-[370px] w-full border-b-1
            border-white border-opacity-[8%] flex items-center"
         >
           <input
@@ -35,7 +35,7 @@ const Newsletter = () => {
 
         <p
           className="text-white-secondary text-[15px] font-normal 
-        leading-6 text-center lg:text-left pt-10"
+        leading-6 text-left pt-10"
         >
           Subscribe to our newsletter to receive our weekly feed.
         </p>

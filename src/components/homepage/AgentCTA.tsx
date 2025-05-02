@@ -10,14 +10,14 @@ const AgentCTA = () => {
       <section className="bg-white-warm rounded-medium lg:py-[104px] py-[70px] mb-5">
         <div className="container">
           <main
-            className="flex  md:flex-row flex-col items-center
+            className="flex xmd:flex-row flex-col items-center
            justify-between px-[50px] md:px-0"
           >
             {/* section heading  */}
             <Heading
               heading="Become a Real Estate Agent"
               discription="We only work with the best companies around the globe"
-              className="font-medium text-center md:text-left"
+              className="font-medium xmd:text-left text-center"
               spacing="text-[30px] leading-8 pb-[10px]"
             />
 
@@ -30,7 +30,7 @@ const AgentCTA = () => {
               isLinkEnable={true}
               buttonLink="/"
               buttonIcon={<ArrowRight size={18} strokeWidth={1.2} />}
-              className="w-[174px] h-[54px]"
+              className="w-[174px] h-[54px] mt-[25px] xmd:mt-0"
             />
           </main>
         </div>

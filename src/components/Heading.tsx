@@ -1,3 +1,4 @@
+import parse from "html-react-parser";
 import { twMerge } from "tailwind-merge";
 
 type HeadingPropsType = {
@@ -17,7 +18,9 @@ const Heading = ({
     <>
       <div className={twMerge("text-center capitalize", className)}>
         {heading && (
-          <h2 className={twMerge("heading pb-[5px]", spacing)}>{heading}</h2>
+          <h2 className={twMerge("heading pb-[5px]", spacing)}>
+            {parse(heading)}
+          </h2>
         )}
         {discription && <p className="heading-discription">{discription}</p>}
       </div>

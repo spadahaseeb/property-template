@@ -10,7 +10,7 @@ const TrustBy = () => {
           Thousands of world’s leading companies trust Space
         </p>
 
-        <div className="justify-items-center grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-[30px]">
+        <div className="justify-items-center grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-[30px] place-items-center pt-10 sm:pt-0">
           {TrustedByContent.map((elem) => (
             <Image
               src={`/images/${elem.src}`}

@@ -24,13 +24,15 @@
     @apply font-normal font-roboto text-[17px] leading-8;
   }
   .footer-container {
-    @apply max-w-[1710px] w-full m-auto px-[15px];
+    @apply max-w-[1880px] w-full m-auto xxl:px-[100px] px-[30px];
   }
   .footer-links-heading {
     @apply font-medium text-[19px] leading-[19px] text-white/50;
   }
-  .swiper-naviagtion-button-rh {
-    @apply pointer-events-auto bg-white border-1 border-black sm:w-[60px] sm:h-10 text-black flex items-center justify-center rounded-lg w-[40px] h-10;
+  .swiper-naviagtion-button-rh,
+  .swiper-naviagtion-button-tstm,
+  .swiper-naviagtion-button-bstprpt {
+    @apply pointer-events-auto bg-white border-1 border-white-secondary sm:w-[60px] sm:h-10 text-black flex items-center justify-center rounded-lg w-[40px] h-10;
   }
 }
 

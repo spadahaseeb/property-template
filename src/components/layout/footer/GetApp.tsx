@@ -5,7 +5,7 @@ import Image from "next/image";
 const GetApp = () => {
   return (
     <>
-      <div className="pl-[90px]">
+      <div className="3xl:pl-[90px]">
         <h6 className="font-medium text-[19px] text-white text-opacity-[47%] normal-case pb-[29px]">
           Get the app
         </h6>

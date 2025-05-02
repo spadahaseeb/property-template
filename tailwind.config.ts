@@ -90,6 +90,7 @@ const config: Config = {
         xl: "1366px",
         xxl: "1440px",
         "2xl": "1720px",
+        "3xl": "1880px",
       },
       zIndex: {
         "0": "0",
