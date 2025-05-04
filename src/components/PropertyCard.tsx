@@ -1,8 +1,10 @@
-import { Bath, Bed, Copy, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import Image from "next/image";
 // components
+import { propertyDetailContent } from "@/components/homepage/content/content";
 import PropertyDetail from "@/components/PropertyDetail";
 import PropertyTag from "@/components/PropertyTag";
+import Thumbnail from "./Thumbnail";
 
 // types
 type PropertyCardPropType = {
@@ -26,21 +28,15 @@ const PropertyCard = ({
     <>
       <div className="h-[max-content] rounded-medium text-black p-[11px] bg-white border-1 border-black/10">
         {/* property-image */}
-        <div className="relative">
+        <div>
           <a href="#">
-            <Image
-              src={`/images/${image}`}
-              width={425}
-              height={425}
-              alt="property-product-image"
-              className="rounded-medium w-full"
-              loading="lazy"
-            />
+            <Thumbnail image={image} className="min-h-[296px]">
+              <div className="pt-6 pl-5 w-full flex items-center gap-[10px]">
+                {isForSale && <PropertyTag text="for sale" variant="v1" />}
+                {isFeatured && <PropertyTag text="featured" variant="v2" />}
+              </div>
+            </Thumbnail>
           </a>
-          <div className="absolute top-6 left-5 w-full flex items-center gap-[10px]">
-            {isForSale && <PropertyTag text="for sale" variant="v1" />}
-            {isFeatured && <PropertyTag text="featured" variant="v2" />}
-          </div>
 
           {/* property-details */}
           <div className="lg:p-5 xs:p-[15px] py-[10px] capitalize">
@@ -68,11 +64,11 @@ const PropertyCard = ({
             {/* details */}
             <div>
               <ul className="flex flex-wrap text-black font-normal">
-                {propertyDetailContent.map((item, idx) => (
+                {propertyDetailContent.map((item) => (
                   <PropertyDetail
-                    key={idx}
+                    key={item.detail}
                     detail={item.detail}
-                    icon={item.icon}
+                    icon={<item.icon size={20} strokeWidth={0.75} />}
                     className="border-r-1 border-black-primary/30 last:border-r-0 mt-5
                      w-[max-content] pr-1 mr-1 xs:pr-[12px] xs:mr-[12px] last:mr-0 last:pr-0"
                   />
@@ -86,18 +82,3 @@ const PropertyCard = ({
   );
 };
 export default PropertyCard;
-
-const propertyDetailContent = [
-  {
-    detail: "4 beds",
-    icon: <Bed strokeWidth={0.75} size={20} />,
-  },
-  {
-    detail: "4 baths",
-    icon: <Bath strokeWidth={0.75} size={20} />,
-  },
-  {
-    detail: "400 sqft",
-    icon: <Copy strokeWidth={0.75} size={20} />,
-  },
-];

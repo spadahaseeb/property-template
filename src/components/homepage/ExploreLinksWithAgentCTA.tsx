@@ -15,18 +15,18 @@ const ExploreLinksWithAgentCTA = () => {
           {/* content  */}
           <TabGroup>
             <TabList className="sm:flex grid grid-cols-2 items-center justify-start sm:gap-[30px] gap-[15px]">
-              {ExploreLinksWithAgentCTAContent.map((item, idx) => (
+              {ExploreLinksWithAgentCTAContent.map((item) => (
                 <Tab
                   className="data-[selected]:border-b-black border-b-[2px] outline-none border-transparent bg-transparent text-black text-[19px] font-medium ease-out duration-300 capitalize inline-reset pb-3"
-                  key={idx}
+                  key={item.tab}
                 >
                   {item.tab}
                 </Tab>
               ))}
             </TabList>
             <TabPanels>
-              {ExploreLinksWithAgentCTAContent.map((item, idx) => (
-                <TabPanel key={idx}>
+              {ExploreLinksWithAgentCTAContent.map((item) => (
+                <TabPanel key={item.tab}>
                   <div className="pt-[35px] pb-4 border-t-1 border-black/10 translate-y-[-1px]">
                     <div className="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-6 pt-[30px] lg:pt-0">
                       {Array.from({
@@ -35,8 +35,8 @@ const ExploreLinksWithAgentCTA = () => {
                         <ul key={colIdx} className="space-y-2">
                           {item.links
                             .slice(colIdx * 6, colIdx * 6 + 6)
-                            .map((link, linkIdx) => (
-                              <li key={linkIdx} className="list-none p-[5px]">
+                            .map((link) => (
+                              <li key={link} className="list-none p-[5px]">
                                 <Link
                                   href="/"
                                   className="font-normal text-[15px] capitalize inline-reset group"

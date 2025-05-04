@@ -16,6 +16,7 @@ const ExpertiseShowcase = () => {
             <Thumbnail
               image="expertise.webp"
               className="md:h-[638px] h-[500px] w-full p-[25px]"
+              background={true}
             >
               <Image
                 src={"/images/totalclients.webp"}

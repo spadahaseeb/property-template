@@ -1,6 +1,7 @@
 import {
   Bath,
   Bed,
+  Copy,
   File,
   House,
   HousePlus,
@@ -68,6 +69,21 @@ export const NavigationLinksContent = [
     ],
   },
   { text: "contact", link: "/", icon: false },
+];
+
+export const propertyDetailContent = [
+  {
+    detail: "4 beds",
+    icon: Bed,
+  },
+  {
+    detail: "4 baths",
+    icon: Bath,
+  },
+  {
+    detail: "400 sqft",
+    icon: Copy,
+  },
 ];
 
 export const DiscoverCitiesContent = [
@@ -161,6 +177,21 @@ export const WhyChooseUsContent = [
     title: "Verified listings",
     description:
       "Only verified properties so you can buy, rent or sell with confidence.",
+  },
+];
+
+export const BestPropertiesShowcaseContent = [
+  {
+    img: "bp1.webp",
+    alt: "home-interrior",
+    width: 600,
+    height: 400,
+  },
+  {
+    img: "bp1.webp",
+    alt: "home-interrior",
+    width: 600,
+    height: 400,
   },
 ];
 

@@ -23,9 +23,9 @@ const WhyChooseUs = () => {
         {/* section-content  */}
         <main>
           <div className="w-[max-content] m-auto grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[30px] justify-items-center">
-            {WhyChooseUsContent.map((item, idx) => (
+            {WhyChooseUsContent.map((item) => (
               <FeatureItem
-                key={idx}
+                key={item.title}
                 featureTitle={item.title}
                 discription={item.description}
                 featureIcon={<item.icon size={50} strokeWidth={0.75} />}

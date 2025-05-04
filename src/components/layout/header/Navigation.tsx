@@ -10,10 +10,10 @@ const Navigation = () => {
       className="text-white flex flex-1 xl:items-center xl:justify-center xl:flex-row
     flex-col items-start"
     >
-      {NavigationLinksContent.map((item, idx) => (
+      {NavigationLinksContent.map((item) => (
         // tap trigger
         <li
-          key={idx}
+          key={item.text}
           className="cursor-pointer inline-reset capitalize font-medium py-[7px] xl:py-0 xl:px-5 xl:text-[16px] sm:text-[21px] text-[16px]"
         >
           {item.hoverLinks && item.hoverLinks.length > 0 ? (
@@ -28,9 +28,9 @@ const Navigation = () => {
               >
                 <div className="flex flex-col gap-2 p-6 bg-black-muted min-w-[200px] rounded-medium">
                   {item.hoverLinks &&
-                    item.hoverLinks.map((linkx, idxx) => (
+                    item.hoverLinks.map((linkx) => (
                       <Link
-                        key={idxx}
+                        key={linkx.text}
                         href={linkx.link}
                         className="text-[14px] block xl:inline-block text-white capitalize hover:text-white-secondary/90"
                       >

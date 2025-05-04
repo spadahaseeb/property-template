@@ -12,7 +12,7 @@ const PropertyStatsCard = () => {
           </span>
           <h6 className="text-[19px] font-normal pb-5">properties</h6>
           <p className="pb-10 font-roboto font-normal text-16 leading-7">
-            Explore our wide variety of properties to fid your dream home today
+            Explore our wide variety of properties to find your dream home today
           </p>
         </div>
 

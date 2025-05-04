@@ -8,7 +8,9 @@ import {
 } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
+import Image from "next/image";
 // components
+import { BestPropertiesShowcaseContent } from "@/components/homepage/content/content";
 import Heading from "@/components/Heading";
 import Thumbnail from "@/components/Thumbnail";
 import Button from "@/components/Button";
@@ -32,6 +34,7 @@ const BestPropertiesShowcase = () => {
             <div className="grid xl:grid-cols-2 grid-cols-1 gap-[30px]">
               <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-[30px] gap-[15px]">
                 <div className="lg:col-span-2 min-h-[334px] relative">
+                  {/* thumbnail 1  */}
                   <Swiper
                     className="overflow-visible"
                     modules={[
@@ -51,12 +54,17 @@ const BestPropertiesShowcase = () => {
                     slidesPerView={1}
                     spaceBetween={15}
                   >
-                    <SwiperSlide className="select-none">
-                      <Thumbnail image="bp1.webp" className="min-h-[334px]" />
-                    </SwiperSlide>
-                    <SwiperSlide className="select-none">
-                      <Thumbnail image="bp1.webp" className="min-h-[334px]" />
-                    </SwiperSlide>
+                    {BestPropertiesShowcaseContent.map((item) => (
+                      <SwiperSlide className="select-none min-h-[334px] w-full h-full">
+                        <Image
+                          src={`/images/${item.img}`}
+                          alt={item.alt}
+                          width={item.width}
+                          height={item.height}
+                          className="w-full h-full rounded-medium"
+                        />
+                      </SwiperSlide>
+                    ))}
                   </Swiper>
 
                   <div className="absolute top-0 left-0 right-0 bottom-0 z-10 flex items-center m-auto sm:m-0 gap-[25px] pt-[25px] justify-between w-full px-[10px] pointer-events-none">
@@ -69,31 +77,33 @@ const BestPropertiesShowcase = () => {
                   </div>
                 </div>
 
+                {/* thumbnail 2  */}
                 <PropertyStatsCard />
 
+                {/* thumbnail 3  */}
                 <div>
-                  <Thumbnail
-                    image="bp2.webp"
-                    className="min-h-[329px] flex items-center justify-center"
-                  >
-                    <Button
-                      buttonIcon={
-                        <Play
-                          size={23}
-                          strokeWidth={0.8}
-                          className="text-white"
-                        />
-                      }
-                      variant="v3"
-                      className="bg-black-primary/20 w-[70px] h-[70px]"
-                      buttonIconStyles="p-0"
-                      isLinkEnable={true}
-                      buttonLink="/"
-                    />
+                  <Thumbnail image="bp2.webp" className="min-h-[329px]">
+                    <div className="flex items-center justify-center h-full">
+                      <Button
+                        buttonIcon={
+                          <Play
+                            size={23}
+                            strokeWidth={0.8}
+                            className="text-white"
+                          />
+                        }
+                        variant="v3"
+                        className="bg-black-primary/20 w-[70px] h-[70px]"
+                        buttonIconStyles="p-0"
+                        isLinkEnable={true}
+                        buttonLink="/"
+                      />
+                    </div>
                   </Thumbnail>
                 </div>
               </div>
 
+              {/* thumbnail 4  */}
               <a href="#" className="duration-300 ease-out hover:scale-[1.01]">
                 <PropertyHighlightCard
                   isForSle={true}

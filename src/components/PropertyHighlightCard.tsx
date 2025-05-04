@@ -61,7 +61,7 @@ const PropertyHighlightCard = ({
               <div className="xl:pl-[60px] sm:pl-[15px] flex items-center">
                 {PropertyHighlightCardContent.map((item, idx) => (
                   <PropertyDetail
-                    key={idx}
+                    key={item.detail}
                     detail={item.detail}
                     icon={<item.icon size={20} strokeWidth={1.2} />}
                     className={twMerge(
