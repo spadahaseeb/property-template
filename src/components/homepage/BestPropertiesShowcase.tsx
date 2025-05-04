@@ -18,6 +18,8 @@ import PropertyStatsCard from "@/components/PropertyStatsCard";
 import PropertyHighlightCard from "@/components/PropertyHighlightCard";
 
 const BestPropertiesShowcase = () => {
+  const modules = [Navigation, Pagination, Scrollbar, A11y, Autoplay];
+
   return (
     <>
       <section className="section-spacing">
@@ -33,17 +35,11 @@ const BestPropertiesShowcase = () => {
           <main>
             <div className="grid xl:grid-cols-2 grid-cols-1 gap-[30px]">
               <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-[30px] gap-[15px]">
-                <div className="lg:col-span-2 min-h-[334px] relative">
+                <div className="lg:col-span-2 relative">
                   {/* thumbnail 1  */}
                   <Swiper
                     className="overflow-visible"
-                    modules={[
-                      Navigation,
-                      Pagination,
-                      Scrollbar,
-                      A11y,
-                      Autoplay,
-                    ]}
+                    modules={modules}
                     autoplay={{ delay: 2000 }}
                     navigation={{
                       prevEl: ".swiper-naviagtion-button-left-bstprpt",
@@ -55,19 +51,16 @@ const BestPropertiesShowcase = () => {
                     spaceBetween={15}
                   >
                     {BestPropertiesShowcaseContent.map((item) => (
-                      <SwiperSlide className="select-none min-h-[334px] w-full h-full">
-                        <Image
-                          src={`/images/${item.img}`}
-                          alt={item.alt}
-                          width={item.width}
-                          height={item.height}
-                          className="w-full h-full rounded-medium"
-                        />
+                      <SwiperSlide className="select-none w-full h-[max-content]">
+                        <Thumbnail image={item.img} />
                       </SwiperSlide>
                     ))}
                   </Swiper>
 
-                  <div className="absolute top-0 left-0 right-0 bottom-0 z-10 flex items-center m-auto sm:m-0 gap-[25px] pt-[25px] justify-between w-full px-[10px] pointer-events-none">
+                  <div
+                    className="absolute top-0 left-0 right-0 bottom-0 z-10 flex items-center m-auto 
+                    sm:m-0 gap-[25px] pt-[25px] justify-between w-full px-[10px] pointer-events-none"
+                  >
                     <div className="swiper-naviagtion-button-left-bstprpt swiper-naviagtion-button-bstprpt bg-transparent border-none text-white backdrop-blur-[70px] pointer-events-auto">
                       <ChevronLeft size={16} strokeWidth={1} />
                     </div>

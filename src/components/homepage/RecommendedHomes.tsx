@@ -18,6 +18,21 @@ import { RecommendedHomesContent } from "@/components/homepage/content/content";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const RecommendedHomes = () => {
+  const breakpoints = {
+    10: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    700: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    1240: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  };
+
   return (
     <>
       <section className="bg-white-soft rounded-medium section-spacing">
@@ -37,34 +52,16 @@ const RecommendedHomes = () => {
               <Swiper
                 className="overflow-visible"
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-                autoplay={{
-                  delay: 2000,
-                  disableOnInteraction: false,
-                }}
+                autoplay={{ delay: 2000 }}
                 slidesPerView={3}
                 navigation={{
                   nextEl: ".swiper-button-next-rh",
                   prevEl: ".swiper-button-prev-rh",
                 }}
-                pagination={{
-                  clickable: true,
-                }}
+                pagination={{ clickable: true }}
                 loop={true}
                 speed={500}
-                breakpoints={{
-                  10: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                  },
-                  700: {
-                    slidesPerView: 2,
-                    spaceBetween: 15,
-                  },
-                  1240: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                  },
-                }}
+                breakpoints={breakpoints}
               >
                 {RecommendedHomesContent.map((item) => (
                   <SwiperSlide key={item.title} className="select-none">
