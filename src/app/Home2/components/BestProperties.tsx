@@ -11,6 +11,7 @@ import {
 import PropertyDetails from "@/components/shared/PropertyDetails";
 import PropertyPrice from "@/components/shared/PropertyPrice";
 import PropertyAdress from "@/components/shared/PropertyAdress";
+import { ArrowRight } from "lucide-react";
 
 const BestProperties = () => {
   return (
@@ -65,7 +66,16 @@ const BestProperties = () => {
                   data={BestPropertiesShowcaseContent}
                 />
                 <PropertyVideoPreviewCard />
-                <PropertyStatsCard />
+                <PropertyStatsCard
+                  className="bg-accent-gold text-black"
+                  isButton={true}
+                  buttonLink="/"
+                  buttonIcon={<ArrowRight size={20} strokeWidth={1} />}
+                  buttonVariant="v3"
+                  title1="280+"
+                  title2="properties"
+                  discription="Explore our wide variety of properties to fid your dream home today"
+                />
               </div>
             </div>
           </main>

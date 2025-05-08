@@ -1,37 +1,79 @@
-import { ArrowRight } from "lucide-react";
-// components
-import Button from "@/components/shared/Button";
 import { twMerge } from "tailwind-merge";
 import { PropertyStatsCardPropType } from "@/assets/types";
+import parse from "html-react-parser";
+// components
+import Button from "@/components/shared/Button";
 
-const PropertyStatsCard = ({ className }: PropertyStatsCardPropType) => {
+const PropertyStatsCard = ({
+  className,
+  cardBoxStyles,
+  title1,
+  title2,
+  discription,
+  isButton,
+  buttonIcon,
+  buttonVariant,
+  buttonLink,
+  title1Styles,
+  title2Styles,
+  discriptionStyles,
+}: PropertyStatsCardPropType) => {
   return (
     <>
       <div
         className={twMerge(
-          "min-h-[329px] h-full w-full bg-accent-gold text-black rounded-medium flex p-10 flex-col justify-between",
+          "h-[max-content] w-full bg-accent-gold text-black rounded-medium p-10",
           className
         )}
       >
-        <div>
-          <span className="font-medium text-[40px] font-roboto pb-[5px]">
-            280+
-          </span>
-          <h6 className="text-[19px] font-normal pb-5">properties</h6>
-          <p className="pb-10 font-roboto font-normal text-16 leading-7">
-            Explore our wide variety of properties to find your dream home today
-          </p>
-        </div>
+        <div
+          className={twMerge("flex flex-col justify-between", cardBoxStyles)}
+        >
+          <div>
+            {title1 && (
+              <span
+                className={twMerge(
+                  "font-medium text-[40px] font-roboto pb-[5px] block",
+                  title1Styles
+                )}
+              >
+                {parse(title1)}
+              </span>
+            )}
+            {title2 && (
+              <h6
+                className={twMerge(
+                  "text-[19px] font-normal pb-5",
+                  title2Styles
+                )}
+              >
+                {parse(title2)}
+              </h6>
+            )}
+            {discription && (
+              <p
+                className={twMerge(
+                  "pb-10 font-roboto font-normal text-16 leading-7",
+                  discriptionStyles
+                )}
+              >
+                {discription}
+              </p>
+            )}
+          </div>
 
-        <div className="flex items-center justify-end">
-          <Button
-            buttonIcon={<ArrowRight size={20} strokeWidth={1} />}
-            variant="v3"
-            className="bg-black-primary/20 bg-white text-black"
-            buttonIconStyles="p-0"
-            isLinkEnable={true}
-            buttonLink="/"
-          />
+          {isButton && (
+            <div className="flex items-center justify-end">
+              <Button
+                buttonIcon={buttonIcon}
+                variant={buttonVariant}
+                className="bg-black-primary/20 bg-white text-black"
+                buttonIconStyles="p-0"
+                isLinkEnable={true}
+                buttonLink={buttonLink}
+              />
+            </div>
+          )}
         </div>
       </div>
     </>

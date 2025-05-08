@@ -5,6 +5,7 @@ import { ChangeEvent, useEffect, useState } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/Tabs";
 import { SearchKeywordsContent } from "@/assets/content";
 import { PropertySearchBarPropType } from "@/assets/types";
+import { twMerge } from "tailwind-merge";
 
 type ContentProps = {
   tab: string;
@@ -76,7 +77,13 @@ const Content = ({
   </div>
 );
 
-const PropertySearchBar = ({ isTabEnable }: PropertySearchBarPropType) => {
+const PropertySearchBar = ({
+  isTabEnable,
+  TabsListStyles,
+  TabsTriggerStyles,
+  className,
+  variant,
+}: PropertySearchBarPropType) => {
   const [searchValue, setSearchValue] = useState("");
   const [matchedKeywords, setMatchedKeywords] = useState<string[]>([]);
   const [tab, setTab] = useState("sale");
@@ -95,20 +102,31 @@ const PropertySearchBar = ({ isTabEnable }: PropertySearchBarPropType) => {
   return isTabEnable ? (
     <Tabs
       defaultValue="sale"
-      className="w-[max-content] m-auto"
+      className={twMerge("w-[max-content] m-auto", className)}
       value={tab}
       onValueChange={setTab}
     >
-      <TabsList className="bg-transparent flex md:gap-16 gap-5 mb-[35px]">
+      <TabsList
+        className={twMerge(
+          "bg-transparent flex md:gap-16 gap-5 mb-[35px]",
+          TabsListStyles
+        )}
+      >
         <TabsTrigger
           value="sale"
-          className="rounded-none bg-transparent text-white text-18 font-roboto font-normal border-b-2 border-transparent data-[state=active]:border-white duration-300 ease-out capitalize p-0 pb-2"
+          className={twMerge(
+            "rounded-none bg-transparent text-white text-18 font-roboto font-normal border-b-2 border-transparent data-[state=active]:border-white duration-300 ease-out capitalize p-0 pb-2",
+            TabsTriggerStyles
+          )}
         >
           sale
         </TabsTrigger>
         <TabsTrigger
           value="rent"
-          className="rounded-none bg-transparent text-white text-18 font-roboto font-normal border-b-2 border-transparent data-[state=active]:border-white duration-300 ease-out capitalize p-0 pb-2"
+          className={twMerge(
+            "rounded-none bg-transparent text-white text-18 font-roboto font-normal border-b-2 border-transparent data-[state=active]:border-white duration-300 ease-out capitalize p-0 pb-2",
+            TabsTriggerStyles
+          )}
         >
           rent
         </TabsTrigger>

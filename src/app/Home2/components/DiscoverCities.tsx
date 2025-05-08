@@ -60,7 +60,7 @@ const DiscoverCities = () => {
               {DiscoverCitiesContent.map((item) => (
                 <SwiperSlide
                   className="select-none lg:pb-[50px] md:pb-[30px] sm:pb-[20px] pb-0"
-                  key={item.properties}
+                  key={item.city}
                 >
                   <a
                     href="#"

@@ -14,9 +14,11 @@ export type ArticlePropType = {
   image: string;
 };
 
+export type ButtonVariantType = "v1" | "v2" | "v3" | "v4" | "v5" | "default";
+
 export type ButtonPropType = {
   hover?: boolean;
-  variant?: "v1" | "v2" | "v3" | "v4" | "v5" | "default";
+  variant?: ButtonVariantType;
   className?: string;
   buttonText?: string;
   buttonIcon?: ReactNode;
@@ -142,9 +144,24 @@ export type PropertyThumbSliderPropType = {
 };
 
 export type PropertyStatsCardPropType = {
+  cardBoxStyles?: string;
   className?: string;
+  title1?: string;
+  title2?: string;
+  discription?: string;
+  isButton?: boolean;
+  buttonIcon?: ReactNode;
+  buttonVariant?: ButtonVariantType;
+  buttonLink?: string;
+  title1Styles?: string;
+  title2Styles?: string;
+  discriptionStyles?: string;
 };
 
 export type PropertySearchBarPropType = {
   isTabEnable: boolean;
+  TabsListStyles?: string;
+  TabsTriggerStyles?: string;
+  className?: string;
+  variant?: string;
 };

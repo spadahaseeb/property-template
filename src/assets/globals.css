@@ -5,7 +5,7 @@
 *,
 *::before,
 *::after {
-  @apply border-border font-roboto;
+  @apply box-border font-roboto;
 }
 
 /* layer components  */

@@ -11,6 +11,7 @@ import PropertyVideoPreviewCard from "@/components/shared/PropertyVideoPreviewCa
 import PropertyDetails from "@/components/shared/PropertyDetails";
 import PropertyAdress from "@/components/shared/PropertyAdress";
 import PropertyPrice from "@/components/shared/PropertyPrice";
+import { ArrowRight } from "lucide-react";
 
 const BestPropertiesShowcase = () => {
   return (
@@ -32,7 +33,18 @@ const BestPropertiesShowcase = () => {
                 <div className="lg:col-span-2 relative">
                   <PropertyThumbSlider data={BestPropertiesShowcaseContent} />
                 </div>
-                <PropertyStatsCard className="bg-black-primary text-white" />
+
+                <PropertyStatsCard
+                  className="bg-black-primary text-white"
+                  isButton={true}
+                  buttonLink="/"
+                  buttonIcon={<ArrowRight size={20} strokeWidth={1} />}
+                  buttonVariant="v3"
+                  title1="280+"
+                  title2="properties"
+                  discription="Explore our wide variety of properties to fid your dream home today"
+                />
+
                 <PropertyVideoPreviewCard />
               </div>
 

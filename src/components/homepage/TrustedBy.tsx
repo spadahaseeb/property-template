@@ -1,11 +1,12 @@
 import Image from "next/image";
 // components
 import { TrustedByContent } from "@/assets/content";
+import { twMerge } from "tailwind-merge";
 
-const TrustBy = () => {
+const TrustBy = ({ className }: { className?: string }) => {
   return (
     <>
-      <div className="text-center pt-[75px]">
+      <div className={twMerge("text-center pt-[75px]", className)}>
         <p className="font-normal text-[17px] leading-8 pb-[30px]">
           Thousands of world’s leading companies trust Space
         </p>

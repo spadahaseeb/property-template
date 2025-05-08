@@ -40,7 +40,11 @@ const Services = () => {
                   {/* icon  */}
                   <div className="relative">
                     <span className="absolute top-0 left-0 w-[30px] h-[30px] bg-accent-gold rounded-full translate-x-[-30%] translate-y-[45%]"></span>
-                    <Home size={35} strokeWidth={1} className="relative z-10" />
+                    <item.icon
+                      size={35}
+                      strokeWidth={1}
+                      className="relative z-10"
+                    />
                   </div>
 
                   {/* service-text  */}
