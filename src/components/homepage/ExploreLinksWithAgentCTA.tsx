@@ -1,8 +1,8 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
+import { ExploreLinksWithAgentCTAContent } from "@/assets/content";
 import Link from "next/link";
 // components
-import Heading from "@/components/Heading";
-import { ExploreLinksWithAgentCTAContent } from "@/components/homepage/content/content";
+import Heading from "@/components/shared/Heading";
 
 const ExploreLinksWithAgentCTA = () => {
   return (

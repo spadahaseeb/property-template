@@ -1,8 +1,7 @@
-// components
-
-import Heading from "@/components/Heading";
-import Button from "@/components/Button";
 import { ArrowRight } from "lucide-react";
+// components
+import Heading from "@/components/shared/Heading";
+import Button from "@/components/shared/Button";
 
 const AgentCTA = () => {
   return (
@@ -18,7 +17,7 @@ const AgentCTA = () => {
               heading="Become a Real Estate Agent"
               discription="We only work with the best companies around the globe"
               className="font-medium xmd:text-left text-center"
-              spacing="text-[30px] leading-8 pb-[10px]"
+              headingStyles="text-[30px] leading-8 pb-[10px]"
             />
 
             {/* section content  */}

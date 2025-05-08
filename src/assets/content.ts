@@ -16,11 +16,9 @@ export const NavigationLinksContent = [
     icon: true,
     hoverLinks: [
       { text: "home 1", link: "/" },
-      { text: "home 2", link: "/" },
-      { text: "home 3", link: "/" },
-      { text: "home 4", link: "/" },
-      { text: "home 5", link: "/" },
-      { text: "home 6", link: "/" },
+      { text: "home 2", link: "/Home2" },
+      { text: "home 3", link: "/Home3" },
+      { text: "home 4", link: "/Home4" },
     ],
   },
   {
@@ -123,34 +121,94 @@ export const RecommendedHomesContent = [
   {
     image: "product1.webp",
     title: "Skyper Pool Apartment",
-    location: "1020 Bloomingdale Ave",
+    adress: "1020 Bloomingdale Ave",
     price: "$280,000",
     isForSale: true,
     isFeatured: false,
+    isMonthly: false,
+    details: [
+      {
+        detail: "4 beds",
+        icon: Bed,
+      },
+      {
+        detail: "4 baths",
+        icon: Bath,
+      },
+      {
+        detail: "400 sqft",
+        icon: Copy,
+      },
+    ],
   },
   {
     image: "product2.webp",
-    title: "Skyper Pool Apartment",
-    location: "1020 Bloomingdale Ave",
+    title: "North Dillard Street",
+    adress: "1020 Bloomingdale Ave",
     price: "$280,000",
     isForSale: true,
     isFeatured: false,
+    isMonthly: false,
+    details: [
+      {
+        detail: "4 beds",
+        icon: Bed,
+      },
+      {
+        detail: "4 baths",
+        icon: Bath,
+      },
+      {
+        detail: "400 sqft",
+        icon: Copy,
+      },
+    ],
   },
   {
     image: "product3.webp",
-    title: "Skyper Pool Apartment",
-    location: "1020 Bloomingdale Ave",
+    title: "Eaton Garth Penthouse",
+    adress: "1020 Bloomingdale Ave",
     price: "$280,000",
     isForSale: true,
     isFeatured: true,
+    isMonthly: true,
+    details: [
+      {
+        detail: "4 beds",
+        icon: Bed,
+      },
+      {
+        detail: "4 baths",
+        icon: Bath,
+      },
+      {
+        detail: "400 sqft",
+        icon: Copy,
+      },
+    ],
   },
   {
     image: "product3.webp",
-    title: "Skyper Pool Apartment 4",
-    location: "1020 Bloomingdale Ave",
+    title: "Eaton Garth Penthouse 2",
+    adress: "1020 Bloomingdale Ave",
     price: "$280,000",
     isForSale: true,
     isFeatured: true,
+    isMonthly: false,
+    details: [
+      {
+        detail: "4 beds",
+        icon: Bed,
+      },
+      {
+        detail: "4 baths",
+        icon: Bath,
+      },
+      {
+        detail: "400 sqft",
+        icon: Copy,
+      },
+    ],
   },
 ];
 
@@ -183,13 +241,13 @@ export const WhyChooseUsContent = [
 export const BestPropertiesShowcaseContent = [
   {
     img: "bp1.webp",
-    alt: "home-interrior",
+    alt: "home-interrior1",
     width: 600,
     height: 400,
   },
   {
     img: "bp1.webp",
-    alt: "home-interrior",
+    alt: "home-interrior2",
     width: 600,
     height: 400,
   },

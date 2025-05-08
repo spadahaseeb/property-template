@@ -1,7 +1,7 @@
 // components
-import Heading from "@/components/Heading";
-import Article from "@/components/Article";
-import { RecentArticlesContent } from "@/components/homepage/content/content";
+import Heading from "@/components/shared/Heading";
+import Article from "@/components/shared/Article";
+import { RecentArticlesContent } from "@/assets/content";
 
 const RecentArticles = () => {
   return (
@@ -12,7 +12,7 @@ const RecentArticles = () => {
           <Heading
             heading="Recent Articles & News"
             discription="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            spacing="pb-5"
+            headingStyles="pb-5"
             className="pb-6"
           />
 
@@ -21,7 +21,7 @@ const RecentArticles = () => {
             <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-[30px] gap-[15px]">
               {RecentArticlesContent.map((item) => (
                 <Article
-                  key={item.title}
+                  key={item.date}
                   date={item.date}
                   title={item.title}
                   image={item.image}

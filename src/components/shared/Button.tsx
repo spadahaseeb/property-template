@@ -1,23 +1,10 @@
+import { ButtonPropType } from "@/assets/types";
 import Link from "next/link";
-import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 import { tv } from "tailwind-variants";
 
-// types
-interface ButtonPropType {
-  hover?: boolean;
-  variant?: "v1" | "v2" | "v3";
-  className?: string;
-  buttonText?: string;
-  buttonIcon?: ReactNode;
-  buttonIconStyles?: string;
-  isLinkEnable: boolean;
-  buttonLink?: string;
-  onClick?: React.MouseEventHandler<HTMLAnchorElement | HTMLButtonElement>;
-}
-
 // component
-const ButtonT = ({
+const Button = ({
   hover = false,
   variant,
   className,
@@ -66,7 +53,7 @@ const ButtonT = ({
   );
 };
 
-export default ButtonT;
+export default Button;
 
 // tailwind-variants
 const ButtonVariant = tv({
@@ -76,6 +63,8 @@ const ButtonVariant = tv({
       v1: "w-[148px] h-[42px] text-[15px] font-medium border border-white rounded-lg text-white bg-transparent hover:bg-white hover:text-black",
       v2: "w-[161px] h-[54px] bg-accent-gold text-black text-[15px] rounded-normal font-medium",
       v3: "w-[51px] h-[51px] rounded-full font-medium",
+      v4: "w-10 h-10 bg-white text-black text-[13px] rounded-full font-normal",
+      v5: "w-[max-content] h-[max-content] border-black text-black hover:bg-black-deep hover:text-white border-black border-1 rounded-full hover:border-transparent",
       default: "w-[max-content] h-[max-content] text-[15px] font-medium",
     },
   },

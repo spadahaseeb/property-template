@@ -1,6 +1,6 @@
 // components
-import Stats from "@/components/Stats";
-import { ExpertiseStatsContent } from "@/components/homepage/content/content";
+import { ExpertiseStatsContent } from "@/assets/content";
+import Stats from "@/components/shared/Stats";
 
 const ExpertiseStats = () => {
   return (

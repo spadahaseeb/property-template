@@ -33,6 +33,7 @@ const config: Config = {
           muted: "#F9F9F9",
           soft: "#F6F8FA",
           warm: "#FFF8F6",
+          grayed: "#F7F7F7",
         },
         gray: {
           light: "#E1E1E1",
@@ -112,9 +113,6 @@ const config: Config = {
         "3": "3px",
         "4": "4px",
         "5": "5px",
-        "6": "6px",
-        "7": "7px",
-        full: "100%",
       },
       borderRadius: {
         xsm: "3px",
@@ -123,7 +121,7 @@ const config: Config = {
         medium: "16px",
         lg: "50px",
         xlg: "100px",
-        md: "calc(var(--radius) - 2px)",
+        md: "16px",
       },
     },
   },

@@ -1,47 +1,39 @@
+// components
+import PropertyHighlightCard from "@/components/shared/PropertyHighlightCard";
+import Heading from "@/components/shared/Heading";
+import PropertyThumbSlider from "@/components/shared/PropertyThumbSlider";
+import PropertyStatsCard from "@/components/shared/PropertyStatCard";
+import PropertyVideoPreviewCard from "@/components/shared/PropertyVideoPreviewCard";
 import {
   BestPropertiesShowcaseContent,
   PropertyHighlightCardContent,
 } from "@/assets/content";
-// components
-import Heading from "@/components/shared/Heading";
-import PropertyThumbSlider from "@/components/shared/PropertyThumbSlider";
-import PropertyStatsCard from "@/components/shared/PropertyStatCard";
-import PropertyHighlightCard from "@/components/shared/PropertyHighlightCard";
-import PropertyVideoPreviewCard from "@/components/shared/PropertyVideoPreviewCard";
 import PropertyDetails from "@/components/shared/PropertyDetails";
-import PropertyAdress from "@/components/shared/PropertyAdress";
 import PropertyPrice from "@/components/shared/PropertyPrice";
+import PropertyAdress from "@/components/shared/PropertyAdress";
 
-const BestPropertiesShowcase = () => {
+const BestProperties = () => {
   return (
     <>
-      <section className="section-spacing">
+      <section className="lg:pt-[165px] lg:pb-[169px] sm:py-[100px] pb-[70px] bg-black-primary">
         <div className="container">
-          {/* section-heading  */}
+          {/* heading-section  */}
           <Heading
             heading="Best Properties"
             discription="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            className="pb-10"
+            className="pb-6 text-white"
+            headingStyles="pb-[5px]"
           />
 
           {/* section-content  */}
           <main>
-            <div className="grid xl:grid-cols-2 grid-cols-1 gap-[30px]">
-              {/* col1  */}
-              <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-[30px] gap-[15px]">
-                <div className="lg:col-span-2 relative">
-                  <PropertyThumbSlider data={BestPropertiesShowcaseContent} />
-                </div>
-                <PropertyStatsCard className="bg-black-primary text-white" />
-                <PropertyVideoPreviewCard />
-              </div>
-
-              {/* col2  */}
+            <div className="grid xxl:grid-cols-2 grid-cols-1 gap-[30px] h-[max-content]">
+              {/* highlight-card  */}
               <PropertyHighlightCard
                 imgSrc="bp3.webp"
-                isForSle={true}
                 isFeatured={true}
-                className="min-h-[700px]"
+                isForSle={true}
+                className="w-full md:min-h-[700px] min-h-[450px]"
               >
                 <div>
                   <PropertyAdress
@@ -50,7 +42,7 @@ const BestPropertiesShowcase = () => {
                     className="pb-[29px]"
                   />
 
-                  <div className="flex items-center">
+                  <div className="flex md:items-center md:flex-row flex-col">
                     <PropertyPrice
                       className="text-white"
                       isMonthly={false}
@@ -58,13 +50,23 @@ const BestPropertiesShowcase = () => {
                     />
                     <PropertyDetails
                       data={PropertyHighlightCardContent}
-                      className="bg-transparent p-0 pl-[59px]"
+                      className="bg-transparent p-0 md:pl-[59px] pt-5 flex-wrap"
                       priceStyles="text-white pr-[60px]"
                       veryChildStyles="border-white/30"
                     />
                   </div>
                 </div>
               </PropertyHighlightCard>
+
+              {/* slider/ stats/ video-preview card  */}
+              <div className="grid md:grid-cols-2 grid-cols-1 gap-[30px]">
+                <PropertyThumbSlider
+                  className="md:min-h-[334px] md:col-span-2"
+                  data={BestPropertiesShowcaseContent}
+                />
+                <PropertyVideoPreviewCard />
+                <PropertyStatsCard />
+              </div>
             </div>
           </main>
         </div>
@@ -72,4 +74,5 @@ const BestPropertiesShowcase = () => {
     </>
   );
 };
-export default BestPropertiesShowcase;
+
+export default BestProperties;

@@ -1,5 +1,5 @@
 // components
-import { FooterLinksContent } from "@/components/homepage/content/content";
+import { FooterLinksContent } from "@/assets/content";
 import Newsletter from "@/components/layout/footer/Newsletter";
 import LinksWrapper from "@/components/layout/footer/LinksWrapper";
 import GetApp from "@/components/layout/footer/GetApp";

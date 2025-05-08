@@ -1,5 +1,5 @@
 // componemts
-import Button from "@/components/Button";
+import Button from "@/components/shared/Button";
 import { ArrowRight } from "lucide-react";
 
 const Newsletter = () => {

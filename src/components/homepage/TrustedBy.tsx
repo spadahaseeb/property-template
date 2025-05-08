@@ -1,6 +1,6 @@
 import Image from "next/image";
 // components
-import { TrustedByContent } from "@/components/homepage/content/content";
+import { TrustedByContent } from "@/assets/content";
 
 const TrustBy = () => {
   return (
@@ -18,6 +18,7 @@ const TrustBy = () => {
               key={elem.src}
               width={elem.width}
               height={elem.height}
+              className={`h-auto`}
             />
           ))}
         </div>

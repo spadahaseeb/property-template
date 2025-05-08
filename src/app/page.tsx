@@ -1,5 +1,5 @@
 // componnets
-import HeroSection from "@/components/homepage/HeroSection";
+import Hero from "@/components/homepage/Hero";
 import RecommendedHomes from "@/components/homepage/RecommendedHomes";
 import DiscoverCities from "@/components/homepage/DiscoverCities";
 import WhyChooseUs from "@/components/homepage/WhyChooseUs";
@@ -10,20 +10,22 @@ import RecentArticles from "@/components/homepage/RecentArticles";
 import ExploreLinksWithAgentCTA from "@/components/homepage/ExploreLinksWithAgentCTA";
 import AgentCTA from "@/components/homepage/AgentCTA";
 
-const HomePage = () => {
+const Home1 = () => {
   return (
     <>
-      <HeroSection />
-      <RecommendedHomes />
-      <DiscoverCities />
-      <WhyChooseUs />
-      <BestPropertiesShowcase />
-      <ExpertiseShowcase />
-      <Testimonials />
-      <RecentArticles />
-      <ExploreLinksWithAgentCTA />
-      <AgentCTA />
+      <div className="md:p-5 p-[10px]">
+        <Hero />
+        <RecommendedHomes />
+        <DiscoverCities />
+        <WhyChooseUs />
+        <BestPropertiesShowcase />
+        <ExpertiseShowcase />
+        <Testimonials />
+        <RecentArticles />
+        <ExploreLinksWithAgentCTA />
+        <AgentCTA />
+      </div>
     </>
   );
 };
-export default HomePage;
+export default Home1;

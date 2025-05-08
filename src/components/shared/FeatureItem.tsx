@@ -1,21 +1,15 @@
 // components
-
+import { FeatureItemPropType } from "@/assets/types";
 import { twMerge } from "tailwind-merge";
 
 // types
-type featureItemPropType = {
-  featureIcon: React.ReactNode;
-  featureTitle: string;
-  discription: string;
-  className?: string;
-};
 
 const FeatureItem = ({
   featureIcon,
   featureTitle,
   discription,
   className,
-}: featureItemPropType) => {
+}: FeatureItemPropType) => {
   return (
     <div
       className={twMerge(

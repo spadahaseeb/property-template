@@ -1,8 +1,8 @@
-// components
-import FeatureItem from "@/components/FeatureItem";
-import Heading from "@/components/Heading";
-import { WhyChooseUsContent } from "@/components/homepage/content/content";
 import { twMerge } from "tailwind-merge";
+// components
+import { WhyChooseUsContent } from "@/assets/content";
+import Heading from "@/components/shared/Heading";
+import FeatureItem from "@/components/shared/FeatureItem";
 
 const WhyChooseUs = () => {
   return (

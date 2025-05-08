@@ -1,7 +1,7 @@
 // components
-import Heading from "@/components/Heading";
-import { DiscoverCitiesContent } from "@/components/homepage/content/content";
-import Thumbnail from "../Thumbnail";
+import Heading from "@/components/shared/Heading";
+import { DiscoverCitiesContent } from "@/assets/content";
+import Thumbnail from "@/components/shared/Thumbnail";
 
 const DiscoverCities = () => {
   return (

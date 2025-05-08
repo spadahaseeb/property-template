@@ -1,12 +1,6 @@
+import { PropertyTagPropsType } from "@/assets/types";
 import { twMerge } from "tailwind-merge";
 import { tv } from "tailwind-variants";
-
-// types
-type PropertyTagPropsType = {
-  className?: string;
-  variant?: "v1" | "v2";
-  text: string;
-};
 
 const PropertyTag = ({ variant, className, text }: PropertyTagPropsType) => {
   return (

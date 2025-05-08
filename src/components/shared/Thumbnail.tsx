@@ -1,16 +1,8 @@
+"use client";
 // components
-
+import { ThumbnailPropType } from "@/assets/types";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
-
-// types
-type ThumbnailPropType = {
-  image: string;
-  children?: React.ReactNode;
-  className?: string;
-  background?: boolean;
-  forground?: boolean;
-};
 
 const Thumbnail = ({
   image,
@@ -45,8 +37,8 @@ const Thumbnail = ({
             <Image
               src={`/images/${image}`}
               alt={image}
-              width={600}
-              height={600}
+              width={1000}
+              height={1000}
               className="w-full h-full object-cover"
             />
           </div>

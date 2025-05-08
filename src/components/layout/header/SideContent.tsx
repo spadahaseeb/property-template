@@ -3,7 +3,7 @@
 import { Phone, UserRound } from "lucide-react";
 import Link from "next/link";
 // components
-import Button from "@/components/Button";
+import Button from "@/components/shared/Button";
 
 const SideContent = () => {
   return (

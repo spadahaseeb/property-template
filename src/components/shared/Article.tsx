@@ -1,15 +1,9 @@
-import { ArrowRight, MoveRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import parse from "html-react-parser";
 // components
-import Thumbnail from "@/components/Thumbnail";
-import Button from "@/components/Button";
-
-// types
-type ArticlePropType = {
-  date: string;
-  title: string;
-  image: string;
-};
+import Thumbnail from "@/components/shared/Thumbnail";
+import Button from "@/components/shared/Button";
+import { ArticlePropType } from "@/assets/types";
 
 // component
 const Article = ({ date, title, image }: ArticlePropType) => {

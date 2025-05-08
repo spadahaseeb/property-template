@@ -6,20 +6,25 @@ import {
   A11y,
   Autoplay,
 } from "swiper/modules";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-// components
-import Stats from "@/components/Stats";
-import Heading from "@/components/Heading";
-import Review from "@/components/homepage/Review";
-import TrustedBy from "@/components/homepage/TrustedBy";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { twMerge } from "tailwind-merge";
+// components
+import Stats from "@/components/shared/Stats";
+import Heading from "@/components/shared/Heading";
+import Review from "@/components/shared/Review";
+import TrustedBy from "@/components/homepage/TrustedBy";
 
-const Testimonials = () => {
+const Testimonials = ({ className }: { className?: string }) => {
   return (
     <>
-      <section className="lg:pt-[187px] lg:pb-[155px] py-[100px]">
+      <section
+        className={twMerge(
+          "lg:pt-[187px] lg:pb-[155px] py-[100px] text-black",
+          className
+        )}
+      >
         <div className="container">
           {/* heading & review wrapper  */}
           <div className="gap-20 flex xl:flex-row flex-col justify-between pb-[76px]">
@@ -29,7 +34,7 @@ const Testimonials = () => {
                 heading="What our customers are <br className='hidden sm:block' /> saying us?"
                 discription="Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like."
                 className="pb-5 sm:text-left text-transform-none"
-                spacing="pb-5"
+                headingStyles="pb-5"
               />
 
               {/* stats  */}
@@ -71,10 +76,10 @@ const Testimonials = () => {
               </Swiper>
 
               <div className="flex items-center m-auto w-[max-content] sm:m-0 gap-[25px] pt-[25px]">
-                <div className="swiper-naviagtion-button-left-tstm swiper-naviagtion-button-tstm">
+                <div className="swiper-naviagtion-button-left-tstm testimonialSwiperBtn">
                   <ChevronLeft size={16} strokeWidth={1} />
                 </div>
-                <div className="swiper-naviagtion-button-right-tstm swiper-naviagtion-button-tstm">
+                <div className="swiper-naviagtion-button-right-tstm testimonialSwiperBtn">
                   <ChevronRight size={16} strokeWidth={1} />
                 </div>
               </div>

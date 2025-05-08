@@ -1,13 +1,5 @@
+import { LinksWrapperPropType } from "@/assets/types";
 import { twMerge } from "tailwind-merge";
-
-// types
-interface LinksWrapperPropType {
-  data: {
-    tab: string;
-    links: string[];
-  };
-  className?: string;
-}
 
 const LinksWrapper = ({ data, className }: LinksWrapperPropType) => {
   return (

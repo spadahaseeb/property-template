@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 // components
-import Thumbnail from "@/components/Thumbnail";
-import Heading from "@/components/Heading";
-import Button from "@/components/Button";
+import Thumbnail from "@/components/shared/Thumbnail";
+import Heading from "@/components/shared/Heading";
+import Button from "@/components/shared/Button";
 import ExpertiseStats from "@/components/homepage/ExpertiseStats";
 
 const ExpertiseShowcase = () => {
@@ -32,10 +32,10 @@ const ExpertiseShowcase = () => {
               <div className="pb-5">
                 <Heading
                   heading="Local expertise for luxury homes"
-                  className="pb-5 sm:text-left text-center normal-case sm:max-w-[334px]"
+                  className="pb-5 sm:text-left text-center normal-case sm:max-w-[334px] text-white"
                 />
                 <Heading
-                  className="normal-case max-w-[700px] w-full sm:text-left text-center"
+                  className="normal-case max-w-[700px] w-full sm:text-left text-center text-white"
                   discription="Pellentesque egestas elementum egestas faucibus sem. Velit nunc egestas ut morbi. Leo diam diam nibh eget fermentum massa pretium. Mi mauris nulla ac dictum ut mauris non."
                 />
               </div>

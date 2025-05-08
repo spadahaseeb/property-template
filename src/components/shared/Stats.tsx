@@ -1,16 +1,6 @@
-import { ReactNode } from "react";
+import { StatsPropType } from "@/assets/types";
 import { twMerge } from "tailwind-merge";
 // component
-
-// types
-type StatsPropType = {
-  statStyle?: string;
-  statDiscriptionStyle?: string;
-  stat: string;
-  statDiscription: string;
-  className?: string;
-  children?: ReactNode;
-};
 
 export const Stats = ({
   statStyle,

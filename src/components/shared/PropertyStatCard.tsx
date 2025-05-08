@@ -1,12 +1,19 @@
-// components
-import Button from "@/components/Button";
 import { ArrowRight } from "lucide-react";
+// components
+import Button from "@/components/shared/Button";
+import { twMerge } from "tailwind-merge";
+import { PropertyStatsCardPropType } from "@/assets/types";
 
-const PropertyStatsCard = () => {
+const PropertyStatsCard = ({ className }: PropertyStatsCardPropType) => {
   return (
     <>
-      <div className="min-h-[329px] h-full w-full bg-black-primary rounded-medium flex p-10 flex-col justify-between">
-        <div className="text-white">
+      <div
+        className={twMerge(
+          "min-h-[329px] h-full w-full bg-accent-gold text-black rounded-medium flex p-10 flex-col justify-between",
+          className
+        )}
+      >
+        <div>
           <span className="font-medium text-[40px] font-roboto pb-[5px]">
             280+
           </span>

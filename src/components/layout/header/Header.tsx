@@ -8,13 +8,13 @@ import { twMerge } from "tailwind-merge";
 import Navigation from "@/components/layout/header/Navigation";
 import SideContent from "@/components/layout/header/SideContent";
 import useScrollPosition from "@/hooks/useScrollPosition";
-import Button from "@/components/Button";
+import Button from "@/components/shared/Button";
 
 const Header = () => {
   const [IsMenuClicked, setIsMenuClicked] = useState<boolean>(false);
   const handleToogleNavbar = () => setIsMenuClicked(!IsMenuClicked);
 
-  const isScrolled = useScrollPosition(100);
+  const isScrolled = useScrollPosition(50);
   const HeaderStyles = isScrolled
     ? "w-[calc((100%)-80px] border-white/10 rounded-medium bg-black-muted bg-black-deep py-[25px] px-[20px] md:top-5 top-[10px] left-[10px] right-[10px] md:py-[30px] md:px-[30px] md:left-10 md:right-10"
     : "top-0 left-0 right-0 bg-transparent md:py-[50px] md:px-[60px] py-[40px] px-[25px]";
