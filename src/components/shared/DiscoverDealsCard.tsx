@@ -1,17 +1,16 @@
 // components
-
 import { DiscoverDealsCardPropType } from "@/app/Home3/assets/types";
-import PropertyAdress from "./PropertyAdress";
-import PropertyDetails from "./PropertyDetails";
-import PropertyPrice from "./PropertyPrice";
-import PropertyTag from "./PropertyTag";
-import Thumbnail from "./Thumbnail";
+import PropertyAdress from "@/components/shared/PropertyAdress";
+import PropertyDetails from "@/components/shared/PropertyDetails";
+import PropertyPrice from "@/components/shared/PropertyPrice";
+import PropertyTag from "@/components/shared/PropertyTag";
+import Thumbnail from "@/components/shared/Thumbnail";
 
 const DiscoverDealsCard = ({ data }: DiscoverDealsCardPropType) => {
   return (
     <>
       <div>
-        <Thumbnail image={data.imgSrc} className="xxl:min-h-[311px] w-full">
+        <Thumbnail image={data.imgSrc} className="min-h-[311px] w-full">
           <div className="flex items-center gap-[10px] pl-5 pt-[23px]">
             {data.forSale && <PropertyTag variant="v1" text="for sale" />}
             {data.isFeatured && <PropertyTag variant="v2" text="featured" />}

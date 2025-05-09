@@ -18,7 +18,7 @@ const ExploreCities = () => {
             />
           </div>
 
-          <main className="grid grid-cols-5 gap-[30px] text-black">
+          <main className="grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[30px] text-black">
             {ExploreCitiesContent.map((item) => (
               <div key={item.title}>
                 <PropertyCityCard data={item} contentInside={false} />

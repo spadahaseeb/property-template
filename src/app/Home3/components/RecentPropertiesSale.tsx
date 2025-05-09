@@ -8,9 +8,24 @@ import Heading from "@/components/shared/Heading";
 // components
 
 const RecentPropertiesSale = () => {
+  const swiperBreakpoints = {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1080: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  };
+
   return (
     <>
-      <section className="pb-[150px]">
+      <section className="lg:pb-[150px] md:pb-[100px] pb-[60px]">
         <div className="container">
           {/* heading-content  */}
           <div>
@@ -27,11 +42,10 @@ const RecentPropertiesSale = () => {
               className="overflow-visible"
               modules={[Pagination, Scrollbar, A11y, Autoplay]}
               autoplay={{ delay: 2500 }}
-              slidesPerView={4}
               pagination={{ clickable: true }}
               loop={true}
               speed={500}
-              spaceBetween={30}
+              breakpoints={swiperBreakpoints}
             >
               {RecentPropertiesSaleContent.map((item) => (
                 <div key={item.imgSrc}>

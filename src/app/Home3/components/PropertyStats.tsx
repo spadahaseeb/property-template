@@ -1,13 +1,12 @@
 // components
-
 import Heading from "@/components/shared/Heading";
 import PropertyStatsCard from "@/components/shared/PropertyStatCard";
-import { PropertyStatsContent } from "../assets/content";
+import { PropertyStatsContent } from "@/app/Home3/assets/content";
 
 const PropertyStats = () => {
   return (
     <>
-      <section className="pt-[15px] pb-[179px]">
+      <section className="pt-[15px] lg:pb-pb-[179px] md:pb-[100x] pb-[60px]">
         <div className="container">
           {/* heading-content  */}
           <div>
@@ -20,7 +19,7 @@ const PropertyStats = () => {
           </div>
 
           {/* section-content  */}
-          <main className="grid grid-cols-4 gap-[30px]">
+          <main className="grid xxl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[30px]">
             {PropertyStatsContent.map((item) => (
               <div key={item.title1}>
                 <PropertyStatsCard

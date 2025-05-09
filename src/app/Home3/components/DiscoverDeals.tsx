@@ -1,21 +1,21 @@
 "use client";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
+import { Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // components
 import DiscoverDealsCard from "@/components/shared/DiscoverDealsCard";
 import Heading from "@/components/shared/Heading";
-import { DiscoverDealsContent } from "../assets/content";
+import { DiscoverDealsContent } from "@/app/Home3/assets/content";
 
 const DiscoverDeals = () => {
+  const swiperBreakpoints = {
+    10: { spaceBetween: 15, slidesPerView: 1 },
+    768: { spaceBetween: 20, slidesPerView: 2 },
+    1080: { spaceBetween: 30, slidesPerView: 3 },
+  };
+
   return (
     <>
-      <section className="pb-[165px]">
+      <section className="lg:pb-[165px] md:pb-[100x] pb-[60px]">
         <div className="container">
           {/* heading-content  */}
           <div>
@@ -33,11 +33,10 @@ const DiscoverDeals = () => {
               className="overflow-visible"
               modules={[Pagination, Scrollbar, A11y, Autoplay]}
               autoplay={{ delay: 2500 }}
-              slidesPerView={3}
               pagination={{ clickable: true }}
               loop={true}
               speed={500}
-              spaceBetween={30}
+              breakpoints={swiperBreakpoints}
             >
               {DiscoverDealsContent.map((item) => (
                 <div key={item.imgSrc}>

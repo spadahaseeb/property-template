@@ -1,22 +1,19 @@
-// components
-
-import Button from "@/components/shared/Button";
-import Heading from "@/components/shared/Heading";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+// components
+import Button from "@/components/shared/Button";
 
 const DiscoverPlace = () => {
   return (
     <>
-      <section className="py-[220px] relative">
+      <section className="relative xl:py-[220px] lg:py-[150px] md:py-[100px] py-[70px]">
         {/* background-image  */}
-        <div className="absolute top-0 left-0 right-0 bottom-0s">
+        <div className="absolute inset-0">
           <Image
-            src={"/images/DiscoverPlace.png"}
+            fill
+            src="/images/DiscoverPlace.png"
             alt="discover-place background"
-            width={1920}
-            height={700}
-            className="w-full h-[max-content]"
+            className="object-cover w-full h-full"
           />
         </div>
 
@@ -27,7 +24,7 @@ const DiscoverPlace = () => {
         >
           <h1
             className="text-center lg:text-[60px] md:text-[48px] xs:text-[38px] text-[30px] 
-            pb-5 font-medium md:leading-[78px] xs:leading-[60px] leading-[50px]"
+            pb-5 font-medium md:leading-[78px] lg:leading-[60px] leading-[45px]"
           >
             Discover a place {"you'll"} love to live
           </h1>

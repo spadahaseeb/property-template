@@ -1,8 +1,7 @@
 // components
 import Heading from "@/components/shared/Heading";
-import { Home } from "lucide-react";
 import Image from "next/image";
-import { ServicesContent } from "../assets/content";
+import { ServicesContent } from "@/app/Home2/assets/content";
 
 const Services = () => {
   return (

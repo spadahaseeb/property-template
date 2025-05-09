@@ -1,13 +1,12 @@
-// components
-
-import Heading from "@/components/shared/Heading";
 import Image from "next/image";
-import { ServicesContent } from "../assets/content";
+// components
+import Heading from "@/components/shared/Heading";
+import { ServicesContent } from "@/app/Home3/assets/content";
 
 const HowItWorks = () => {
   return (
     <>
-      <section className="pb-[165px]">
+      <section className="lg:pb-[165px] md:pb-[100px] pb-[60px]">
         <div className="container">
           {/* heading-content  */}
           <div>
@@ -20,13 +19,16 @@ const HowItWorks = () => {
           </div>
 
           {/* section-content  */}
-          <main className="grid grid-cols-2 gap-[30px] items-center">
+          <main className="lg:grid xl:grid-cols-2 grid-cols-1 gap-[30px] items-center flex flex-col-reverse">
             {/* services  */}
-            <div className="max-w-[453px] h-[max-content] pl-[47px] border-white-warm border-l-3">
+            <div className="flex gap-[30px] items-center xl:block h-[max-content] lg:pl-[47px] lg:border-white-warm border-transparent border-l-3 justify-center flex-wrap max-w-[720px] lg:max-w-full pt-10 lg:pt-0">
               {ServicesContent.map((item) => (
-                <div key={item.title} className="py-10">
+                <div
+                  key={item.title}
+                  className="lg:py-10 lg:max-w-[453px] max-w-[320px]"
+                >
                   {/* icon  */}
-                  <div className="pb-5">
+                  <div className="pb-5 flex flex-col items-center lg:block">
                     <item.icon
                       size={35}
                       strokeWidth={1}
@@ -35,7 +37,7 @@ const HowItWorks = () => {
                   </div>
 
                   {/* service-text  */}
-                  <div className="text-center sm:text-left">
+                  <div className="lg:text-left text-center">
                     <h5 className="text-[21px] font-medium capitalize">
                       {item.title}
                     </h5>
@@ -52,7 +54,7 @@ const HowItWorks = () => {
                 alt="services-background"
                 width={685}
                 height={748}
-                className="w-full h-[max-content] object-cover rounded-md"
+                className="w-full xl:h-[max-content] h-[500px] object-cover rounded-md"
               />
             </div>
           </main>

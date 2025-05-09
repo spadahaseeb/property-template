@@ -7,6 +7,21 @@ import DiscoverDealsCard from "@/components/shared/DiscoverDealsCard";
 import Heading from "@/components/shared/Heading";
 
 const RecentPropertiesRent = () => {
+  const swiperBreakpoints = {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1080: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  };
+
   return (
     <>
       <section className="section-spacing">
@@ -26,11 +41,10 @@ const RecentPropertiesRent = () => {
               className="overflow-visible"
               modules={[Pagination, Scrollbar, A11y, Autoplay]}
               autoplay={{ delay: 2500 }}
-              slidesPerView={4}
               pagination={{ clickable: true }}
               loop={true}
               speed={500}
-              spaceBetween={30}
+              breakpoints={swiperBreakpoints}
             >
               {RecentPropertiesRentContent.map((item) => (
                 <div key={item.imgSrc}>

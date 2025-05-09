@@ -21,12 +21,12 @@ const Hero = () => {
         <div className="container relative">
           {/* heading-content  */}
           <div className="text-center m-auto w-[max-content]">
-            <h1 className="text-[60px] leading-[78px] normal-case pb-[10px]">
+            <h1 className="lg:text-[60px] md:text-[50px] text-[40px] md:leading-[78px] leading-[60px] normal-case pb-[35px]">
               The <span className="text-blue-primary">#1</span> site real estate
               <br />
               professionals trust*
             </h1>
-            <p className="text-[17px] font-normal pb-5 leading-8">
+            <p className="text-[17px] font-normal pb-[35px] leading-8">
               From as low as $10 per day with limited time offer discounts.
             </p>
           </div>

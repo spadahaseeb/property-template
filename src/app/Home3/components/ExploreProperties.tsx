@@ -19,7 +19,7 @@ const ExploreProperties = () => {
           </div>
 
           {/* section-content  */}
-          <main className="grid grid-cols-5 gap-[30px] text-black">
+          <main className="grid xxl:grid-cols-5 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] text-black">
             {ExplorePropertiesContent.map((item) => (
               <div key={item.title}>
                 <PropertyCityCard data={item} contentInside={true} />
