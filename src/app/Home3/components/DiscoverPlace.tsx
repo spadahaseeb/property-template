@@ -37,7 +37,7 @@ const DiscoverPlace = () => {
           <div className="flex justify-center m-auto">
             <Button
               variant="v2"
-              className="bg-blue-primary normal-case text-white w-[191px] h-[54px]"
+              className="w-[140px] h-[38px] text-[11px] bg-blue-primary normal-case text-white lg:w-[191px] lg:h-[54px] lg:text-[15px]"
               buttonText="View Properties"
               buttonIcon={<ArrowRight size={18} strokeWidth={1} />}
               isLinkEnable={true}

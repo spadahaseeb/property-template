@@ -28,13 +28,13 @@ const RecomendedPropertyCard = ({ data }: { data: PropertyCardPropType }) => {
         </div>
 
         {/* card-detail  */}
-        <div className="xs:pl-5 xs:pt-[19px] xs:pr-[30px] xs:pb-6 py-5 px-0">
-          <div className="flex justify-between pb-5 flex-col xs:flex-row">
+        <div className="lg:pl-5 lg:pt-[19px] lg:pr-[30px] lg:pb-6 py-5 px-0">
+          <div className="flex justify-between pb-5 xxl:flex-row flex-col">
             <PropertyAdress title={data.title} adress={data.adress} />
             <PropertyPrice
               price={data.price}
               isMonthly={data.isMonthly || false}
-              className="pt-5 xs:pt-0"
+              className="pt-5 xxl:pt-0"
             />
           </div>
 

@@ -48,6 +48,7 @@ const ExpertiseShowcase = () => {
                   isLinkEnable={true}
                   buttonLink="/"
                   buttonIcon={<ArrowRight size={18} strokeWidth={1.2} />}
+                  className="lg:w-[161px] lg:h-[54px] w-[120px] h-[32px] text-[11px] lg:text-[15px]"
                 />
               </div>
             </div>

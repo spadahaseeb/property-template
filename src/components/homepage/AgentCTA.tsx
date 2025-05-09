@@ -29,7 +29,7 @@ const AgentCTA = () => {
               isLinkEnable={true}
               buttonLink="/"
               buttonIcon={<ArrowRight size={18} strokeWidth={1.2} />}
-              className="w-[174px] h-[54px] mt-[25px] xmd:mt-0"
+              className="lg:w-[174px] lg:h-[54px] mt-[25px] xmd:mt-0 w-[120px] h-[35px] text-[11px] lg:text-[15px]"
             />
           </main>
         </div>

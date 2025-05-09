@@ -9,6 +9,10 @@ import Heading from "@/components/shared/Heading";
 
 const RecentPropertiesSale = () => {
   const swiperBreakpoints = {
+    10: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
     768: {
       slidesPerView: 2,
       spaceBetween: 20,

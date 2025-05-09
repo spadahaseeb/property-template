@@ -21,7 +21,7 @@ const HowItWorks = () => {
           {/* section-content  */}
           <main className="lg:grid xl:grid-cols-2 grid-cols-1 gap-[30px] items-center flex flex-col-reverse">
             {/* services  */}
-            <div className="flex gap-[30px] items-center xl:block h-[max-content] lg:pl-[47px] lg:border-white-warm border-transparent border-l-3 justify-center flex-wrap max-w-[720px] lg:max-w-full pt-10 lg:pt-0">
+            <div className="flex gap-[30px] items-center xl:block h-[max-content] lg:pl-[47px] lg:border-white-warm border-transparent border-l-3 justify-center flex-wrap lg:flex-nowrap max-w-[720px] lg:max-w-full pt-10 lg:pt-0">
               {ServicesContent.map((item) => (
                 <div
                   key={item.title}

@@ -79,7 +79,7 @@ const FeaturedProperties = () => {
         {/* button */}
         <div className="flex justify-center">
           <Button
-            className="w-[180px] h-[54px] bg-accent-gold border-none"
+            className="lg:w-[180px] lg:h-[54px] w-[150px] h-[40px] text-[13px] lg:text-[15px] bg-accent-gold border-none"
             buttonText="See all listing"
             buttonIcon={<ArrowRight size={18} strokeWidth={1} />}
             variant="v3"

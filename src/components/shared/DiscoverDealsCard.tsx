@@ -10,12 +10,14 @@ const DiscoverDealsCard = ({ data }: DiscoverDealsCardPropType) => {
   return (
     <>
       <div>
-        <Thumbnail image={data.imgSrc} className="min-h-[311px] w-full">
-          <div className="flex items-center gap-[10px] pl-5 pt-[23px]">
-            {data.forSale && <PropertyTag variant="v1" text="for sale" />}
-            {data.isFeatured && <PropertyTag variant="v2" text="featured" />}
-          </div>
-        </Thumbnail>
+        <a href="#">
+          <Thumbnail image={data.imgSrc} className="min-h-[311px] w-full">
+            <div className="flex items-center gap-[10px] pl-5 pt-[23px]">
+              {data.forSale && <PropertyTag variant="v1" text="for sale" />}
+              {data.isFeatured && <PropertyTag variant="v2" text="featured" />}
+            </div>
+          </Thumbnail>
+        </a>
 
         <div className="pt-[19px] pb-[30px]">
           <PropertyAdress
