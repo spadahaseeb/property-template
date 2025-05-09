@@ -5,7 +5,7 @@ import Thumbnail from "@/components/shared/Thumbnail";
 const WhyChooseUs = () => {
   return (
     <>
-      <section className="py-[165px]">
+      <section className="section-spacing">
         <div className="container">
           <div className="xxl:grid grid-cols-2 items-center flex flex-col">
             <div>

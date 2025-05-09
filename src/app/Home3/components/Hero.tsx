@@ -5,23 +5,21 @@ import PropertySearchBar from "@/components/shared/PropertySearchBar";
 const Hero = () => {
   return (
     <>
-      <section className="pt-[275px] pb-[274px] relative text-black">
+      <section className="lg:pt-[275px] lg:pb-[274px] relative text-black xs:py-[170px] pt-[170px] pb-[120px]">
         {/* background-image  */}
         <div className="w-full h-full absolute top-0 left-0 right-0">
           <Image
             src={"/images/background3.png"}
             alt="background3"
             className="w-full h-full object-cover"
-            width={1920}
-            height={700}
-            priority
+            fill
           />
         </div>
 
         <div className="container relative">
           {/* heading-content  */}
-          <div className="text-center m-auto w-[max-content]">
-            <h1 className="lg:text-[60px] md:text-[50px] text-[40px] md:leading-[78px] leading-[60px] normal-case pb-[35px]">
+          <div className="text-center m-auto lg:max-w-full max-w-[500px]">
+            <h1 className="lg:text-[60px] md:text-[50px] text-[30px] md:leading-[78px] leading-[60px] normal-case pb-[35px]">
               The <span className="text-blue-primary">#1</span> site real estate
               <br />
               professionals trust*

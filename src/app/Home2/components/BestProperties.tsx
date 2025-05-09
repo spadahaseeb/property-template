@@ -16,7 +16,7 @@ import { ArrowRight } from "lucide-react";
 const BestProperties = () => {
   return (
     <>
-      <section className="lg:pt-[165px] lg:pb-[169px] sm:py-[100px] pb-[70px] bg-black-primary">
+      <section className="lg:pt-[165px] lg:pb-[169px] sm:py-[100px] py-[70px] bg-black-primary">
         <div className="container">
           {/* heading-section  */}
           <Heading

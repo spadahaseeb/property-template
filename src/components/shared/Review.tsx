@@ -16,7 +16,7 @@ const Review = () => {
                 alt="user-profile"
                 width={90}
                 height={90}
-                className="rounded-full overflow-hidden"
+                className="rounded-full overflow-hidden md:w-[90px] w-[70px] md:h-[90px] h-[70px]"
               />
             </div>
 

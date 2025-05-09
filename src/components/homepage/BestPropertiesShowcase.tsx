@@ -53,7 +53,7 @@ const BestPropertiesShowcase = () => {
                 imgSrc="bp3.webp"
                 isForSle={true}
                 isFeatured={true}
-                className="min-h-[700px]"
+                className="md:h-[700px] min-h-[400px] h-full"
               >
                 <div>
                   <PropertyAdress
@@ -62,17 +62,18 @@ const BestPropertiesShowcase = () => {
                     className="pb-[29px]"
                   />
 
-                  <div className="flex items-center">
+                  <div className="flex sm:items-center flex-col sm:flex-row">
                     <PropertyPrice
-                      className="text-white"
+                      className="text-white pb-5 sm:pb-0"
                       isMonthly={false}
                       price="$200,0000"
                     />
                     <PropertyDetails
                       data={PropertyHighlightCardContent}
-                      className="bg-transparent p-0 pl-[59px]"
+                      className="bg-transparent p-0 sm:pl-[59px]"
                       priceStyles="text-white pr-[60px]"
                       veryChildStyles="border-white/30"
+                      detailStyles="text-[12px] xm:text-[14px]"
                     />
                   </div>
                 </div>

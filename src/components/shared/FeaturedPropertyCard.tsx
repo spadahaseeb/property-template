@@ -12,7 +12,7 @@ const FeaturedPropertyCard = ({
   return (
     <>
       <Thumbnail image={data.imgSrc}>
-        <div className="w-full h-full p-5 flex flex-col justify-between">
+        <div className="w-full h-full sm:p-5 p-[10px] flex flex-col justify-between">
           {/* tags  */}
           <div className="flex items-center gap-[10px]">
             {data.isForSale && <PropertyTag text="For Sale" variant="v1" />}

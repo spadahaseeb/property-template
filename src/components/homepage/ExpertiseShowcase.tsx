@@ -15,7 +15,7 @@ const ExpertiseShowcase = () => {
             {/* image with-label  */}
             <Thumbnail
               image="expertise.webp"
-              className="md:h-[638px] h-[500px] w-full p-[25px]"
+              className="md:h-[638px] h-full min-h-[400px] w-full p-[25px]"
               background={true}
             >
               <Image
