@@ -1,5 +1,5 @@
 // components
-import { DiscoverDealsCardPropType } from "@/app/home3/assets/types";
+import { DiscoverDealsCardPropType } from "@/app/Home3/assets/types";
 import PropertyAdress from "@/components/shared/PropertyAdress";
 import PropertyDetails from "@/components/shared/PropertyDetails";
 import PropertyPrice from "@/components/shared/PropertyPrice";

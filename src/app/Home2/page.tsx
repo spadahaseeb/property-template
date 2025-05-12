@@ -1,15 +1,15 @@
 import { Metadata } from "next";
 
 // components
-import Hero from "@/app/home2/components/Hero";
-import WhyChooseUs from "@/app/home2/components/WhyChooseUs";
-import FeaturedProperties from "@/app/home2/components/FeaturedProperties";
-import DiscoverCities from "@/app/home2/components/DiscoverCities";
-import Services from "@/app/home2/components/Services";
+import Hero from "@/app/Home2/components/Hero";
+import WhyChooseUs from "@/app/Home2/components/WhyChooseUs";
+import FeaturedProperties from "@/app/Home2/components/FeaturedProperties";
+import DiscoverCities from "@/app/Home2/components/DiscoverCities";
+import Services from "@/app/Home2/components/Services";
 import Testimonials from "@/components/homepage/Testimonials";
-import BestProperties from "@/app/home2/components/BestProperties";
-import MeetTeem from "@/app/home2/components/MeetTeem";
-import PopularMarkets from "@/app/home2/components/PopularMarkets";
+import BestProperties from "@/app/Home2/components/BestProperties";
+import MeetTeem from "@/app/Home2/components/MeetTeem";
+import PopularMarkets from "@/app/Home2/components/PopularMarkets";
 
 // metadata
 export const metadata: Metadata = {

@@ -1,5 +1,5 @@
 // components
-import { MeetTeemContent } from "@/app/home2/assets/content";
+import { MeetTeemContent } from "@/app/Home2/assets/content";
 import Heading from "@/components/shared/Heading";
 import TeemCard from "@/components/shared/TeemCard";
 

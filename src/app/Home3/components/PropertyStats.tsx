@@ -1,7 +1,7 @@
 // components
 import Heading from "@/components/shared/Heading";
 import PropertyStatsCard from "@/components/shared/PropertyStatCard";
-import { PropertyStatsContent } from "@/app/home3/assets/content";
+import { PropertyStatsContent } from "@/app/Home3/assets/content";
 
 const PropertyStats = () => {
   return (

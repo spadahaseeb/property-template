@@ -1,6 +1,6 @@
 import { Bath, Bed, Copy, MapPin } from "lucide-react";
 // components
-import { PropertyDetailsPropType } from "@/app/home2/assets/types";
+import { PropertyDetailsPropType } from "@/app/Home2/assets/types";
 import { twMerge } from "tailwind-merge";
 
 const FeateuredPropertyDetailsBox = ({

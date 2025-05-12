@@ -1,5 +1,5 @@
 // components
-import { PropertyButtonsContent } from "@/app/home2/assets/content";
+import { PropertyButtonsContent } from "@/app/Home2/assets/content";
 import PropertyButton from "@/components/shared/PropertyButton";
 
 const PropertyButtons = () => {

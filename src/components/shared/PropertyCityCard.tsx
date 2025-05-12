@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 // components
 import Thumbnail from "@/components/shared/Thumbnail";
-import { PropertyCityCardPropType } from "@/app/home3/assets/types";
+import { PropertyCityCardPropType } from "@/app/Home3/assets/types";
 
 const PropertyCityCard = ({
   data,

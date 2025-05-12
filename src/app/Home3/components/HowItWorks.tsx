@@ -1,7 +1,7 @@
 import Image from "next/image";
 // components
 import Heading from "@/components/shared/Heading";
-import { ServicesContent } from "@/app/home3/assets/content";
+import { ServicesContent } from "@/app/Home3/assets/content";
 
 const HowItWorks = () => {
   return (

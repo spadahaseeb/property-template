@@ -1,4 +1,4 @@
-import { FeaturedPropertyCardPropType } from "@/app/home2/assets/types";
+import { FeaturedPropertyCardPropType } from "@/app/Home2/assets/types";
 // components
 import Thumbnail from "@/components/shared/Thumbnail";
 import PropertyTag from "@/components/shared/PropertyTag";
