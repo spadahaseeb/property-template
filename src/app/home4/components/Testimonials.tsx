@@ -67,10 +67,10 @@ const Testimonials = ({ className }: { className?: string }) => {
                 spaceBetween={15}
               >
                 <SwiperSlide className="select-none">
-                  <Review image="quote-yellow.png" />
+                  <Review quotesImg="quote-yellow.webp" />
                 </SwiperSlide>
                 <SwiperSlide className="select-none">
-                  <Review image="quote-yellow.png/" />
+                  <Review quotesImg="quote-yellow.webp" />
                 </SwiperSlide>
               </Swiper>
 

@@ -10,7 +10,7 @@ const Hero = () => {
         {/* background-image  */}
         <div className="w-full h-full absolute top-0 left-0 right-0">
           <Image
-            src={"/images/background2.png"}
+            src={"/images/background2.webp"}
             alt="background"
             width={1920}
             height={700}

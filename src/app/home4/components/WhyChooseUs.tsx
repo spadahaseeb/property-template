@@ -13,14 +13,14 @@ const WhyChooseUs = () => {
             <div className="flex xmd:flex-row flex-col-reverse gap-5 m-auto">
               <div className="flex flex-col items-end gap-5 relative">
                 <Image
-                  src={"/images/hom4chooseus1.png"}
+                  src={"/images/hom4chooseus1.webp"}
                   alt="choose-us preview"
                   width={309}
                   height={350}
                   className="h-auto rounded-md xmd:max-w-[309px] max-w-[400px] w-full"
                 />
                 <Image
-                  src={"/images/hom4chooseus2.png"}
+                  src={"/images/hom4chooseus2.webp"}
                   alt="choose-us preview"
                   width={209}
                   height={182}
@@ -30,7 +30,7 @@ const WhyChooseUs = () => {
               </div>
 
               <Image
-                src={"/images/hom4chooseus3.png"}
+                src={"/images/hom4chooseus3.webp"}
                 alt="choose-us preview"
                 width={400}
                 height={474}

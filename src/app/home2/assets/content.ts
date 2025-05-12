@@ -107,7 +107,7 @@ export const FeaturedPropertiesContent = {
       isMonthly: true,
     },
     {
-      imgSrc: "product4.png",
+      imgSrc: "product4.webp",
       isForSale: true,
       isFeatured: true,
       title: "Eaton Garth Penthouse",
@@ -120,7 +120,7 @@ export const FeaturedPropertiesContent = {
       isMonthly: false,
     },
     {
-      imgSrc: "product5.png",
+      imgSrc: "product5.webp",
       isForSale: true,
       isFeatured: true,
       title: "New Apartment Nice Wiew",
@@ -133,7 +133,7 @@ export const FeaturedPropertiesContent = {
       isMonthly: true,
     },
     {
-      imgSrc: "product6.png",
+      imgSrc: "product6.webp",
       isForSale: true,
       isFeatured: true,
       title: "Diamond Manor Apartment",
@@ -251,25 +251,25 @@ export const PropertyHighlightCardContent = {
 
 export const MeetTeemContent = [
   {
-    imgSrc: "teem1.png",
+    imgSrc: "teem1.webp",
     imgAlt: "team expert",
     expertName: "john powell",
     expertBio: "service support",
   },
   {
-    imgSrc: "teem2.png",
+    imgSrc: "teem2.webp",
     imgAlt: "team expert",
     expertName: "Thomas Powell",
     expertBio: "Marketing",
   },
   {
-    imgSrc: "teem3.png",
+    imgSrc: "teem3.webp",
     imgAlt: "team expert",
     expertName: "Tom Wilson",
     expertBio: "Designer",
   },
   {
-    imgSrc: "teem4.png",
+    imgSrc: "teem4.webp",
     imgAlt: "team expert",
     expertName: "Samuel Palmer",
     expertBio: "Marketing",

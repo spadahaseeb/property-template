@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
           <div className="xxl:grid grid-cols-2 items-center flex flex-col">
             <div>
               <Thumbnail
-                image="chooseus3.png"
+                image="chooseus3.webp"
                 className="w-full xxl:h-[685px]"
               />
             </div>

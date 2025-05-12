@@ -2,37 +2,37 @@ import { ArrowRight, Bath, Bed, Copy, Home } from "lucide-react";
 
 export const TrustedByContent = [
   {
-    src: "trustwhite1.png",
+    src: "trustwhite1.webp",
     alt: "trusted by amazon",
     width: 84,
     height: 26,
   },
   {
-    src: "trustwhite2.png",
+    src: "trustwhite2.webp",
     alt: "trusted by amazon",
     width: 83,
     height: 21,
   },
   {
-    src: "trustwhite3.png",
+    src: "trustwhite3.webp",
     alt: "trusted by amazon",
     width: 74,
     height: 23,
   },
   {
-    src: "trustwhite4.png",
+    src: "trustwhite4.webp",
     alt: "trusted by amazon",
     width: 122,
     height: 25,
   },
   {
-    src: "trustwhite5.png",
+    src: "trustwhite5.webp",
     alt: "trusted by amazon",
     width: 82,
     height: 26,
   },
   {
-    src: "trustwhite6.png",
+    src: "trustwhite6.webp",
     alt: "trusted by amazon",
     width: 99,
     height: 31,
@@ -41,17 +41,17 @@ export const TrustedByContent = [
 
 export const FindDreamHouseContent = [
   {
-    imgSrc: "finddreamhouse1.png",
+    imgSrc: "finddreamhouse1.webp",
     title: "1. Search for you favorite house in your location",
     discription: "Pellentesque egestas elementum egestas faucibus sem.",
   },
   {
-    imgSrc: "finddreamhouse2.png",
+    imgSrc: "finddreamhouse2.webp",
     title: "2. Make a visit appointment with one of your agents",
     discription: "Pellentesque egestas elementum egestas faucibus sem.",
   },
   {
-    imgSrc: "finddreamhouse3.png",
+    imgSrc: "finddreamhouse3.webp",
     title: "3. Get your dream house in a month, or less",
     discription: "Pellentesque egestas elementum egestas faucibus sem.",
   },
@@ -205,19 +205,19 @@ export const RecentPropertiesRentContent = [
 
 export const WhyChooseUsContent = [
   {
-    imgSrc: "chechfill.png",
+    imgSrc: "chechfill.webp",
     text: "100% Secure",
   },
   {
-    imgSrc: "chechfill.png",
+    imgSrc: "chechfill.webp",
     text: "Wide Range of Properties",
   },
   {
-    imgSrc: "chechfill.png",
+    imgSrc: "chechfill.webp",
     text: "Buy or Rent Homes",
   },
   {
-    imgSrc: "chechfill.png",
+    imgSrc: "chechfill.webp",
     text: "Truested by Thousands",
   },
 ];
@@ -311,7 +311,7 @@ export const PropertiesByAreaContent = [
 
 export const BuySellCtaContent = [
   {
-    imgSrc: "home-icon1.png",
+    imgSrc: "home-icon1.webp",
     title: "Looking for the new home?",
     discription:
       "10 new offers every day. 350 offers on site, trusted by a community of thousands of users.",
@@ -320,7 +320,7 @@ export const BuySellCtaContent = [
     buttonLink: "/",
   },
   {
-    imgSrc: "home-icon2.png",
+    imgSrc: "home-icon2.webp",
     title: "Want to sell your home?",
     discription:
       "10 new offers every day. 350 offers on site, trusted by a community of thousands of users.",

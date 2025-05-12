@@ -9,7 +9,7 @@ const Hero = () => {
         {/* background-image  */}
         <div className="w-full h-full absolute top-0 left-0 right-0">
           <Image
-            src={"/images/background3.png"}
+            src={"/images/background3.webp"}
             alt="background3"
             className="w-full h-full object-cover"
             fill

@@ -11,7 +11,7 @@ const DiscoverPlace = () => {
         <div className="absolute inset-0">
           <Image
             fill
-            src="/images/DiscoverPlace.png"
+            src="/images/DiscoverPlace.webp"
             alt="discover-place background"
             className="object-cover w-full h-full"
           />

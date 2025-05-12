@@ -17,7 +17,13 @@ import Review from "@/components/shared/Review";
 import TrustedBy from "@/components/homepage/TrustedBy";
 import { TrustedByContent } from "@/assets/content";
 
-const Testimonials = ({ className }: { className?: string }) => {
+const Testimonials = ({
+  className,
+  quotesImg,
+}: {
+  className?: string;
+  quotesImg: string;
+}) => {
   return (
     <>
       <section
@@ -69,10 +75,10 @@ const Testimonials = ({ className }: { className?: string }) => {
                 spaceBetween={15}
               >
                 <SwiperSlide className="select-none">
-                  <Review />
+                  <Review quotesImg={quotesImg} />
                 </SwiperSlide>
                 <SwiperSlide className="select-none">
-                  <Review />
+                  <Review quotesImg={quotesImg} />
                 </SwiperSlide>
               </Swiper>
 

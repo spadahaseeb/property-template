@@ -26,7 +26,10 @@ const page = () => {
       <FeaturedProperties />
       <DiscoverCities />
       <Services />
-      <Testimonials className="bg-white-warm testimonialSwiperBtnH2" />
+      <Testimonials
+        className="bg-white-warm testimonialSwiperBtnH2"
+        quotesImg="vector.webp"
+      />
       <BestProperties />
       <MeetTeem />
       <PopularMarkets />

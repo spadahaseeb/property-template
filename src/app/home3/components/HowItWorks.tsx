@@ -50,7 +50,7 @@ const HowItWorks = () => {
             {/* image  */}
             <div>
               <Image
-                src={"/images/services3.png"}
+                src={"/images/services3.webp"}
                 alt="services-background"
                 width={685}
                 height={748}

@@ -12,7 +12,7 @@ const Services = () => {
             {/* services-image  */}
             <div>
               <Image
-                src={"/images/services.png"}
+                src={"/images/services.webp"}
                 alt="services-background"
                 width={780}
                 height={818}

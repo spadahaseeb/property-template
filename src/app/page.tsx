@@ -20,7 +20,7 @@ const Home1 = () => {
         <WhyChooseUs />
         <BestPropertiesShowcase />
         <ExpertiseShowcase />
-        <Testimonials />
+        <Testimonials quotesImg="vector.webp" />
         <RecentArticles />
         <ExploreLinksWithAgentCTA />
         <AgentCTA />
