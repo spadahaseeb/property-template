@@ -179,100 +179,100 @@ export const RecentPropertiesRentContent = [
     imgSrc: "product3.webp",
     forSale: true,
     isFeatured: false,
-    title: "Skyper Pool Apartment",
-    adress: "1020 Bloomingdale Ave",
+    title: "New Apartment Nice Wiew",
+    adress: "42 Avenue O, Brooklyn",
     detailsData: [
       {
         detail: "4",
         icon: Bed,
       },
       {
-        detail: "2",
+        detail: "1",
         icon: Bath,
       },
       {
-        detail: "400",
+        detail: "460",
         icon: Copy,
       },
     ],
     isMonthly: false,
-    price: "$280,000",
+    price: "$850",
   },
   {
     imgSrc: "product3.webp",
     forSale: true,
     isFeatured: false,
-    title: "Skyper Pool Apartment2",
-    adress: "1020 Bloomingdale Ave",
+    title: "Villa Garden With Pool",
+    adress: "6822 Bay Pkwy, Brooklyn",
     detailsData: [
       {
-        detail: "4",
+        detail: "3",
         icon: Bed,
       },
       {
-        detail: "2",
+        detail: "1",
         icon: Bath,
       },
       {
-        detail: "400",
+        detail: "350",
         icon: Copy,
       },
     ],
     isMonthly: false,
-    price: "$280,000",
+    price: "$350",
   },
   {
     imgSrc: "product2.webp",
     forSale: true,
     isFeatured: false,
-    title: "North Dillard Street",
-    adress: "4330 Bell Shoals Rd",
+    title: "Ely Parkway Apartment",
+    adress: "7203 20th Ave, Brooklyn",
     detailsData: [
       {
         detail: "4",
         icon: Bed,
       },
       {
-        detail: "2",
+        detail: "1",
         icon: Bath,
       },
       {
-        detail: "400",
+        detail: "500",
         icon: Copy,
       },
     ],
     isMonthly: true,
-    price: "$250",
+    price: "$5,800",
   },
   {
     imgSrc: "product1.webp",
     forSale: true,
     isFeatured: true,
-    title: "Eaton Garth Penthouse",
-    adress: "7722 18th Ave, Brooklyn",
+    title: "Modern Elegant Apartment",
+    adress: "1458 W Taylor St",
     detailsData: [
       {
         detail: "4",
         icon: Bed,
       },
       {
-        detail: "2",
+        detail: "1",
         icon: Bath,
       },
       {
-        detail: "400",
+        detail: "300",
         icon: Copy,
       },
     ],
     isMonthly: false,
-    price: "$250,000",
+    price: "$590",
   },
   {
     imgSrc: "product1.webp",
     forSale: true,
     isFeatured: true,
-    title: "Eaton Garth Penthouse",
-    adress: "7722 18th Ave, Brooklyn",
+    title: "1458 W Taylor St2",
+    adress: "7722 18th Ave, Brooklyn2",
     detailsData: [
       {
         detail: "5",
@@ -309,7 +309,7 @@ export const RecentPropertiesSaleContent = [
         icon: Bath,
       },
       {
-        detail: "400",
+        detail: "450",
         icon: Copy,
       },
     ],
@@ -332,7 +332,7 @@ export const RecentPropertiesSaleContent = [
         icon: Bath,
       },
       {
-        detail: "400",
+        detail: "450",
         icon: Copy,
       },
     ],
@@ -343,8 +343,8 @@ export const RecentPropertiesSaleContent = [
     imgSrc: "product2.webp",
     forSale: true,
     isFeatured: false,
-    title: "North Dillard Street",
-    adress: "4330 Bell Shoals Rd",
+    title: "Eaton Garth Penthouse",
+    adress: "7722 18th Ave, Brooklyn",
     detailsData: [
       {
         detail: "4",
@@ -355,7 +355,7 @@ export const RecentPropertiesSaleContent = [
         icon: Bath,
       },
       {
-        detail: "400",
+        detail: "450",
         icon: Copy,
       },
     ],
@@ -366,8 +366,8 @@ export const RecentPropertiesSaleContent = [
     imgSrc: "product1.webp",
     forSale: true,
     isFeatured: true,
-    title: "Eaton Garth Penthouse",
-    adress: "7722 18th Ave, Brooklyn",
+    title: "Diamond Manor Apartment",
+    adress: "7802 20th Ave, Brooklyn",
     detailsData: [
       {
         detail: "4",
@@ -378,7 +378,7 @@ export const RecentPropertiesSaleContent = [
         icon: Bath,
       },
       {
-        detail: "400",
+        detail: "500",
         icon: Copy,
       },
     ],
@@ -389,19 +389,19 @@ export const RecentPropertiesSaleContent = [
     imgSrc: "product1.webp",
     forSale: true,
     isFeatured: true,
-    title: "Eaton Garth Penthouse",
-    adress: "7722 18th Ave, Brooklyn",
+    title: "Comfortable Villa Green",
+    adress: "214 Kings Hwy, Brooklyn",
     detailsData: [
       {
-        detail: "5",
+        detail: "4",
         icon: Bed,
       },
       {
-        detail: "2",
+        detail: "1",
         icon: Bath,
       },
       {
-        detail: "400",
+        detail: "450",
         icon: Copy,
       },
     ],

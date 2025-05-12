@@ -38,26 +38,13 @@ const FeateuredPropertyDetailsBox = ({
             ) : null}
           </p>
           <div className="flex items-center py-[10px] xs:py-0">
-            {[
-              {
-                icon: Bed,
-                name: "bed",
-              },
-              {
-                icon: Bath,
-                name: "bath",
-              },
-              {
-                icon: Copy,
-                name: "copy",
-              },
-            ].map((item) => (
+            {data.details.map((item) => (
               <p
-                key={item.name}
+                key={item.label}
                 className="flex items-center mr-[15px] pr-[15px] border-r-1 border-white-secondary last:border-r-0 last:mr-0 last:pr-0"
               >
-                <Bed size={18} strokeWidth={1} />
-                <span className="pl-[7px]">{data.beds}</span>
+                <item.icon size={18} strokeWidth={1} />
+                <span className="pl-[7px]">{item.label}</span>
               </p>
             ))}
           </div>

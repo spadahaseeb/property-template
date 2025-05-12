@@ -155,11 +155,11 @@ export const RecommendedHomesContent = [
         icon: Bed,
       },
       {
-        detail: "4 baths",
+        detail: "2 baths",
         icon: Bath,
       },
       {
-        detail: "400 sqft",
+        detail: "450 sqft",
         icon: Copy,
       },
     ],
@@ -168,7 +168,7 @@ export const RecommendedHomesContent = [
     image: "product3.webp",
     title: "Eaton Garth Penthouse",
     adress: "1020 Bloomingdale Ave",
-    price: "$280,000",
+    price: "$250",
     isForSale: true,
     isFeatured: true,
     isMonthly: true,
@@ -178,7 +178,7 @@ export const RecommendedHomesContent = [
         icon: Bed,
       },
       {
-        detail: "4 baths",
+        detail: "2 baths",
         icon: Bath,
       },
       {
@@ -191,7 +191,7 @@ export const RecommendedHomesContent = [
     image: "product3.webp",
     title: "Eaton Garth Penthouse 2",
     adress: "1020 Bloomingdale Ave",
-    price: "$280,000",
+    price: "$180,000",
     isForSale: true,
     isFeatured: true,
     isMonthly: false,
@@ -201,11 +201,11 @@ export const RecommendedHomesContent = [
         icon: Bed,
       },
       {
-        detail: "4 baths",
+        detail: "2 baths",
         icon: Bath,
       },
       {
-        detail: "400 sqft",
+        detail: "450 sqft",
         icon: Copy,
       },
     ],
@@ -217,24 +217,22 @@ export const WhyChooseUsContent = [
     icon: House,
     title: "Find your future home",
     description:
-      "We help you find a new home by offering a smart evfevq experience.",
+      "We help you find a new home by offering a smart real estate experience",
   },
   {
     icon: HousePlus,
-    title: "Trusted by thousands",
-    description: "Our platform is trusted by thousands of users every month.",
+    title: "Experienced agents",
+    description: "Find an experienced agent who knows your market best",
   },
   {
     icon: School,
-    title: "Verified listings",
-    description:
-      "Only verified properties so you can buy, rent or sell with confidence.",
+    title: "Buy or rent homes",
+    description: "Millions of houses and apartments in your favourite cities",
   },
   {
     icon: LaptopMinimalCheck,
-    title: "Verified listings",
-    description:
-      "Only verified properties so you can buy, rent or sell with confidence.",
+    title: "List your own property",
+    description: "Sign up now and sell or rent your own properties",
   },
 ];
 

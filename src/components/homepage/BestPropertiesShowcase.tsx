@@ -66,7 +66,7 @@ const BestPropertiesShowcase = () => {
                     <PropertyPrice
                       className="text-white pb-5 sm:pb-0"
                       isMonthly={false}
-                      price="$200,0000"
+                      price="$120,000"
                     />
                     <PropertyDetails
                       data={PropertyHighlightCardContent}

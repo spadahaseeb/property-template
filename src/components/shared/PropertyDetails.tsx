@@ -15,7 +15,7 @@ const PropertyDetails = ({
           <div
             key={item.detail}
             className={twMerge(
-              "mr-[10px] pr-[10px] border-r-1 border-black-primary last:border-r-0 last:mr-0 last:pr-0",
+              "mr-[10px] pr-[10px] border-r-1 border-white-secondary last:border-r-0 last:mr-0 last:pr-0",
               veryChildStyles
             )}
           >

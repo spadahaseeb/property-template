@@ -9,6 +9,9 @@ import {
   TvMinimal,
   KeyRound,
   Home,
+  Bed,
+  Bath,
+  Copy,
 } from "lucide-react";
 
 export const navigationContent = [
@@ -74,11 +77,22 @@ export const FeaturedPropertiesContent = {
       title: "Luxury Family Home",
       adress: "1800-1818 79th St",
       price: "$395,000",
-      beds: 4,
-      tubs: 1,
-      size: 400,
       type: "sale",
       isMonthly: false,
+      details: [
+        {
+          label: "4",
+          icon: Bed,
+        },
+        {
+          label: "1",
+          icon: Bath,
+        },
+        {
+          label: "400",
+          icon: Copy,
+        },
+      ],
     },
     {
       imgSrc: "product2.webp",
@@ -87,9 +101,20 @@ export const FeaturedPropertiesContent = {
       title: "Skyper Pool Apartment",
       adress: "1020 Bloomingdale Ave",
       price: "$280,000",
-      beds: 4,
-      tubs: 1,
-      size: 400,
+      details: [
+        {
+          label: "4",
+          icon: Bed,
+        },
+        {
+          label: "2",
+          icon: Bath,
+        },
+        {
+          label: "450",
+          icon: Copy,
+        },
+      ],
       type: "sale",
       isMonthly: false,
     },
@@ -100,11 +125,22 @@ export const FeaturedPropertiesContent = {
       title: "North Dillard Street",
       adress: "4330 Bell Shoals Rd",
       price: "$250",
-      beds: 4,
-      tubs: 2,
-      size: 400,
-      type: "rent",
-      isMonthly: true,
+      details: [
+        {
+          label: "4",
+          icon: Bed,
+        },
+        {
+          label: "2",
+          icon: Bath,
+        },
+        {
+          label: "400",
+          icon: Copy,
+        },
+      ],
+      type: "sale",
+      isMonthly: false,
     },
     {
       imgSrc: "product4.webp",
@@ -113,9 +149,20 @@ export const FeaturedPropertiesContent = {
       title: "Eaton Garth Penthouse",
       adress: "7722 18th Ave, Brooklyn",
       price: "$395,000",
-      beds: 4,
-      tubs: 2,
-      size: 450,
+      details: [
+        {
+          label: "4",
+          icon: Bed,
+        },
+        {
+          label: "2",
+          icon: Bath,
+        },
+        {
+          label: "450",
+          icon: Copy,
+        },
+      ],
       type: "sale",
       isMonthly: false,
     },
@@ -126,11 +173,23 @@ export const FeaturedPropertiesContent = {
       title: "New Apartment Nice Wiew",
       adress: "42 Avenue O, Brooklyn",
       price: "$395,000",
-      beds: 4,
-      tubs: 1,
-      size: 460,
-      type: "rent",
-      isMonthly: true,
+
+      type: "sale",
+      isMonthly: false,
+      details: [
+        {
+          label: "4",
+          icon: Bed,
+        },
+        {
+          label: "1",
+          icon: Bath,
+        },
+        {
+          label: "450",
+          icon: Copy,
+        },
+      ],
     },
     {
       imgSrc: "product6.webp",
@@ -139,11 +198,22 @@ export const FeaturedPropertiesContent = {
       title: "Diamond Manor Apartment",
       adress: "7802 20th Ave, Brooklyn",
       price: "$259,000",
-      beds: 4,
-      tubs: 2,
-      size: 500,
       type: "sale",
       isMonthly: false,
+      details: [
+        {
+          label: "4",
+          icon: Bed,
+        },
+        {
+          label: "2",
+          icon: Bath,
+        },
+        {
+          label: "500",
+          icon: Copy,
+        },
+      ],
     },
   ],
 };

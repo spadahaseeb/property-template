@@ -1,5 +1,11 @@
 // Types.ts
-import { ReactNode } from "react";
+import { LucideProps } from "lucide-react";
+import {
+  ForwardRefExoticComponent,
+  ReactElement,
+  ReactNode,
+  RefAttributes,
+} from "react";
 
 // Root Layout
 export type RootLayoutPropType = {
@@ -49,11 +55,18 @@ export type FeaturedPropertyCardPropType = {
   title: string;
   adress: string;
   price: string;
-  beds: number;
-  tubs: number;
-  size: number;
   type: string;
   isMonthly: boolean;
+  details: {
+    label: string;
+    icon:
+      | ReactNode
+      | ReactElement
+      | ForwardRefExoticComponent<
+          Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
+        >
+      | any;
+  }[];
 };
 
 // Stats
