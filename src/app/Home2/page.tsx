@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-// import "@/assets/globals.css";
 
 // components
 import Hero from "@/app/home2/components/Hero";
