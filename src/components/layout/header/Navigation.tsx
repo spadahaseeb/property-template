@@ -21,7 +21,7 @@ const Navigation = () => {
           className="cursor-pointer inline-reset capitalize font-medium py-[7px] xl:py-0 xl:px-5 
           xl:text-[16px] sm:text-[21px] text-[16px]"
           onMouseEnter={() => setHoveredItem(item.text)}
-          onClick={() => setHoveredItem(item.text)}
+          onClick={() => setHoveredItem(null)}
           onMouseLeave={() => setHoveredItem(null)}
         >
           {item.hoverLinks && item.hoverLinks.length > 0 ? (

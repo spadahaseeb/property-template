@@ -1,7 +1,7 @@
 import Image from "next/image";
 // componnets
 import PropertySearchBar from "@/components/shared/PropertySearchBar";
-import PropertyButtons from "@/app/Home2/components/PropertyButtons";
+import PropertyButtons from "@/app/home2/components/PropertyButtons";
 
 const Hero = () => {
   return (

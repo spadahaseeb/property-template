@@ -13,6 +13,7 @@ type ContentProps = {
   matchedKeywords: string[];
   handleSearchValue: (e: ChangeEvent<HTMLInputElement>) => void;
   setSearchValue: (value: string) => void;
+  searchBarStyles?: string;
 };
 
 const placeholders: Record<string, string> = {
@@ -26,10 +27,16 @@ const Content = ({
   matchedKeywords,
   handleSearchValue,
   setSearchValue,
+  searchBarStyles,
 }: ContentProps) => (
   <div className="relative">
     {/* Search bar */}
-    <div className="w-full bg-white-soft rounded-full overflow-hidden">
+    <div
+      className={twMerge(
+        "w-full bg-white-soft rounded-full overflow-hidden",
+        searchBarStyles
+      )}
+    >
       <form action="/" className="w-full relative">
         <div className="p-[5px] w-full">
           <input
@@ -82,6 +89,7 @@ const PropertySearchBar = ({
   TabsListStyles,
   TabsTriggerStyles,
   className,
+  searchBarStyles,
   variant,
 }: PropertySearchBarPropType) => {
   const [searchValue, setSearchValue] = useState("");
@@ -137,6 +145,7 @@ const PropertySearchBar = ({
         matchedKeywords={matchedKeywords}
         handleSearchValue={handleSearchValue}
         setSearchValue={setSearchValue}
+        searchBarStyles={searchBarStyles}
       />
     </Tabs>
   ) : (
@@ -146,6 +155,7 @@ const PropertySearchBar = ({
       matchedKeywords={matchedKeywords}
       handleSearchValue={handleSearchValue}
       setSearchValue={setSearchValue}
+      searchBarStyles={searchBarStyles}
     />
   );
 };

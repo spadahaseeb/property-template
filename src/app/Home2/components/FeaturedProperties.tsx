@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 // components
-import { FeaturedPropertiesContent } from "@/app/Home2/assets/content";
+import { FeaturedPropertiesContent } from "@/app/home2/assets/content";
 import Heading from "@/components/shared/Heading";
 import Button from "@/components/shared/Button";
 import FeaturedPropertyCard from "@/components/shared/FeaturedPropertyCard";

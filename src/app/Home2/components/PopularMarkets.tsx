@@ -1,5 +1,5 @@
 // components
-import { PopularMarketsContent } from "@/app/Home2/assets/content";
+import { PopularMarketsContent } from "@/app/home2/assets/content";
 import Heading from "@/components/shared/Heading";
 import Button from "@/components/shared/Button";
 

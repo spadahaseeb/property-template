@@ -1,5 +1,5 @@
 // components
-import { WhyChooseUsContent } from "@/app/Home2/assets/content";
+import { WhyChooseUsContent } from "@/app/home2/assets/content";
 import Heading from "@/components/shared/Heading";
 
 const WhyChooseUs = () => {

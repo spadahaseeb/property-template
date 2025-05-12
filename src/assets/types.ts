@@ -162,6 +162,17 @@ export type PropertySearchBarPropType = {
   isTabEnable: boolean;
   TabsListStyles?: string;
   TabsTriggerStyles?: string;
+  searchBarStyles?: string;
   className?: string;
   variant?: string;
+};
+
+export type TrustedByPropType = {
+  className?: string;
+  data: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  }[];
 };

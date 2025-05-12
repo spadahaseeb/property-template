@@ -1,17 +1,18 @@
 import { Metadata } from "next";
 
 // components
-import Hero from "@/app/Home3/components/Hero";
-import ExploreProperties from "@/app/Home3/components/ExploreProperties";
-import PropertyStats from "@/app/Home3/components/PropertyStats";
-import DiscoverDeals from "@/app/Home3/components/DiscoverDeals";
-import ExploreCities from "@/app/Home3/components/ExploreCities";
-import RecentPropertiesRent from "@/app/Home3/components/RecentPropertiesRent";
-import RecentPropertiesSale from "@/app/Home3/components/RecentPropertiesSale";
-import HowItWorks from "@/app/Home3/components/HowItWorks";
-import DiscoverPlace from "@/app/Home3/components/DiscoverPlace";
-import WhyChooseUs from "@/app/Home3/components/WhyChooseUs";
+import Hero from "@/app/home3/components/Hero";
+import ExploreProperties from "@/app/home3/components/ExploreProperties";
+import PropertyStats from "@/app/home3/components/PropertyStats";
+import DiscoverDeals from "@/app/home3/components/DiscoverDeals";
+import ExploreCities from "@/app/home3/components/ExploreCities";
+import RecentPropertiesRent from "@/app/home3/components/RecentPropertiesRent";
+import RecentPropertiesSale from "@/app/home3/components/RecentPropertiesSale";
+import HowItWorks from "@/app/home3/components/HowItWorks";
+import DiscoverPlace from "@/app/home3/components/DiscoverPlace";
+import WhyChooseUs from "@/app/home3/components/WhyChooseUs";
 import TrustBy from "@/components/homepage/TrustedBy";
+import { TrustedByContent } from "@/assets/content";
 
 // metadata
 export const metadata: Metadata = {
@@ -33,7 +34,7 @@ const page = () => {
       <HowItWorks />
       <DiscoverPlace />
       <WhyChooseUs />
-      <TrustBy className="pt-[15px] pb-[155px]" />
+      <TrustBy className="pt-[15px] pb-[155px]" data={TrustedByContent} />
     </>
   );
 };

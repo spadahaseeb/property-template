@@ -1,7 +1,7 @@
 "use client";
 import { Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { RecentPropertiesRentContent } from "@/app/Home3/assets/content";
+import { RecentPropertiesRentContent } from "@/app/home3/assets/content";
 // components
 import DiscoverDealsCard from "@/components/shared/DiscoverDealsCard";
 import Heading from "@/components/shared/Heading";

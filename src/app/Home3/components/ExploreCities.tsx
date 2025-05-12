@@ -1,4 +1,4 @@
-import { ExploreCitiesContent } from "@/app/Home3/assets/content";
+import { ExploreCitiesContent } from "@/app/home3/assets/content";
 // components
 import Heading from "@/components/shared/Heading";
 import PropertyCityCard from "@/components/shared/PropertyCityCard";

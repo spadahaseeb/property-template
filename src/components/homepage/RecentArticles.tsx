@@ -2,11 +2,17 @@
 import Heading from "@/components/shared/Heading";
 import Article from "@/components/shared/Article";
 import { RecentArticlesContent } from "@/assets/content";
+import { twMerge } from "tailwind-merge";
 
-const RecentArticles = () => {
+const RecentArticles = ({ className }: { className?: string }) => {
   return (
     <>
-      <section className="section-spacing bg-white-muted rounded-medium">
+      <section
+        className={twMerge(
+          "section-spacing bg-white-muted rounded-medium",
+          className
+        )}
+      >
         <div className="container">
           {/* section heading  */}
           <Heading

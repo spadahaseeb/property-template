@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // components
 import DiscoverDealsCard from "@/components/shared/DiscoverDealsCard";
 import Heading from "@/components/shared/Heading";
-import { DiscoverDealsContent } from "@/app/Home3/assets/content";
+import { DiscoverDealsContent } from "@/app/home3/assets/content";
 
 const DiscoverDeals = () => {
   const swiperBreakpoints = {

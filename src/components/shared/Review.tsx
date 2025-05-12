@@ -1,7 +1,7 @@
 import Image from "next/image";
 // components
 
-const Review = () => {
+const Review = ({ image }: { image?: string }) => {
   return (
     <>
       <div className="max-w-[700px]">
@@ -32,7 +32,7 @@ const Review = () => {
           {/* quotes  */}
           <div className="mb-5 sm:mb-0">
             <Image
-              src={"/images/vector.webp"}
+              src={`/images/${image}` || "/images/vector.webp"}
               alt="quote"
               width={45}
               height={44}

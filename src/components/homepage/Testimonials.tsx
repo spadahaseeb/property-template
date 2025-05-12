@@ -15,6 +15,7 @@ import Stats from "@/components/shared/Stats";
 import Heading from "@/components/shared/Heading";
 import Review from "@/components/shared/Review";
 import TrustedBy from "@/components/homepage/TrustedBy";
+import { TrustedByContent } from "@/assets/content";
 
 const Testimonials = ({ className }: { className?: string }) => {
   return (
@@ -90,7 +91,7 @@ const Testimonials = ({ className }: { className?: string }) => {
         {/* trusted by section  */}
         <hr className="w-full h-[1px] border-none outline-none bg-gray-light" />
         <div className="container">
-          <TrustedBy />
+          <TrustedBy data={TrustedByContent} />
         </div>
       </section>
     </>

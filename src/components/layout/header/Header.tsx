@@ -2,29 +2,36 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { twMerge } from "tailwind-merge";
 // components
 import Navigation from "@/components/layout/header/Navigation";
 import SideContent from "@/components/layout/header/SideContent";
 import useScrollPosition from "@/hooks/useScrollPosition";
 import Button from "@/components/shared/Button";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [IsMenuClicked, setIsMenuClicked] = useState<boolean>(false);
   const handleToogleNavbar = () => setIsMenuClicked(!IsMenuClicked);
 
   const isScrolled = useScrollPosition(50);
-  const HeaderStyles = isScrolled
-    ? "w-[calc((100%)-80px] border-white/10 rounded-medium bg-black-muted bg-black-deep py-[25px] px-[20px] md:top-5 top-[10px] left-[10px] right-[10px] md:py-[30px] md:px-[30px] md:left-10 md:right-10"
-    : "top-0 left-0 right-0 bg-transparent md:py-[50px] md:px-[60px] py-[40px] px-[25px]";
+  const pathname = usePathname();
+
+  const headerEffect = useMemo(() => {
+    return isScrolled
+      ? "w-[calc((100%)-80px] border-white/10 rounded-medium bg-black-muted bg-black-deep py-[25px] px-[20px] md:top-5 top-[10px] left-[10px] right-[10px] md:py-[30px] md:px-[30px] md:left-10 md:right-10"
+      : pathname !== "/"
+      ? "bg-black/50 top-0 left-0 right-0 md:py-[50px] md:px-[60px] py-[40px] px-[25px]"
+      : "top-0 left-0 right-0 bg-transparent md:py-[50px] md:px-[60px] py-[40px] px-[25px]";
+  }, [pathname, isScrolled]);
 
   return (
     <>
       <header
         className={twMerge(
           "fixed z-300 ease-in-out duration-300 border-1 border-transparent",
-          HeaderStyles,
+          headerEffect,
           IsMenuClicked
             ? "top-0 left-0 right-0 md:top-0 md:left-0 md:right-0 bg-black-deep rounded-none md:px-[30px] md:py-[30px] py-[30px] px-[30px] border-none"
             : ""

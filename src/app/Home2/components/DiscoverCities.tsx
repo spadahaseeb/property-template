@@ -1,7 +1,7 @@
 "use client";
 
 import { Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
-import { DiscoverCitiesContent } from "@/app/Home2/assets/content";
+import { DiscoverCitiesContent } from "@/app/home2/assets/content";
 import { Swiper, SwiperSlide } from "swiper/react";
 // components
 import Thumbnail from "@/components/shared/Thumbnail";
