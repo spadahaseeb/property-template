@@ -1,6 +1,6 @@
 import { twMerge } from "tailwind-merge";
 // components
-import { TeemCardPropType } from "@/app/Home2/assets/types";
+import { TeemCardPropType } from "@/app/home2/assets/types";
 import Image from "next/image";
 
 const TeemCard = ({

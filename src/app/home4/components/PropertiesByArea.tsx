@@ -1,7 +1,7 @@
 import Image from "next/image";
 // components
 import Heading from "@/components/shared/Heading";
-import { PropertiesByAreaContent } from "@/app/Home4/assets/content";
+import { PropertiesByAreaContent } from "@/app/home4/assets/content";
 
 const PropertiesByArea = () => {
   return (

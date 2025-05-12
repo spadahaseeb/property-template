@@ -1,4 +1,4 @@
-import { BuySellCtaContent } from "@/app/Home4/assets/content";
+import { BuySellCtaContent } from "@/app/home4/assets/content";
 // components
 import BuySellCtaCard from "@/components/shared/BuySellCtaCard";
 import Heading from "@/components/shared/Heading";

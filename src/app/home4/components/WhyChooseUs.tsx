@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { WhyChooseUsContent } from "@/app/Home4/assets/content";
+import { WhyChooseUsContent } from "@/app/home4/assets/content";
 // components
 import Heading from "@/components/shared/Heading";
 

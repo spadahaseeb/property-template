@@ -2,19 +2,19 @@ import { Metadata } from "next";
 import {
   TrustedByContent,
   TrustedByContentH4,
-} from "@/app/Home4/assets/content";
+} from "@/app/home4/assets/content";
 // components
-import Hero from "@/app/Home4/components/Hero";
+import Hero from "@/app/home4/components/Hero";
 import TrustedBy1 from "@/components/homepage/TrustedBy";
 import TrustedBy2 from "@/components/homepage/TrustedBy";
-import FindDreamHouse from "@/app/Home4/components/FindDreamHouse";
-import FeaturedCategories from "@/app/Home4/components/FeaturedCategories";
-import RecentPropertiesRent from "@/app/Home4/components/RecentPropertiesRent";
-import WhyChooseUs from "@/app/Home4/components/WhyChooseUs";
-import Testimonials from "@/app/Home4/components/Testimonials";
-import PropertiesByArea from "@/app/Home4/components/PropertiesByArea";
+import FindDreamHouse from "@/app/home4/components/FindDreamHouse";
+import FeaturedCategories from "@/app/home4/components/FeaturedCategories";
+import RecentPropertiesRent from "@/app/home4/components/RecentPropertiesRent";
+import WhyChooseUs from "@/app/home4/components/WhyChooseUs";
+import Testimonials from "@/app/home4/components/Testimonials";
+import PropertiesByArea from "@/app/home4/components/PropertiesByArea";
 import RecentArticles from "@/components/homepage/RecentArticles";
-import BuySellCta from "@/app/Home4/components/BuySellCta";
+import BuySellCta from "@/app/home4/components/BuySellCta";
 
 // metadata
 export const metadata: Metadata = {

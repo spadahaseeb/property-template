@@ -16,9 +16,9 @@ export const NavigationLinksContent = [
     icon: true,
     hoverLinks: [
       { text: "home 1", link: "/" },
-      { text: "home 2", link: "/home2" },
-      { text: "home 3", link: "/home3" },
-      { text: "home 4", link: "/home4" },
+      { text: "home 2", link: "/Home2" },
+      { text: "home 3", link: "/Home3" },
+      { text: "home 4", link: "/Home4" },
     ],
   },
   {

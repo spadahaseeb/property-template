@@ -1,4 +1,4 @@
-import { RecentPropertyCardPropType } from "@/app/Home4/assets/types";
+import { RecentPropertyCardPropType } from "@/app/home4/assets/types";
 import { twMerge } from "tailwind-merge";
 import { Heart } from "lucide-react";
 // components

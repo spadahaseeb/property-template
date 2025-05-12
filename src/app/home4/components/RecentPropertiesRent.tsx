@@ -1,7 +1,7 @@
-import { RecentPropertiesRentContent } from "@/app/Home4/assets/content";
+import { RecentPropertiesRentContent } from "@/app/home4/assets/content";
 // components
 import Heading from "@/components/shared/Heading";
-import RecentPropertyCard from "@/app/Home4/components/RecentPropertyCard";
+import RecentPropertyCard from "@/app/home4/components/RecentPropertyCard";
 
 const RecentPropertiesRent = () => {
   return (

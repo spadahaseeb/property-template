@@ -1,5 +1,5 @@
 import { twMerge } from "tailwind-merge";
-import { PropertyButtonPropType } from "@/app/Home2/assets/types";
+import { PropertyButtonPropType } from "@/app/home2/assets/types";
 // components
 import Button from "@/components/shared/Button";
 

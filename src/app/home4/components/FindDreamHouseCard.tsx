@@ -1,6 +1,6 @@
 import Image from "next/image";
 // components
-import { FindDreamHouseCardPropType } from "@/app/Home4/assets/types";
+import { FindDreamHouseCardPropType } from "@/app/home4/assets/types";
 
 const FindDreamHouseCard = ({ data }: FindDreamHouseCardPropType) => {
   return (

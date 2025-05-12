@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
-import { BuySellCtaCardPropType } from "@/app/Home4/assets/types";
+import { BuySellCtaCardPropType } from "@/app/home4/assets/types";
 // components
 import Button from "@/components/shared/Button";
 

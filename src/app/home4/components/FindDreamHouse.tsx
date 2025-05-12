@@ -1,7 +1,7 @@
-import { FindDreamHouseContent } from "@/app/Home4/assets/content";
+import { FindDreamHouseContent } from "@/app/home4/assets/content";
 // components
 import Heading from "@/components/shared/Heading";
-import FindDreamHouseCard from "@/app/Home4/components/FindDreamHouseCard";
+import FindDreamHouseCard from "@/app/home4/components/FindDreamHouseCard";
 
 const FindDreamHouse = () => {
   return (
