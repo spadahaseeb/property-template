@@ -20,7 +20,7 @@ const Testimonials = ({ className }: { className?: string }) => {
     <>
       <section
         className={twMerge(
-          "lg:pt-[187px] lg:pb-[155px] py-[100px] bg-black-deep  text-white",
+          "lg:pt-[187px] lg:pb-[155px] pt-[100px] bg-black-deep  text-white",
           className
         )}
       >

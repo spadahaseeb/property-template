@@ -6,7 +6,7 @@ import { PropertiesByAreaContent } from "@/app/home4/assets/content";
 const PropertiesByArea = () => {
   return (
     <>
-      <section>
+      <section className="">
         <div className="container">
           {/* heading-content  */}
           <Heading
@@ -17,10 +17,10 @@ const PropertiesByArea = () => {
             className="text-center m-auto"
           />
 
-          <main className="grid gap-x-[30px] gap-y-[50px] grid-cols-3">
+          <main className="grid lg:gap-x-[30px] lg:gap-y-[50px] gap-[30px] xxl:grid-cols-3 xmd:grid-cols-2 grid-cols-1">
             {PropertiesByAreaContent.map((item) => (
               <div
-                className="max-w-[446px] h-[100px] rounded-md flex items-center"
+                className="xxl:max-w-[446px] max-w-full h-[100px] rounded-md flex items-center border-black-secondary/30 border-1 xxl:border-transparent"
                 key={item.title}
               >
                 <div className="w-[100px] h-[100px]">

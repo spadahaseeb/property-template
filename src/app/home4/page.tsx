@@ -36,9 +36,12 @@ const page = () => {
       <RecentPropertiesRent />
       <WhyChooseUs />
       <Testimonials />
-      <TrustedBy2 data={TrustedByContentH4} className="pt-[164px] pb-[160px]" />
+      <TrustedBy2
+        data={TrustedByContentH4}
+        className="lg:pt-[164px] lg:pb-[160px] py-[100px]"
+      />
       <PropertiesByArea />
-      <RecentArticles className="pt-[180px] pb-[30px] bg-white" />
+      <RecentArticles className="lg:pt-[180px] pb-[30px] md:pt-[100px] pt-[70px] bg-white" />
       <BuySellCta />
     </>
   );

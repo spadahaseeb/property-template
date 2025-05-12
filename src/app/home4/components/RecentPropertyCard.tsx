@@ -15,14 +15,14 @@ const RecentPropertyCard = ({
     <>
       <div
         className={twMerge(
-          "border-1 border-white-secondary rounded-md overflow-hidden w-[max-content]",
+          "border-1 border-white-secondary rounded-md overflow-hidden w-full",
           className
         )}
       >
         <a href="#">
           <Thumbnail
             image={data.imgSrc}
-            className="rounded-bl-none rounded-br-none h-[227px] w-[326px]"
+            className="rounded-bl-none rounded-br-none xxl:min-h-[227px] min-h-[350px] min-w-[326px] w-full"
           >
             <div className="pt-[23px] pl-5 flex gap-[10px]">
               {data.isForSle && <PropertyTag text="For Rent" variant="v1" />}

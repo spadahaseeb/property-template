@@ -60,6 +60,11 @@ export const FindDreamHouseContent = [
 export const FeaturedCategoriesContent = [
   {
     icon: Home,
+    title: "Modern Villa1",
+    discription: "10 properties",
+  },
+  {
+    icon: Home,
     title: "Modern Villa",
     discription: "10 properties",
   },
@@ -81,6 +86,29 @@ export const FeaturedCategoriesContent = [
 ];
 
 export const RecentPropertiesRentContent = [
+  {
+    imgSrc: "product1.webp",
+    title: "New Apartment Nice Wiew1",
+    adress: "42 Avenue O, Brooklyn",
+    price: "$250,000",
+    isMonthly: true,
+    isForSle: true,
+    isFeatured: true,
+    details: [
+      {
+        detail: "4",
+        icon: Bed,
+      },
+      {
+        detail: "1",
+        icon: Bath,
+      },
+      {
+        detail: "460",
+        icon: Copy,
+      },
+    ],
+  },
   {
     imgSrc: "product1.webp",
     title: "New Apartment Nice Wiew",

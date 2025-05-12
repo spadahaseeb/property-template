@@ -1,15 +1,14 @@
 import { BuySellCtaContent } from "@/app/home4/assets/content";
 // components
 import BuySellCtaCard from "@/components/shared/BuySellCtaCard";
-import Heading from "@/components/shared/Heading";
 
 const BuySellCta = () => {
   return (
     <>
-      <section className="pt-[150px] pb-[165px]">
+      <section className="lg:pt-[150px] lg:pb-[165px] md:py-[70px]">
         <div className="container">
           {/* section-content  */}
-          <main className="flex gap-[30px]">
+          <main className="flex gap-[30px] xxl:flex-row flex-col">
             {BuySellCtaContent.map((item) => (
               <div
                 key={item.title}

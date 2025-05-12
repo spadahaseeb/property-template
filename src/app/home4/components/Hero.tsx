@@ -12,7 +12,7 @@ const Hero = () => {
           <Image
             src={"/images/background4.png"}
             alt="home4-background"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-[100%_20%] md:object-center"
             fill
           />
         </div>
@@ -29,12 +29,14 @@ const Hero = () => {
               </p>
             </button>
 
-            <p className="text-regular text-black pb-5 text-[16px]">
-              We’ve more than 745,000 apartments, place & plot.
-            </p>
-            <h1 className="md:text-[60px] xs:text-[40px] text-[36px] font-medium text-black-deep pb-[50px]">
-              Believe in finding it
-            </h1>
+            <div className="flex lg:flex-col flex-col-reverse">
+              <p className="text-regular text-black text-[16px] max-w-[370px] text-center m-auto pb-[50px] lg:pb-5">
+                We’ve more than 745,000 apartments, place & plot.
+              </p>
+              <h1 className="md:text-[60px] xs:text-[40px] text-[36px] font-medium text-black-deep lg:pb-[50px]">
+                Believe in finding it
+              </h1>
+            </div>
           </div>
 
           {/* property-searchbar  */}

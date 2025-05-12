@@ -11,17 +11,17 @@ const FindDreamHouseCard = ({ data }: FindDreamHouseCardPropType) => {
             <Image
               src={`/images/${data.imgSrc}`}
               alt={"service-image"}
-              className="w-[200px] h-[155px]"
+              className="xmd:w-[200px] xmd:h-[155px] w-[120px]"
               width={200}
               height={155}
             />
           </div>
 
-          <div>
-            <h4 className="text-[21px] font-medium max-w-[321px] pb-[14px] leading-[25px]">
+          <div className="">
+            <h4 className="text-[21px] font-medium max-w-[321px] pb-[14px] leading-[25px] m-auto xl:m-0">
               {data.title}
             </h4>
-            <p className="text-[15px] font-normal max-w-[278px] leading-7">
+            <p className="text-[15px] font-normal max-w-[278px] leading-7 m-auto xl:m-0">
               {data.discription}
             </p>
           </div>
